@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Paycrave | Lauren Fritz Dogan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Boogaloo|Carrois+Gothic|Julius+Sans+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="/styles/nav.css">
+    <link rel="stylesheet" type="text/css" href="/styles/projects.css">
+ </head>
+<body>
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="one-half left">
+            <a href="/index.html">
+                <img id="logo" alt="LFD" src="/lfd_logo.png">
+                <h2 id="myname">Lauren Fritz Dogan</h2>
+            </a>
+        </div>
+        <div class="one-half right">
+            <a href="#">About Me</a>
+            <a href="#">Resume</a>
+            <a href="/projects/projects.html">Projects</a>
+    </nav>
+    
+    
+    
+    
+    <main class="project">
+    
+    
+        <h1>Paycrave</h1>
+        <a href="https://marvelapp.com/1bj4fbj">
+            <img alt="Paycrave" src="paycrave-multiscreen.png">    
+        </a>
+
+        <h2>Summary</h2>
+        <p></p>
+        <h2>Explanation</h2>
+        <p></p>
+        <h2>Problem</h2>
+        <p>My list of the current design's problems:
+            <ul>
+                <li></li>
+                <li></li>
+            </ul>        
+        </p>
+        <h2>Solution</h2>
+        <p></p>
+        <h2>Results</h2>
+        <p></p>
+        <h2>Conclusion</h2>
+        <p></p>
+    
+
+    </main>
+    
+    
+<p>About this project
+</p><p>
+My first project was to design a mobile app for finding local food trucks, viewing menus, and purchasing food.
+</p><p>
+User Stories</p><p>
+User 1: College Student</p><p>
+Wants to find the least expensive food truck. only likes to eat certain things. not interested trying foreign foods. would like to be able to filter out the trucks with Indian food, crepes, Mexican food, Greek food. He likes to eat the same thing every time he goes to a certain truck. He would like to see a list of his previous orders from all trucks.
+</p><p>
+User 2: Patrolling police office</p><p>
+Wants the fastest way to check out. He wants to know what’s close to him so that he can pay by credit card
+</p><p>
+User 3: Office worker.</p><p>
+Has an hour for lunch. But she wants good food. She wants to try new things but only if they’ve been rated well.
+</p><p>
+Screen Shots 9/14/15</p><p>
+Find a food truck by Map or List. Tap a marker.
+</p><p>
+Detail of a food truck. View Menu or Reviews.
+</p><p>
+Search by Zip Code
+</p><p>
+Screen Shots 9/15/15</p><p>
+Splash Screen / Page Loading</p><p>
+Home Page</p><p>
+View trucks near me</p><p>
+View trucks by specified zip code</p><p>
+I added a new selector bar with a third option (My Orders). Menu has also been changed.
+</p><p>
+STEPS:</p><p>
+Create a map view with locations of food trucks. At first I used pins that were identical displayed on the map. If you click on a pin, basic information will pop up about the truck (name, street address, average user rating, and an image). You can switch back and forth between viewing them on a map or list. I also added a search bar at the bottom of the map and list so a user can search for trucks in a specified zip code rather than his current location. 
+</p><p>
+My first thoughts were to create a homepage with links to certain functions. Then I decided that when opening the app it should take the user to the most important function. I wasn’t sure if users would always want to view food trucks near them. I thought that maybe they’d want to go directly to their favorite truck or to a list of their previous orders so that they could repeat an order. So, I did a survey of 25 people to find out what they thought. See details below under the heading “Test #1: Survey”. Based on this survey I found out that the majority of people would be most interested in seeing the map of trucks near them. They would also be interested in seeing reviews of these trucks. In order to appease the majority I decided to have the app open directly to the map view. I ran another test (#5) to determine if they understood color-coded pins to signify average user rating on a 5 point scale (dark red is excellent, medium red is good, gray is not as good). Many people did figure this out but I determined that the gray confused people. Some thought gray meant that the truck was not in service. In this test I also asked about displaying information on the pin heads. I showed distance in yards (ex: 320, 50), no numbers, an ordered listing (ex: 1, 2, 3), and average rating value to the nearest 1/10th (ex: 4.2, 2.7) on the 4 different variations. Only 23% of testers understood the pins with distance displayed. 34% of testers understood the listing number from closest to farthest away. 88% of people understood the average rating listed on the pin heads. I also asked them which they thought was the best variation and 53% of testers said the ratings version. Since most people understood these pinhead numbers and those people thought this was the best design, I decided to use ratings on the pinheads.
+</p><p>
+I created a page for a specific food truck that includes photo, name, address, phone number, average user rating, hours of operation, and style of food. It also has links to Menu, My Orders, and Reviews. Users can view the menu or order from the menu. 
+</p><p>
+Users will be able to see all of their previous orders from this food truck. The list of orders will include date, total cost of order, and a list of items purchased. If he clicks on any listing he will see a pop-up of the order with the ability to order it again and view his review (or create a review if he hasn’t yet written a review about this order).
+</p><p>
+They can also view a list of reviews from all users about this food truck. If user clicks on a review he can view the details and full review text. If this review was one he created then he will have the option to edit review.
+</p><p>
+When a user wants to create a new order he will select the food truck then click on the menu. the menu is broken down by food category. He will see all food categories and if he clicks on a category it will open up to show items. The items will show name, price, a photo, and an add button. When he clicks the add button, the total at the top of the screen will be updated, it will show the items in his order, and the checkout button will appear. He will have the opportunity to add other category items. After each item is added the total will be updated and the item will be added to the list at the top of the screen. If he wants more information about an item he can click on it to get a pop-up of a description and other information the truck provides (example: vegetarian/vegan/kosher, allergy warnings, nutrition information).
+</p><p>
+When the user clicks on the checkout button he will be able to review his order, increase/decrease the quantity of his items, see the total cost, and click on the button to continue to payment. 
+</p><p>
+-If the user is not signed in he will have the option to sign in (Facebook, twitter, email/password), create an account, or continue without signing in. 
+</p><p>
+--If he signs in he will be taken to his saved credit card information.
+</p><p>
+--If user wants to create an account he will be given the option to create an account using his Facebook or twitter account or by email/password.
+</p><p>
+--If he wants to continue without signing in he will be taken to the credit card information page. 
+</p><p>
+-If the user is signed in his next screen will show his saved credit card information. 
+</p><p>
+All users will now have the opportunity to update credit card information and click to proceed with order. If the credit card was approved the user will see a confirmation page. The confirmation page will tell the user to pick up his food at the food truck (lists name, address, phone number, and hours of operation) and mention an order number or his username which is provided on confirmation page. It will also show his order summary. After 2 minutes a pop-up button will appear asking the user to rate or review his order. He will have the option to rate the order on a 5-star scale, remind him in 10 minutes (if he hasn’t picked up his food, eaten it, or is too busy at the moment), write a full review, or skip rating.
+</p><p>
+I ran another usability test (#2) on the ordering process. I started testers on the list of food trucks near them. I asked them to order a cheeseburger, cheese fries, and a water from the Oh My Grill truck. From the screen showing the list of trucks, only 62% of the 26 testers clicked on the listing for Oh My Grill. It was the 5th out of 9 trucks listed on the screen. The next task was add a cheeseburger to the order. 73% of testers clicked on the Plus button for the cheeseburger. The majority of the people who didn’t had clicked elsewhere on the cheeseburger item. If they had been testing the actual site rather than a static image they would’ve seen the pop-up information about the cheeseburger and probably would’ve then clicked on the plus button.
+</p><p>
+Since not everyone was able to find the fifth listing, I thought that this page needed some changes so I ran another test (#4). I provided three alternatives for the listing of food trucks to determine if moving things around, changing colors, or adding space, or changing text size would help. Based on the results of this test, I added more space between truck listings, increased the space above and below the links for sorting, and changed the color of the rating stars. 
+</p><p>
+The menu button at the top of the pages will provide links to View Map, Search, profile information & credit card information, My Review, and My Order History.
+</p><p>
+If user selects My Reviews or My Order History he will see his History and be able to switch between reviews and orders. He can click on any of his reviews or orders to see more details. When he clicks on a previous order he’ll be able to order it again. If he clicks to order again it will take him to the order summary page to make changes, then he’ll go to the payment page to review his card details, and then submit the order. I ordered a usability test (#3) to see how well users could repeat an order from June 5th. I started them on the food truck’s page. In an average completion time of 15 seconds, 88% of testers clicked on the link for My Orders while the other three people clicked on the food truck’s hours. It took some time for them to find the link for My Orders but most people did find it. I think that I probably don’t need to change that button. When looking at the list of previous orders all but one (95%) clicked on the first order on the list which was the order from June 5th.
+</p><p>
+From the menu the user can Search. He will be taken to a page where he can type in types of foods, style of food, or food truck name to be given a list view of the food trucks that meet his query. At the bottom of the screen he will also have the opportunity to search for food trucks in a specified zip code.
+</p><p>
+I did some user testing on a few of the pages.
+</p><p>
+Test #1 Ranking importance of functions</p><p>
+Test #1: survey - Ranking importance of  functions</p><p>
+Created and published Sep 15, 2015</p><p>
+25 responses</p><p>
+Information given to testers: “This is a list of functions for a new mobile app for local food trucks. This app lets you search for food trucks, view their menus, order food, and pay by credit card. After placing an order you go to pick up your food at the truck.”
+Question 1: Which one of these is most important to you?</p><p>
+Question 2: Which is second most important for you?</p><p>
+Question 3: Please let me know if there is something not on this list that you would find important.
+</p><p>
+The list:</p><p>
+1.	Finding the least expensive food truck</p><p>
+2.	Ordering something you previously ordered from a food truck</p><p>
+3.	viewing a map with food trucks near you</p><p>
+4.	viewing a list of food trucks near you</p><p>
+5.	find the best rated food truck near you</p><p>
+6.	using this app without logging in</p><p>
+7.	viewing a map of food trucks in a specified zip code</p><p>
+8.	reading reviews from a food truck</p><p>
+Results</p><p>
+They prioritize these 2 functions:</p><p>
+#1 View a map of food trucks near me</p><p>
+#2 Read reviews from a food truck</p><p>
+Other items people found somewhat important were:</p><p>
+•	Using the app without logging in</p><p>
+•	Find the best rated food truck near me</p><p>
+Other things to consider:</p><p>
+•	a way to mark if I had enjoyed the truck before -- view my ratings on a map</p><p>
+•	search bar -- trucks by zip code, or search by food name or category</p><p>
+•	does ordering online allow me to cut to the front to pick up my food</p><p>
+•	favoriting trucks, get an alert when truck is in my area</p><p>
+•	nutrition facts
+</p><p>
+Test #2: Navigation flow -  Create Oh My Grill order of cheeseburger, cheese fries, and water</p><p>
+Created and published Sep 16, 2015</p><p>
+26 responses</p><p>
+Instructions: This is a prototype for a food truck mobile app. Please order a cheeseburger, cheese fries, and a water from the Oh My Grill food truck.</p><p>
+Step 1: Testers begin on a list of food trucks near them. They should search for the food truck called Oh My Grill. Slightly more than half of the users (62%) were able to find fifth truck on the list. I believe the others didn’t see it on the list at first glance so they clicked elsewhere.
+</p><p>
+Step 2: Users are taken to the page for Oh My Grill with the Menu already selected. They should click on the Burgers option to view a list of burgers including the cheeseburger. Only 6% of testers did not click on Burgers.
+</p><p>
+Step 3: The list of burgers appears. In the interactive version, if a user clicked on the image (just a gray box right now) or the title of the food, then a box would pop up showing a description of the food. Users should click on the PLUS button for the cheeseburger to add to their order. 73% of users clicked on the PLUS button.
+</p><p>
+Step 4: After adding a cheeseburger to the order, the Total shows the $4 cheeseburger, a button appears to CHECK OUT, and users should scroll down to ADD FRENCH FRIES to their order. All users clicked in the appropriate location.
+</p><p>
+Step 5: After clicking on ADD FRENCH FRIES, the list of french fries appears. Users should select Cheese Fries. 9% did not click on the PLUS button to add the cheese fries to their order.
+</p><p>
+Step 6: After adding cheese fries to the order, the Total updates to show $7 for the two items. Users should now scroll down to click on ADD DRINKS. All testers did this successfully.
+</p><p>
+Step 7: After clicking ADD DRINKS, the available drinks appear. Users should scroll to the bottom of the list to find a bottle of water. They should click the PLUS button to add it to their order. 10% of the remaining testers clicked this successfully.
+</p><p>
+Step 8: After adding the bottle of water to their order, users should now click on the CHECK OUT button to finish adding items to their order and continue to payment. Nine testers reached this step. They all completed this step successfully.
+</p><p>
+Step 9: After clicking on the CHECK OUT button, users can see an overview of their order before proceeding to payment. All nine remaining users clicked on the CONTINUE TO PAYMENT button.
+</p><p>
+Test #3: Navigation flow - Repeat Order</p><p>
+Created and published Sep 18, 2015</p><p>
+25 responses</p><p>
+Based on one of the user stories, I created a way to view previous orders and quickly reorder any of those. After setting up the pages for that I ran a usability test. Instructions: You are logged in to your food truck ordering app. You want to repeat an order you made on June 5th at Oh My Grill. How would you do this?
+</p><p>
+Step 1: I started testers on the Oh My Grill page. The default selection is Menu so users need to find and click on the My Orders button. Most (88%) testers clicked on this button.
+</p><p>
+Step 2: After clicking on the My Orders button users will see a list of their previous orders. It is arranged by date showing the most recent at the top. The most recent order from Oh My Grill was on June 5th, so users should click on the first line of the order history list. 95% of testers clicked on this order.
+</p><p>
+Step 3: Clicking on an order makes a new box appear on top of the truck page. It shows the details of the previous order with buttons to ORDER AGAIN and WRITE A REVIEW (since the user has not written a review for the order). All but one tester clicked on the button to order again.
+</p><p>
+Step 4: After clicking on ORDER AGAIN button, users will now see the order summary page. They can change the quantity of any item and click the CONTINUE TO PAYMENT button. One tester did not click this button.
+</p><p>
+Step 5: Since the user is already signed in to the system (he wouldn’t have an order history while signed out), his credit card information is already displayed. He can make changes or click the PROCEED WITH MY ORDER button. All testers clicked this button.
+</p><p>
+Step 6: After clicking the PROCEED button, the system charges the user’s credit card and sends the order to the food truck. The users sees a confirmation page with an order number or name to use to pick up food at the food truck. 76% of my testers reached this final step in the check out process.
+</p><p>
+Test #4: Questions - Compare List of Trucks by distance</p><p>
+Created and published Sep 18, 2015</p><p>
+25 responses</p><p>
+The results from my second test showed that only 62% of testers found Oh My Grill from a list of food trucks. I would have liked a higher result than that so I tried to redesign the list to make it easier to find a particular food truck without needing to Sort By Name. This new test provides three variations of the list of food trucks. The first is the original list, the second provides a bit more spacing between food truck listings, and the third list has a larger text size for the name of the food truck.
+The instructions: Here are 3 variations of a mobile app page. It lists 9 food trucks near you. You’re looking for a specific truck called “Oh My Grill”.</p><p>
+I asked testers a few questions about these variations.</p><p>
+1. How would you find the truck: Would you scan through the list or click somewhere first? Most people would scan through the list first, some wanted a search function, and others would sort by name</p><p>
+2. Which design variation makes it easier to find the truck you’re looking for (without resorting by name)? The majority of testers preferred the third variation while others said that they didn’t see a difference. Some people told me that they preferred the third because of more spacing or larger fonts.</p><p>
+3. Which design do you prefer? Again, most people preferred the third choice.
+</p><p>
+Peek Test</p><p>
+Completed Sep 18, 2015</p><p>
+5 minute video</p><p>
+I requested a “Peek Test” from UserTesting.com. The instructions asked him to say what is first impression was, the first thing he would do on the page and to do that while describing, also to say what stood out on the website, what frustrated you about the site, and to summarize.</p><p>
+The tester liked that it immediately went to food trucks near him. He liked the map and the variety of food. He liked the look of the phone. He liked that he doesn’t have to navigate through many pages to see what is near him at the moment. He would be interested in knowing if it was gluten free, allergies. He liked the menu interface, and that he could see ratings & reviews and also his previous orders. Would like it to be combined with Yelp app. It reminds him of Yelp (that he likes) since it is modern and friendly. He liked the keypad design. He noticed that he could search for types of foods. 
+</p><p>
+Test #5: Questions - View map with different pin information</p><p>
+Created and published Sep 20, 2015</p><p>
+26 responses</p><p>
+For all pages I changed the color of the rating stars (low rating gray, mid rating pink, high rating red). 
+I also redesigned the location pins for the map pages of the app. I changed their shape and added the color-coding for the food trucks’ overall rating. I considered displaying distance from me, truck’s overall rating, and an integer to increment at distance (1 = closest, 2 = second closest, 3= third closest, etc.).</p><p>
+I provided the following instructions to testers: You’re looking at 4 variations of a screen that shows the locations of food trucks near you. The difference is what is displayed on the pin heads. I want to know what information would be useful and what is unclear.
+Then I asked five questions.</p><p>
+1. The pins are different colors. What do you think the colors signify? 6 people said that they didn’t know, 6 said the open/closed status of the truck, 4 said food type, 3 said number of customers, and 3 said ratings</p><p>
+2. What do you think the numbers signify in the top left screen (#1)? 6 people said distance away from me in either feet/meters/yards, 5 said number of reviews, 5 said number of trucks or truck number or street number, 4 said number of customers, 4 said they didn’t know, 1 said ratings, and 1 mentioned number of ratings where customers liked it</p><p>
+3. What do you think the numbers signify in the bottom left screen (#3)? 9 people said the number of the listing, 7 said they didn’t know, 3 said how many there are or how many food trucks there are, 2 said the number of reviews, 1 said the number of food trucks, 1 said the rating from 1-10, 1 said the number of customers, and 1 said the number on the truck</p><p>
+4. What do you think the numbers signify in the bottom right screen (#4)? 23 people said ratings, 2 said distance, and 1 said the average wait time</p><p>
+5. Of the 4 variations, which do you think is the best? 14 said the bottom right (#4) with ratings, 7 said no preference, 4 said the bottom left (#3) with ordered listing, and 1 said top right (#2) with no numbers.</p><p>
+Based on these results I determined that the color scheme needed adjusting. The gray pin was confusing people since it is not red like the others. I decided to change the gray pin to an even lighter red to help people understand that the colors do not signify an open/closed status. Only open food trucks will be displayed on the map.</p><p>
+As for the information on the pin heads, the distance away in yards was not at all clear. Many people understood the listing number but I felt that didn’t provide any useful additional information. I decided to use the truck rating since that correlated with the pin color. Users do not need to understand this information to successfully use the app.</p>
+    
+    
+    </body>
+</html>
