@@ -1,82 +1,80 @@
-Property Management
-
-About the Project
+<p>About the Project</p><p>
 For the past five years I have owned a house that I rent out. I hired a property management company take care of leasing and repairing it. The company that I have been working with for the past three years uses software that allows property management employees, renters, and property owners to log in to the system. As a property owner I can use their online portal to view bills, lease documents, maintenance requests, and download monthly statements. It isn’t exactly the nicest way to display this information. I get frustrated each time I want to switch from viewing a list of bills to a list of work orders. Not everything is linked and there is some information missing that would be useful for me. So, as another project for my UX/UI Design experience I decided to do an unsolicited redesign of the owner’s portal. 
-
-Current State
+</p><p>
+Current State</p><p>
 I created a current state flow diagram to show the current state of the owner’s portal. 
-
+</p><p>
 When an owner logs in to his account he is immediately taken to the My Account page. This page shows his current photo, alerts, his contact information, and any conversations that he has had with property management through this online portal. I find this page to be especially NOT helpful since I know what I look like and my phone number. The alerts section is the only useful part of this page. It shows a count of how many maintenance requests are pending approval or rejection, although it is a link to the maintenance page rather than providing any useful information.
-
+</p><p>
 Each page has top navigation links for Statements, Bills, My Account, Reports, Maintenance, and Documents. On the diagram I have highlighted the only pages I use on a regular basis: Statements, Bills, and Maintenance. 
 The Reports page provides tax information and end of year tax documents so I only need to view this page once per year. 
 The Documents page shows all lease documents, move in & move out inspection documents, and utility bills that have been uploaded by the property management team. Currently, I receive a bill from the water and sewer company, I pay the bill, and I forward the bill to the property management team for them to submit to the tenant for reimbursement. The property management team either emails the bill to the tenant or uploads it to the portal so that tenant and owner can see the bill. The other documents in this page are the inspection documents that a team member performs every time a tenant moves in to or moves out of a rental property. All of the documents that are available to me are things that I only need to view or download once and I only need to go to the Documents page a few times each year.
-
+</p><p>
 Each month the property management team prepares a statement for all property owners. This statement is uploaded to the owner’s portal for the owner to view and download. It provides dates, costs, and descriptions of all income, maintenance performed, and management fees. It also shows the amount of money that will de deposited into the owner’s bank account each month. 
 The Statements page shows a list of all statements with links download the statement and links to bills for each statement period. It also provides a summary of the income, expenses, and equity for the current timeframe. There is a link for owners to send money to the property management company to cover any expenses that cannot be covered by rental income.
-
+</p><p>
 The Maintenance page lists of the work orders for the owner’s properties. Tenants can submit maintenance requests which are then assigned a work order number. The work order appears in the property management team’s page and also the property owner’s page. The property owner must approve or reject these work orders before any work is begun. From this page, owners can also view the details of each listed work order.
-
+</p><p>
 The Bills page displays a list of all bills from repairs, upgrades, cleaning, management fees, etc. The bills are listed by number and each can be clicked on to view more information and then to view the invoice.
-
+</p><p>
 Help and Logout links are displayed on each page as well.
+</p><p>
 
 
-
-competitive analysis
-The company that I hired to manage my rental property uses a subscription-based software called PropertyWare. I did some competitive analysis research to see what the other options are. I found several different property management software companies available: Buildium, Total Management, AppFolio Property Manager, and Rent Post. I read about these and watched some of their promotional videos. There have been comparisons done between these companies but they have been performed for the software purchaser (the property management company). 
-What I found was that not all of these software companies even provide an online portal for owners. 
-When I was looking at AppFolio I found that an owner who logs in has extremely limited options. The owner can download his “owner packet” or make an owner contribution. The owner packet is created by the property management company and can include a number of different reports based including statement, balance sheet, general ledger, cash flow, work orders, box score. 
-RentPost provides a snapshot of recent activity on the home screen.
+competitive analysis</p><p>
+The company that I hired to manage my rental property uses a subscription-based software called PropertyWare. I did some competitive analysis research to see what the other options are. I found several different property management software companies available: Buildium, Total Management, AppFolio Property Manager, and Rent Post. I read about these and watched some of their promotional videos. There have been comparisons done between these companies but they have been performed for the software purchaser (the property management company). </p><p>
+What I found was that not all of these software companies even provide an online portal for owners. </p><p>
+When I was looking at AppFolio I found that an owner who logs in has extremely limited options. The owner can download his “owner packet” or make an owner contribution. The owner packet is created by the property management company and can include a number of different reports based including statement, balance sheet, general ledger, cash flow, work orders, box score. </p><p>
+RentPost provides a snapshot of recent activity on the home screen.</p><p>
 Since the target audience for this software service are property management companies, they detail the benefits for the property manager. It’s difficult to find anything useful from the perspective of the property owner or property tenant. It seems that these aspects of the software are not much of a consideration.
+</p><p>
+USER STORIES</p><p>
+Property Management Website for property owners</p><p>
+1.	I want to view all bills for the past month</p><p>
+2.	I want to view my latest monthly statement</p><p>
+3.	I want to check on the progress of a work order</p><p>
+4.	I want to view all income/expense transactions for the past month</p><p>
+5.	I want to download the current lease</p><p>
+6.	I want to upload the most recent utility bill for tenant reimbursement</p><p>
+Opening Page</p><p>
+-show all files within the past 30 days</p><p>
+statements, bills, work orders and links to all</p><p>
 
-USER STORIES
-Property Management Website for property owners
-1.	I want to view all bills for the past month
-2.	I want to view my latest monthly statement
-3.	I want to check on the progress of a work order
-4.	I want to view all income/expense transactions for the past month
-5.	I want to download the current lease
-6.	I want to upload the most recent utility bill for tenant reimbursement
-Opening Page
--show all files within the past 30 days
-statements, bills, work orders and links to all
-
-OPENING PAGE
-I wanted to focus on the opening page after logging into the owner’s portal. The best way to make this easiest for property owners would be to put the most important information on the very first screen. There are a few different reasons that I will log in to my owner’s portal:
+OPENING PAGE</p><p>
+I wanted to focus on the opening page after logging into the owner’s portal. The best way to make this easiest for property owners would be to put the most important information on the very first screen. There are a few different reasons that I will log in to my owner’s portal:</p><p>
 Monthly (on the 15th or 16th): I log in to download my statement and verify that the charges are correct.
 Yearly if there is a change in tenants: I log in to view the move out inspection, move in inspection, and new lease.
-At the end of the year: I log in to download my tax report.
-From time to time I log in to view income (have the tenants paid their rent or reimbursed me for utility charges), approve/reject maintenance requests, and view ongoing maintenance work orders.
-For the items I only need to view once a year, I decided to make a link under “My Account”. Those don’t need navigation links on every page and they don’t need to be mentioned on the opening page.
-The things are most important are 1) urgent items; and 2) activity in the last 30 days.
+At the end of the year: I log in to download my tax report.</p><p>
+From time to time I log in to view income (have the tenants paid their rent or reimbursed me for utility charges), approve/reject maintenance requests, and view ongoing maintenance work orders.</p><p>
+For the items I only need to view once a year, I decided to make a link under “My Account”. Those don’t need navigation links on every page and they don’t need to be mentioned on the opening page.</p><p>
+The things are most important are 1) urgent items; and 2) activity in the last 30 days.</p><p>
 My first ideas for the design of this page are shown here. I first considered showing a list of activities in the past 30 days. 
-
-Unfortunately, this approach didn’t show any type of hierarchy on what was important (urgent vs new information). I added a summary level of information for the past 30 days including Total Income, Total Expenses, Portfolio Minimum, Monthly Statement, Completed Maintenance Requests, and Open Maintenance Requests. 
-Income, Expenses, and Minimum show dollar amounts but aren’t interactive.
+</p><p>
+Unfortunately, this approach didn’t show any type of hierarchy on what was important (urgent vs new information). I added a summary level of information for the past 30 days including Total Income, Total Expenses, Portfolio Minimum, Monthly Statement, Completed Maintenance Requests, and Open Maintenance Requests. </p><p>
+Income, Expenses, and Minimum show dollar amounts but aren’t interactive.</p><p>
 Statement, Completed, and Open have linked items on display. The Statement shows the newest monthly statement. Completed and Open Maintenance Request show the numbers of the work orders. Each work order can be clicked to provide details of the work order.
-
-The second design stared to show a bit of hierarchy but it still had a very textual layout. The property owner would need to read through the text to find what was urgent and what was not. So, I separated maintenance, statements, and transactions. 
-The most important (urgent) matter would be the first box seen. If there are any maintenance requests needing approval, these would be first. The pending maintenance requests are pending because they need the property owner to select APPROVE or REJECT this work order. If the property owner wants this request to be investigated and work performed he will select APPROVE. As soon as he clicks the APPROVE button, the property maintenance team can schedule an appointment with the tenant to begin repairing the problem. If there are no pending maintenance requests, this box would disappear.
-The second most important matter would be the monthly statement. If the property management team has uploaded a new statement that the property owner has not yet viewed or downloaded, it will appear in the next box.
+</p><p>
+The second design stared to show a bit of hierarchy but it still had a very textual layout. The property owner would need to read through the text to find what was urgent and what was not. So, I separated maintenance, statements, and transactions. </p><p>
+The most important (urgent) matter would be the first box seen. If there are any maintenance requests needing approval, these would be first. The pending maintenance requests are pending because they need the property owner to select APPROVE or REJECT this work order. If the property owner wants this request to be investigated and work performed he will select APPROVE. As soon as he clicks the APPROVE button, the property maintenance team can schedule an appointment with the tenant to begin repairing the problem. If there are no pending maintenance requests, this box would disappear.</p><p>
+The second most important matter would be the monthly statement. If the property management team has uploaded a new statement that the property owner has not yet viewed or downloaded, it will appear in the next box.</p><p>
 The third box shows the least urgent information. It shows the latest 5 or 6 transactions that have occurred for all of the owner’s properties. It provides a quick description, date, and dollar amount for each transaction. If the property owner has logged in to see if a tenant has paid the $62 water bill he’ll be able to quickly scan these last few transactions to see if it is there.
-
-I ran a usability test on this version. I gave testers the following instructions: 
-You own a house that you rent out to tenants. You received a notification email from your property management company about a maintenance request so you logged on to the owner’s portal of the property management company.
-I showed testers the current opening page for five seconds and then asked them some questions.
+</p><p>
+I ran a usability test on this version. I gave testers the following instructions: </p><p>
+You own a house that you rent out to tenants. You received a notification email from your property management company about a maintenance request so you logged on to the owner’s portal of the property management company.</p><p>
+I showed testers the current opening page for five seconds and then asked them some questions.</p><p>
 1. What was the most prominent element on the page? Of the 25 testers, 17 mentioned something about the maintenance box. 
-
-Version 1 and 2
+</p><p>
+Version 1 and 2</p><p>
 After I decided on my style tile, I incorporated this design into my three different versions of the Opening Page.
-
+</p><p>
 STYLE TILE
-
-OTHER PAGES
+</p><p>
+OTHER PAGES</p><p>
 The Statements page will show a list of the statement date ranges linked to a PDF of the monthly statement. It will also have a link to view all of the bills associated with each statement (the black circle). The most recent statement will always be at the top and it will be displayed in a feature box with additional information including Total Income, Total Expenses, and Owner Draw. 
-
+</p><p>
 The Bills page will show a listing of all bills for the time period selected. It shows the bill number, date, building & unit, description, and cost. Each bill can be clicked on to view details and the invoice.
-
+</p><p>
 The Cash Flow page shows all money transactions for the time period selected. In addition to providing similar information as the Bills page, this page also shows the balance in the owner’s portfolio account. It shows the Total Income, Total Expenses, Opening Balance, and Closing Balance for the selected time period. Each of the Bills can be clicked on for more information.
-
+</p><p>
 The Maintenance Work Orders page separates maintenance by status: pending, open, and completed. Pending maintenance will be listed first because that is the most urgent. If there are any bills assigned to the work orders, the bill number will be shown as a link for more information. The work order number is also a link to more information about that work order.
-
+</p>

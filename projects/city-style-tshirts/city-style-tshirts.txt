@@ -1,109 +1,108 @@
-
-About the Project
-
+<p>About the Project</p>
+</p><p>
 This project was to create an e-commerce website to sell T-shirts. My first step was to decide what to sell. 
 I started by comparing a few different sites like FansEdge, Threadless, and Hard Graft. FansEdge sells many different products with sports team designs, Threadless sells shirts with artsy designs, and Hard Graft sells upscale leather goods to organize your life.
 I’m not particularly interested in higher priced T-shirts, I do like to show off my favorite sports team, and I like to travel. From here I decided to use different city buildings and landmarks as a T-shirt design. I would use multiple colors and multiple city designs on T-shirts for men and women, sweatshirts, and tote bags. I used Photoshop to add the designs to a T-shirt mock-up. 
 I considered the target audience for each of these websites and compared them to the target audience for City Style T-Shirts. 
 My target audience is men and women between the ages of 20 and 50 because I feel those people are the most likely to be able and have the money to travel abroad. Traveling abroad requires a certain amount of adventure and open-mindedness because you’ll be interacting with people who may not speak your language and eating foods that you may not be used to eating. 
 The things I liked about the websites I compared were that on FansEdge you can narrow down what you’re looking for with multiple filters like team, gender, department, size, brand, price. While looking at a product on Threadless you can see what other products are available with that particular design. What I didn’t like about Hard Graft was that when hovering over an image on the home page there were too many links in a small space making it difficult to click on the product for more information. In the check-out process I needed to select US state and zip code in order to calculate shipping rates even though the product page showed a flat rate shipping to all of the US.
-
+</p><p>
 I laid out my design with a low-fidelity wireframe before deciding on branding. I like to have a good sense of what I’m designing before I feel comfortable deciding on a logo, colors, and text. 
-
+</p><p>
 On the homepage I wanted to show examples of the different products available (Men’s T-Shirts, Women’s T-Shirts, Sweatshirts, and Tote Bags). I also listed the names of the cities for which you could order designs. And, I provided navigation links to each of the product pages and a search page.
-
+</p><p>
 I attempted to lay out all of the product pages the same way. I started with the names of the cities, added available colors, and available sizes for filtering. Below the filter options I displayed an example of the product. For each selection (design & color), the example would be updated to reflect that selection. At this point I wasn’t sure whether I should put the color & design options listed at the top or make them more prominent so they are also in the center of the page. The other important element that I hadn’t yet decided on was how and where to display the ADD TO CART function.
-
+</p><p>
 After clicking on the SEARCH link, a new page will appear with a text box and a magnifying glass icon. The customer can type in the name of the city in this box. After submitting the search request, examples of products meeting that request will appear below. Customers can click on any of the products to go to that product page with the city design already selected.
-
+</p><p>
 I also designed a page to show the sizing chart. At this point, customers could get to the sizing chart by clicking on the link in the footer of any page. I felt that a sizing chart would be useful. It could also be necessary since the sweatshirts are sold in men’s and youth sizes. Women would have to order men’s or youth sizes for a comparable fit. The sizing chart shows that a woman’s small is equivalent to a youth XL or a men’s small.  
-
+</p><p>
 After some more consideration, I changed the layout of the product page. Since I had two different styles of city designs I separated those into two distinct groups. I also removed the top filters since the more prominent filter options made more sense. I put the color options in a row at the top, then the two design categories, and finally sizing options with an icon and link to the sizing page. I also added a description of the product.
-
-9/28/15
+</p><p>
+9/28/15</p><p>
 Usability Testing: I had intended for my homepage to have navigation links at the top, images of the designs that were offered, and examples of the different products offered. I was curious as to where people would choose to click when searching for a particular item. So, I ran a usability test on the homepage and I asked people where they would click to begin shopping for a Woman’s T-shirt with the New York design.
-
+</p><p>
 My results showed that people didn’t usually look to the largest but bottom section of the page (the products). Instead they either clicked the navigation links or the city designs. I took this to mean that the product examples were not as important.
-
-9/30/15
+</p><p>
+9/30/15</p><p>
 Usability Testing: Continuing with the homepage, I added a photo of someone wearing one of the shirts. I picked a photo of iconic Times Square in New York City and the man in the photo is wearing a T-shirt with the New York design. This image will change every few seconds between one of three different scenes. I moved the city designs to the right of the photo. I also moved the product descriptive text next to the products. However, I was also curious how well a page would work just showing a lot of the products. I ran a preference test to see which homepage design was more appealing.
-
+</p><p>
 My results showed the the design with the photo of New York was preferred. 64% of testers preferred it and responded 3 seconds faster in choosing this design.
-
+</p><p>
 Usability Testing: For my second test this day I wanted to know if people understood my layout for each of the product pages. I asked them what they’d expect to happen when they clicked on the green square. Nearly everyone said that clicking on the color box would change the color of the T-shirt on display. I also asked what they expected to happen after clicking on the Amsterdam building icon. Again, the majority of people said that the design on the T-shirt pictured would change to show the Amsterdam building. 
-
+</p><p>
 I decided to show the T-shirt with color and design selected but not with a size selected. Originally I thought that the Add to Cart button would only appear on the screen after size, design, and color were selected. In this test only color and design were selected by showing a red checkmark on the selection. 
-
+</p><p>
 My last question for this test asked what would have to be done to add the item to the cart. I wanted to find out if people noticed there was no Add to Cart button and if they realized that a size had not been selected. Only 9 of 26 people mentioned size in their response. The rest of the responses mentioned not seeing the button (but not determining what to do for a button to appear) or that they just didn’t know what to do. Some of these people didn’t even realize the Add to Cart button was missing.
-
-10/1/15
+</p><p>
+10/1/15</p><p>
 Usability Testing: I reworked the design of the product page. I showed both versions to testers and asked a few questions. I wanted to determine which selection was most important to shoppers: color, design, or size. I asked my testers “would you select size, color, or design first”? The majority of people said design. I also asked them if they were shopping other clothing websites, what order would they typically choose. Again, most would choose design first and the second response was usually color. My final question for this test asked which design they preferred. Most responded with the bottom option where each section has their options in one row.
-
+</p><p>
 Now with the new arrangement of selections I had two opportunities for placement of the product selection text and Add to Cart button. I ran a preference test to see which location was best.
-
+</p><p>
 The clear winner was the first alternative with the Add to Cart box at the bottom of the selections in the space next to sizes. 92% of respondents chose this alternative.
-
-10/7/15
+</p><p>
+10/7/15</p><p>
 After I picked the font for the logo and I changed the building icon I did some user testing on the layout of the logo on the homepage. I asked 25 people to select their top 2 favorites. Based on these results I determined that it was best to have a large company name in the center of the page.
-
+</p><p>
 After the test earlier in the day I selected two of the three favorites and added those to my homepage header. I asked which people preferred and almost even responses.
-
+</p><p>
 My test alternatives must have been too similar so the following day I reworked my alternatives using the first alternative and a new variation of the second alternative.
-
-10/8/15
+</p><p>
+10/8/15</p><p>
 For my new header design I went with the a smaller logo in the top corner, removed the company name in the center, and increased the size of the navigation links. With these two homepage options I got a clear winner being the first one with the logo to the left and larger, centered navigation links. 73% of testers chose this design.
-
-Style Tile
+</p><p>
+Style Tile</p><p>
 After I finalized my logo I put together a style tile. 
-
+</p><p>
 The adjectives I chose for this style tile are some words to describe travelers. We are selling T-shirts with designs from different countries. We think that the customers most interested in buying these products will be people who have traveled to these cities or who dream to travel to these cities. They could have just returned from a trip and want to show off where they’ve been. If they did not buy a tourist shirt while visiting the city they may want to get one after arriving home. It would be easy to buy T-shirts for family members who didn’t travel with them. They could also buy these shirts before departing for a trip to that city. In any of these scenarios, an international traveler often can be described as several or many of these adjectives. One must be flexible, resilient, crazy, adventurous, courageous, and open-minded to experience different cultures with different languages, customs, food types, dining experiences, and standards of living.
-
+</p><p>
 I chose Patua One for the header text. This is a serif font that is very blocky. I thought it went well with the body tex, Droid Sans Regular. Droid Sans Regular is a thin font that looks nice in short spurts of text -- this project has a lot of those. 
-
+</p><p>
 The color boxes show some of the colors of the products. I chose four colors for my layout: main call to action is orange, secondary call to action is blue, links are blue, and the footer is a near-black color. The text is also near-black. I chose orange for my call to action for a few reasons. First, orange is an attention-getting color. Second, the color is fun, exactly how I perceive the target audience.
-
-Navigational Flow Testing
-10/9/15
+</p><p>
+Navigational Flow Testing</p><p>
+10/9/15</p><p>
 Usability Testing: I wanted to test the check out flow. I started users on the search results page and told them that they have already added two items to the shopping cart, they do not have an account, do not want to create an account, and that they should complete the order by using a credit card.
-
+</p><p>
 Step 1: All testers clicked on the shopping cart in the header.
-
+</p><p>
 Step 2: Clicking on the shopping cart icon took people to the shopping cart page showing the items in their cart and a cost summary. Most (88%) of users clicked on the CHECK OUT button in orange. Some people checked on the PayPal link instead.
-
+</p><p>
 Step 3: Clicking on the CHECK OUT button opened up the Shipping section for shoppers to specify the destination shipping address. The address fields do not contain an address so I wanted users to click in one of those fields to input their shipping address. About two-thirds of users clicked on one of these fields and most of those clicked in the first text input box. The remaining 36% of users may not have noticed that the fields were waiting for an address since a clicked on the CHECK OUT button again, the PayPal button, or the bar for payment info. 
-
+</p><p>
 Step 4: After adding a shipping address the shipping method selection appears. The user should choose a method to ship the items. However, only 29% of users clicked on one of the three options. Most people clicked on the Payment Info bar. 
-
+</p><p>
 Step 5: Once a shipping method is selected it is highlighted and users need to click for the next section. In this case they should either click on the CHECK OUT button again or on the Payment Info bar. Of the four testers that made it this far, 3 our of 4 clicked in one of these places. The 4th person clicked on the already selected shipping method. From this I decided that I needed to redesign the shipping method section and choose a default shipping method.
-
+</p><p>
 Step 6: After clicking to expand the Payment Info section, users need to input their credit card number and billing address.
-
+</p><p>
 Step 7: After submitting credit card number and billing address, users need to click on the REVIEW MY ORDER button.
-
+</p><p>
 Step 8: Now users will see a summary of their order. They can make changes to items in their cart, shipping method, shipping address, billing address, and credit card information. If this information is correct they can click the PROCESS MY ORDER button to have their card charged and the items prepared for delivery.
-
+</p><p>
 Step 9: After the card is successfully charged, users will see an order confirmation. They will be able to click links to print the receipt, track the order, add an email address to receive tracking updates, or create an account.
-
-10/14/15
+</p><p>
+10/14/15</p><p>
 Usability Testing: After less than optimal results with the check out flow of a few days previously, I reworked some of the screens. I also wanted to see how easy it was to add an item to a shopping cart. I decided to start testers with one item (a sweatshirt) in their shopping cart and ask them to add a second item (Paris tote bag) and complete the order as a guest using a credit card.
-
+</p><p>
 Step 1: Testers begin on the sweatshirt page with a pop-up cart box showing that the sweatshirt is in their cart. I wanted users to click on the CONTINUE SHOPPING button or on the TOTE BAGS navigation link in the header. Only 17 of the 25 users clicked in these locations. The remaining 32% of people clicked on the cart CHECK OUT button, the sweatshirt ADD TO CART button, or on a sweatshirt design button.
-
+</p><p>
 Step 2: Clicking on the CONTINUE SHOPPING button will take users to the homepage. Users could click on the top navigation link for TOTE BAGS, click on the image of a tote bag, click on the text that shows the price of tote bags, or they could click on a design. If a real user were to click on a design, it would take them to a page showing all products available in that design. Unfortunately, since the design page wasn’t the page I wanted to test, these people (65%) ended their test. Only 35% of people clicked on a link that would take them directly to the Tote Bags page.
-
+</p><p>
 Step 3: On the Tote Bag page I wanted users to select a Paris design. There are two different Paris designs so I designed the test to work for both designs. Of the handful of people that got this far in the test, 67% of these clicked on the Paris design. The others clicked on the ADD TO CART button without choosing a design. In the live version of this website I intended to have a button appear over the ADD TO CART button when someone hovers over that button before selecting a design. I also decided to remove the default design from the product image until a design is selected.
-
+</p><p>
 Step 4: After selecting a design, the preview tote bag changes to display the selected design. Users should now add the item to the cart by clicking on the orange ADD TO CART button. 75% of remaining users did this while the rest clicked on a different Paris icon.
-
+</p><p>
 Step 5: After clicking the ADD TO CART button, a pop-up cart is displayed showing the two items in the cart. All remaining users clicked the button to CHECK OUT.
-
+</p><p>
 Step 6: Clicking on the CHECK OUT button takes users to the check out page displaying their items, a summary of charges, and buttons to continue the check out process (CHECK OUT or PayPal). All remaining users (3 of the original 25) clicked the CHECK OUT button.
-
+</p><p>
 Step 7: At this point the CHECK OUT button disappears from the Summary section but users can still click the PayPal button. Users should click in the text fields to add their shipping address. Only 1 of the 3 remaining people clicked in a textfield box. From these poor results and those of my previous check out flow test, I decided to move the text input labels to outside the boxes so it is more obvious that these fields are empty.
-
+</p><p>
 Step 8: Only 1 tester clicked in a box to add a shipping address. After the shipping address is submitted, shipping method appears. I changed the design of this section so that it doesn’t look like input fields. Radio buttons now select a shipping method and the least expensive method is selected by default. Shoppers can change this method or click the CONTINUE TO PAYMENT section.
-
+</p><p>
 Step 9: After clicking the CONTINUE TO PAYMENT button, users should submit credit card information and billing address. The one person that arrived on this page clicked just to the left of the credit card input boxes. Based on Step 7 and Step 9, I changed both input fields so that the labels were outside the fields and the fields would be blank until the shopper provided the required information.
-
-10/15/15
-Usability Testing: I made some changes to the check out process and wanted to test it again. This time I started users with 2 items already in the shopping cart and they should complete their order as a guest using a credit card. 
+</p><p>
+10/15/15</p><p>
+Usability Testing: I made some changes to the check out process and wanted to test it again. This time I started users with 2 items already in the shopping cart and they should complete their order as a guest using a credit card. </p>
