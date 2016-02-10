@@ -19,20 +19,27 @@ nav {
     top: 0px;
     width: 100%;
     height: 60px;
-    border-bottom: 4px solid #BF5217;
+    border-bottom: 5px solid #420D4F;
 }
 
 nav a {
-    color: #420D4F;
+    color: #a086a7;
     text-decoration: none;
 }
-nav a:visited {
+nav a:hover,
+#active-nav-link {
     color: #420D4F;
 }
-#logo {float: left}
+#logo {
+    float: left;
+}
 #myname {
     font-family: 'Julius Sans One', sans-serif;
+    color: black;
 }
+
+
+
 main {
     padding: 60px 5px;
     background-color: white;
@@ -40,6 +47,9 @@ main {
     max-width: 1200px;
     margin: auto;
 }
+
+
+
 .one-half { /* 49*2 = 98% */
     display: inline-block;
     width: 49%;
