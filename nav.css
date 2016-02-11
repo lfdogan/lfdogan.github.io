@@ -50,21 +50,3 @@ main {
 
 
 
-.one-half { /* 49*2 = 98% */
-    display: inline-block;
-    width: 49%;
-}
-.one-third { /* 32.5*3 = 97.5% */
-    display: inline-block;
-    width: 32.5%;
-}
-.one-quarter { /* 24.5*4 = 98% */
-    display: inline-block;
-    width: 24.5%;
-}
-.left {
-    text-align: left;
-}
-.right {
-    text-align: right;
-}

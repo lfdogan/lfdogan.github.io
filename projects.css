@@ -1,18 +1,83 @@
+/* show all projects page*/
 #main-projects-home img {
-    max-height: 100px;
-    max-width: 100px;
+    height: 200px;
+    width: 200px;
+}
+#main-projects-home h2 {
+    border-bottom: none;
+}
+#main-projects-home .box {
+/*    border: 1px solid #BF5217;*/
+    height: 300px;
+/*    display: inline-block;*/
+    text-align: center;
+}
+#main-projects-home a {
+    text-transform: none;
+}
+.one-half { /* 49*2 = 98% */
+    display: inline-block;
+    width: 49%;
+}
+.one-third { /* 32.5*3 = 97.5% */
+    display: inline-block;
+    width: 32.5%;
+}
+.one-quarter { /* 24.5*4 = 98% */
+    display: inline-block;
+    width: 24.5%;
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
 }
 
-h1 {
+
+
+/* each project page */
+main h1 {
     font-family: 'Boogaloo', cursive;
 }
-h2 {
+main h2 {
     border-bottom: 3px solid #BF5217;
 }
-p {
+main p {
     max-width: 40em;
 }
 main img {
     max-width: 300px;
     max-height: 300px;
+}
+main .one-third {
+    display: inline-block;
+    widows: 32%;
+    vertical-align: middle;
+}
+main .half-right-align {
+    display: inline-block;
+    width: 49%;
+    text-align: right;
+    vertical-align: middle;
+}
+main .half-left-align {
+    display: inline-block;
+    width: 49%;
+    text-align: left;
+    vertical-align: middle;
+}
+main .button {
+    background-color: #BF5217;
+    width: 150px;
+    text-align: center;
+    color: white;
+    padding: 8px;
+    border-radius: 8px;
+    box-shadow:  5px 5px 5px lightgray;
+}
+main a {
+    text-decoration: none;
+/*    color: white;*/
+    text-transform: uppercase;
 }
