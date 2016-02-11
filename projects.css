@@ -60,6 +60,12 @@ main img {
     color: #420D4F;
     text-decoration: none;
 }
+div.transbox {
+    background-color: white;
+    opacity: 0.9;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
 
 .projects-page-image {
     padding: 10px;
@@ -72,6 +78,7 @@ main .one-third {
     display: inline-block;
     widows: 32%;
     vertical-align: middle;
+/*    background-color: white;*/
 }
 main .half-right-align {
     display: inline-block;
