@@ -42,6 +42,7 @@ main h1 {
 }
 main h2 {
     border-bottom: 3px solid #BF5217;
+    clear: both;
 }
 main p {
     max-width: 40em;
@@ -49,6 +50,23 @@ main p {
 main img {
     max-width: 300px;
     max-height: 300px;
+/*    background-color: whitesmoke;*/
+}
+.project-box {
+    padding: 20px 0;    
+    color: #420D4F;
+}
+.project-box a {
+    color: #420D4F;
+    text-decoration: none;
+}
+
+.projects-page-image {
+    padding: 10px;
+    margin: 2px;
+    border: 3px solid #420D4F;
+    box-shadow:  5px 5px 5px lightgray;
+    
 }
 main .one-third {
     display: inline-block;
@@ -67,17 +85,18 @@ main .half-left-align {
     text-align: left;
     vertical-align: middle;
 }
-main .button {
+.button {
     background-color: #BF5217;
     width: 150px;
     text-align: center;
     color: white;
     padding: 8px;
+    margin: 5px;
     border-radius: 8px;
     box-shadow:  5px 5px 5px lightgray;
 }
-main a {
+.button-link {
     text-decoration: none;
-/*    color: white;*/
+    color: white;
     text-transform: uppercase;
 }
