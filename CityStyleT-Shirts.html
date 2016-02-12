@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>City Style T-Shirts | Lauren Fritz Dogan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Boogaloo|Carrois+Gothic|Julius+Sans+One' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="nav.css">
-    <link rel="stylesheet" type="text/css" href="projects.css">
+<!--    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Julius+Sans+One' rel='stylesheet' type='text/css'>-->
+    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Fauna+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="print.css">
  </head>
 <body>
@@ -14,17 +14,21 @@
 
     
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="one-half left">
+    <nav>
+        <div id="nav-left">
             <a href="index.html">
-                <img id="logo" alt="LFD" src="lfd_logo.png">
-                <h3 id="myname">Lauren Fritz Dogan</h3>
+                <div id="nav-logo"><img id="logo" alt="LFD" src="lfd02-11-16.png"></div>
+                <div id="nav-name">
+                    <h3 id="myname">Lauren Fritz Dogan</h3>
+                    <h5 id="myrole">UX Researcher / Engineer</h5>
+                </div>
             </a>
         </div>
-        <div class="one-half right">
+        <div id="nav-right">
             <a href="AboutMe.html">About Me</a>
             <a href="resume.html">Resume</a>
-            <a id="active-nav-link" href="projects.html">Projects</a>
+            <a href="projects.html">Projects</a>
+        </div>
     </nav>
     
     
@@ -46,46 +50,68 @@
         </div>
     
     <h2>Summary</h2>
-    <p>I was asked to create an e-commerce website for a company selling T-Shirts. I needed to create a brand and name for this company.</p>
-    <h2>Explanation</h2>
-    <p>I did this project while a student at Bloc. The goal was to create a brand and design an e-commerce website. My goal was to create an easy check out process.</p>
-    <h2>Problem</h2>
-    <p>My first task was to create a brand and products. I chose to sell T-shirts with images of landmarks to display tourist cities around the world. I used Photoshop to desgin the shirts of different colors and designs. The site will also sell sweatshirts and tote bags with the same designs. My target audience is men and women between the ages of 20 and 50. </p>
-        <div>
-            <div style="display: inline-block">
-                <p>Name and logo design</p>
-                <a href="projects/city-style-tshirts/logodesign.png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/logodesign.png"></a>
-            </div>
-            <div style="display: inline-block">
-                <p>Style Tile</p>
-                <a href="projects/city-style-tshirts/Style_Tile_Blocshop2015-10-07.png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/Style_Tile_Blocshop2015-10-07.png"></a>
-            </div>
-        </div>
-        <p>After determining products, I needed to display the products in an easy to use format and create an easy shopping cart and checkout process.</p>
-    <h2>Solution</h2>
-        <div style="float: right">
-            <a href="projects/city-style-tshirts/original-layout.png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/original-layout.png"></a>
-            <br/>
-            <a href="projects/city-style-tshirts/AthensProducts.png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/AthensProducts.png"></a>
-        </div>
-    <p>In order to determine the best way to display my products I compared other e-commerce websites including FansEdge, Threadless, and Hard Graft. FansEdge allows users to filter by many options including sports team, size, gender, type of clothing, brand, and price. I incorporated this idea by separating my website into four pages for men's t-shirts, women's t-shirts, sweatshirts, and tote bags. On each page users can select by design, color, and size. A useful feature I noticed on Threadless was that while viewing a product, the user can select other types of clothing with the same design. I added this feature to view other products with the same selected design. Frustrations I found in Hard Graft were that it was difficult to click links that were close together and that the site needed to calculate shipping to the US even though all US states had the same flat rate.</p>
+        <img style="float: right" alt="T-Shirt Design" src="projects/city-style-tshirts/Men's_T-Shirt_BlueDark_Sydney.png">
+    <p>I wanted to create an e-commerce website for a company selling T-Shirts that shared my passion for travel.</p>
         
-    <h2>Results</h2>
-    <p>I ran several usability tests on branding, layout, and navigational flow. I also published my prototype with limited click capabilities on Marvel App in order to do some Peek testing. </p>
-    <p>For branding, I asked testers to compare potential page headers. </p>
-        <a href="projects/city-style-tshirts/BrandTesting10-07-2015(1).png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/BrandTesting10-07-2015(1).png"></a>
-        <a href="projects/city-style-tshirts/BrandTesting10-08-2015.png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/BrandTesting10-08-2015.png"></a>
+        
+    <h2>Explanation</h2>
+    <p>The goal was to create a user-friendly e-commerce website for T-shirts with a quick and easy checkout process.</p>
     
-        <p>For layout, I found that most users first looked at the at the top of the page to find the type of product they wanted to view. I also found that users preferred the home page to show a large photo in addition to a few product examples rather than lots of examples. On the product page it was best to display the options in a single line rather than a group.</p>
+        
+        <h2>Problem</h2>
+    <p>My first goal was to create a brand and products. I chose to sell T-shirts with images of landmarks to display tourist cities around the world. I used Photoshop to design the shirts in different colors and designs. The site will also sell sweatshirts and tote bags with the same designs. My target audience is men and women between the ages of 20 and 50. After determining products, I needed to display the products in an easy to use format and create an easy shopping cart and checkout process.</p>
+        
+        
+    <h2>Solution</h2>
+            <a style="float: right" href="projects/city-style-tshirts/SWOTHardGraft.png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/SWOTHardGraft.png"></a>
+            <a style="float: right" href="projects/city-style-tshirts/SWOTFansEdge.png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/SWOTFansEdge.png"></a>
+            <a style="float: right" href="projects/city-style-tshirts/SWOTThreadless.png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/SWOTThreadless.png"></a>
+    <p>In order to determine the best way to display my products I compared other e-commerce websites including FansEdge, Threadless, and Hard Graft. FansEdge allows users to filter by many options including sports team, size, gender, type of clothing, brand, and price. I incorporated this idea by separating my website into four pages for men's t-shirts, women's t-shirts, sweatshirts, and tote bags. On each page users can select by design, color, and size. A useful feature I noticed on Threadless was that while viewing a product, the user can select other types of clothing with the same design. I added this feature to view other products with the same selected design. Frustrations I found in Hard Graft were that it was difficult to click links that were close together and that the site needed to calculate shipping to the US even though all US states had the same flat rate.</p>
+
+
+    
+        
+        <h2>Results</h2>
+    <p>I ran several usability tests on branding, layout, and navigational flow. I also published my prototype with limited click capabilities on Marvel App in order to do some Peek testing. </p>
+        <h3>Logo Design</h3>
+    <p>For branding, I asked testers to compare potential page headers. </p>
+        <a href="projects/city-style-tshirts/logodesign.png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/logodesign.png"></a>
+        <a href="projects/city-style-tshirts/BrandTesting10-07-2015(1).png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/BrandTesting10-07-2015(1).png"></a>
+        <a href="projects/city-style-tshirts/Style_Tile_Blocshop2015-10-07.png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/Style_Tile_Blocshop2015-10-07.png"></a>
+        <a href="projects/city-style-tshirts/BrandTesting10-08-2015.png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/BrandTesting10-08-2015.png"></a>
+
+
+  
+        <h3>User Flow</h3>
+        <p>For layout, I found that most users first looked at the at the top of the page to find the type of product they wanted to view. I also found that users preferred the home page to show a large photo in addition to a few product examples rather than lots of examples. On the product page it was best to display the options in a single line rather than a group.  I also learned that users expect to see the product update for each selection made. 
+        </p>
+        <a href="projects/city-style-tshirts/original-layout.png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/original-layout.png"></a>            
+        <a href="projects/city-style-tshirts/AthensProducts.png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/AthensProducts.png"></a>
         <a href="projects/city-style-tshirts/LayoutTesting09-28-2015.png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/LayoutTesting09-28-2015.png"></a>
         <a href="projects/city-style-tshirts/LayoutTesting09-30-2015.png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/LayoutTesting09-30-2015.png"></a>
         <a href="projects/city-style-tshirts/LayoutTesting10-01-2015(1).png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/LayoutTesting10-01-2015(1).png"></a>
-        <p>For navigational flow I found that after adding an item to their shopping cart, users tended to click on the pop-up cart box or back to the navigational links to continue shopping, and radio style selection for shipping options worked best.</p>
+        
+        
+        <h3>Cart and Checkout</h3>  
+        <p>I found that after adding an item to their shopping cart, users tended to click on the pop-up cart box or back to the navigational links to continue shopping, and radio style selection for shipping options worked best.</p>
         <a href="projects/city-style-tshirts/NavTesting10-14-2015(1).png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/NavTesting10-14-2015(1).png"></a>
         <a href="projects/city-style-tshirts/NavTesting10-15-2015(4).png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/NavTesting10-15-2015(4).png"></a>
         <a href="projects/city-style-tshirts/NavTesting10-15-2015(8).png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/NavTesting10-15-2015(8).png"></a>
-    <h2>Conclusion</h2>
-    <p>After designing this website I would have added more images of the products. It would have been great to show a model wearing each of the different products. I also learned that users expect to see the product update for each selection made. It's best to display options from left to right on the screen rather than group them. In the future, I would use less design, color, and size options for the wireframe and prototype. I found that using InVision or Marvel to publish a clickable prototype only works well with fewer than 75 screens, therefore all of the time I spent preparing screens for my many clothing options was wasted. When developing this site it would be best to disable the add to cart button until the user has made a selection for each product option (design, color, and size). </p>
+        <p>I got feedback on 3 testers. </p>
+        <a title="Come back soon to see a clip from this video" href="projects/city-style-tshirts/PeekTest-2015-10-14_14d0a99d_ScreenShot.png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/PeekTest-2015-10-14_14d0a99d_ScreenShot.png"></a>
+        <a title="Come back soon to see a clip from this video" href="projects/city-style-tshirts/PeekTest-2015-10-15_1d94a99d_ScreenShot.png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/PeekTest-2015-10-15_1d94a99d_ScreenShot.png"></a>
+        <a title="Come back soon to see a clip from this video" href="projects/city-style-tshirts/PeekTest-2015-10-16_1a9ca99d_ScreenShot.png"><img alt="City Style T-Shirts" src="projects/city-style-tshirts/PeekTest-2015-10-16_1a9ca99d_ScreenShot.png"></a>
+    
+        
+        <h2>Conclusion</h2>
+    <p>
+        According to my usability tests I feel that the MVP is successful. 
+        
+        For future improvements I would include professionally shot photography with models wearing each of the different products to show customers how the clothing fits on a regular person and provide multiple angles.
+        
+        For future design projects I would use less design, color, and size options for the clickable prototype. I found that using InVision or Marvel to publish a clickable prototype only works well with fewer than 75 screens. 
+        
+        When developing this site it would be best to disable the add to cart button until the user has made a selection for each product option (design, color, and size). </p>
     
     </main>
     

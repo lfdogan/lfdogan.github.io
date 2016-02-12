@@ -4,26 +4,32 @@
     <meta charset="UTF-8">
     <title>Property Management | Lauren Fritz Dogan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href='https://fonts.googleapis.com/css?family=Boogaloo|Carrois+Gothic|Julius+Sans+One' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="nav.css">
-    <link rel="stylesheet" type="text/css" href="projects.css">
+<!--    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Julius+Sans+One' rel='stylesheet' type='text/css'>-->
+    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Fauna+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="main.css">
     <link rel="stylesheet" type="text/css" href="print.css">
  </head>
 <body>
+
+
     
     
     <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="one-half left">
+    <nav>
+        <div id="nav-left">
             <a href="index.html">
-                <img id="logo" alt="LFD" src="lfd_logo.png">
-                <h3 id="myname">Lauren Fritz Dogan</h3>
+                <div id="nav-logo"><img id="logo" alt="LFD" src="lfd02-11-16.png"></div>
+                <div id="nav-name">
+                    <h3 id="myname">Lauren Fritz Dogan</h3>
+                    <h5 id="myrole">UX Researcher / Engineer</h5>
+                </div>
             </a>
         </div>
-        <div class="one-half right">
+        <div id="nav-right">
             <a href="AboutMe.html">About Me</a>
             <a href="resume.html">Resume</a>
-            <a id="active-nav-link" href="projects.html">Projects</a>
+            <a href="projects.html">Projects</a>
+        </div>
     </nav>
     
     
@@ -44,10 +50,10 @@
 
     
     <h2>Summary</h2>
-    <p>Rental home owners who have hired property management companies are able to view important information about their rentals however the information is not very user friendly.</p>
+    <p>Rental property owners hire companies to manage their properties for them for various reasons. Even though the owners have hired a company to lease the property and manage the income and expenses, they still would like to access and view income, expenses, and documents about their rentals, however the information is not very user friendly.</p>
     
         <h2>Explanation</h2>
-    <p>Since I've been using a property management company for my rental home for the past 5 years I've come across many issues with their current system. I get frustrated trying to switch between viewing maintenance work orders and its associated bills, getting useful information from inspection reports, and needing to speak with the property management team for other information that should easily be accessible to me. Therefore, I decided to make an unsolicited redesign of their owner's portal and then develop the page.</p>
+    <p>Since I've been using a property management company for my rental home for the past 5 years I've come across many issues with their current system. I get frustrated trying to switch between viewing maintenance work orders and its associated bills, getting useful information from inspection reports, and needing to speak with the property management team for other information that should easily be accessible to me. Therefore, I decided to make an unsolicited redesign of their owner's portal and then develop the project.</p>
     
         <h2>Problem</h2>
     <p>My list of the current design's problems:
@@ -68,7 +74,7 @@
     </p>
     
         <h2>Solution</h2>
-        <p>I did some competitive analysis between PropertyWare and other property management software companies (Buildium, Total Management, AppFolio Property Manager, Rent Post, and 123Landlord). All of these software programs were designed for the landlord rather than the owner or tenant. I found that not all of the these even have an online portal for owners and those that do generally lack raw data and customization. </p>
+    <p>I did some competitive analysis between PropertyWare and other property management software companies (<a href="projects/property-management/buildium/Screen%20Shot%202016-02-12%20at%2010.10.13.png">Buildium</a>, Total Management, <a href="projects/property-management/appfolio/Screen%20Shot%202016-02-12%20at%2010.13.25.png">AppFolio Property Manager</a>, Rent Post, and 123Landlord). All of these software programs were designed for the landlord rather than the owner or tenant. I found that not all of the these even have an online portal for owners and those that do generally lack raw data and customization. </p>
         <a href="projects/property-management/CompetitiveAnalysisNotes.png"><img alt="current state statements page" src="projects/property-management/CompetitiveAnalysisNotes.png"></a>
         <p>When an owner logs in to his portal he should be able to see items needing his attention plus a snapshot of other useful information. If a work order has been requested, the owner will see this work order request on the opening page so that he can approve or reject it without having to navigate through the system. He should also be able to download his monthly statement and view the recent income and expenses regarding his properties.</p>
         <a href="projects/property-management/WireframeOpeningPageHierarchy.png"><img alt="wireframe of opening page" src="projects/property-management/WireframeOpeningPageHierarchy.png"></a>
@@ -93,6 +99,9 @@
         <a href="projects/property-management/Developed(3).png"><img alt="Property Management" src="projects/property-management/Developed(3).png"></a>
         <a href="projects/property-management/Developed(4).png"><img alt="Property Management" src="projects/property-management/Developed(4).png"></a>
     </main>
+
+
+
 
 
     </body>
