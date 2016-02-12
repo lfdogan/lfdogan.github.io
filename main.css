@@ -251,3 +251,9 @@ main .half-left-align {
     border: 3px solid #420D4F;
     box-shadow:  5px 5px 5px lightgray;
 }
+
+
+#main-resume .button {
+    width: 50px;
+    display: inline-block;
+}
