@@ -212,7 +212,9 @@ main .half-left-align {
     margin: auto;
     padding-top: 5px;
 }
-
+#main-home-page a:hover {
+    text-decoration: none;
+}
 
 
 
