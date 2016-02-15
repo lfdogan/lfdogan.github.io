@@ -47,6 +47,9 @@ a {
     color: white;
     text-transform: uppercase;
 }
+.button-link:hover {
+    text-decoration: none;
+}
 
 
 
@@ -74,13 +77,15 @@ main p {
     max-width: 40em;
 }
 main img {
-    max-width: 300px;
+    max-width: 100%;
     max-height: 300px;
     padding: 10px;
 /*    background-color: whitesmoke;*/
 }
-main a:hover {
-    text-decoration: underline;
+@media (min-width: 300px) {
+    main img {
+        max-width: 300px;
+    }
 }
 main .one-third {
     display: inline-block;
@@ -88,18 +93,7 @@ main .one-third {
     vertical-align: middle;
 /*    background-color: white;*/
 }
-main .half-right-align {
-    display: inline-block;
-    width: 49%;
-    text-align: right;
-    vertical-align: middle;
-}
-main .half-left-align {
-    display: inline-block;
-    width: 49%;
-    text-align: left;
-    vertical-align: middle;
-}
+
 
 
 
@@ -135,4 +129,43 @@ main .half-left-align {
 #main-resume .button {
     width: 50px;
     display: inline-block;
+}
+
+
+
+
+
+
+.main-project .inline-text-link:hover {
+    text-decoration: underline;
+    background-color: #420D4F;
+    color: white;
+}
+.main-project .half-right-align {
+    display: block;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+.main-project .half-left-align {
+    display: block;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+    
+}
+/* FOR DEVICES AT LEAST 700 PIXELS WIDE
+ */
+@media (min-width: 700px) {
+    .main-project .half-right-align {
+        display: inline-block;
+        width: 49%;
+        text-align: right;
+    }
+    .main-project .half-left-align {
+        display: inline-block;
+        width: 49%;
+        text-align: left;
+    }
 }

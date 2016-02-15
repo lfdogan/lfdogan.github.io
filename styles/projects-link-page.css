@@ -10,10 +10,13 @@
 }
 #main-projects-home a {
     text-transform: none;
+    color: black;
+}
+#main-projects-home a:hover {
+    text-decoration: none;
 }
 #main-projects-home .project-box {
-    padding: 20px 0;    
-    color: #420D4F;
+    padding: 20px 0;
 }
 #main-projects-home div.transbox {
     background-color: white;
@@ -23,7 +26,7 @@
 #main-projects-home .projects-page-image {
     padding: 10px;
     margin: 2px;
-    border: 3px solid #420D4F;
+    border: 3px solid black; /* #420D4F; */
     box-shadow:  5px 5px 5px lightgray;
 }
 
