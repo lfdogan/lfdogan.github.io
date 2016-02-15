@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head lang="en" profile="http://www.w3.org/2005/10/profile">
+<link rel="icon" 
+      type="image/png" 
+      href="favicon.png">
+    <meta charset="UTF-8">
+    <title>Checklist | Lauren Fritz Dogan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<!--    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Julius+Sans+One' rel='stylesheet' type='text/css'>-->
+    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Fauna+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/print.css">
+    <link rel="stylesheet" type="text/css" href="styles/nav.css">
+ </head>
+<body>
+    
+    
+    <!-- Navigation Bar -->
+    <nav>
+        <div id="nav-left">
+            <a href="index.html">
+                <div id="nav-logo"><img id="logo" alt="LFD" src="lfd02-11-16.png"></div>
+                <div id="nav-name">
+                    <h3 id="myname">Lauren Fritz Dogan</h3>
+                    <h5 id="myrole">UX Researcher / Engineer</h5>
+                </div>
+            </a>
+        </div>
+        <div id="nav-right">
+            <a href="AboutMe.html">About Me</a>
+            <a href="resume.html">Resume</a>
+            <a href="projects.html">Projects</a>
+        </div>
+    </nav>
+    
+    
+    
+    <main class="main-project">
+    
+        <h1>Bloc It Off</h1>
+        <div class="first-image">
+            <div class="half-right-align">
+                <a href="projects/bloc-it-off/blocitoff-open.png"><img alt="Bloc It Off" src="projects/bloc-it-off/blocitoff-open.png"></a>
+            </div>
+            <div class="half-left-align">
+                <a class="button-link" href="http://thawing-ridge-69261.herokuapp.com/" target="_blank">
+                    <div class="button">Use the App</div>
+                </a>
+            </div>
+        </div>
+    
+        
+        
+        
+        
+    
+        <h2>Summary</h2>
+        <p>Writing a list of tasks that need to be completed is a great way to get organized. Unfortunately, sometimes our to-do lists end of being "would be nice to-do" lists that are very long. A way to keep the list short is to give them an expiration date.</p>
+    
+        
+        
+        
+        
+        <h2>Explanation</h2>
+        <p>I was provided with wireframes to use as a guide for development. My task in this project was to use JavaScript, AngularJS, and the Firebase API to develop this application. </p>
+        <a href="projects/bloc-it-off/wireframe-blocitoff-active-tasks-with-field.jpg"><img alt="Checklist" src="projects/bloc-it-off/wireframe-blocitoff-active-tasks-with-field.jpg"></a>
+        <a href="projects/bloc-it-off/wireframe-blocitoff-active-tasks-with-completion.jpg"><img alt="Checklist" src="projects/bloc-it-off/wireframe-blocitoff-active-tasks-with-completion.jpg"></a>
+        <a href="projects/bloc-it-off/wireframe-blocitoff-task-history.jpg"><img alt="Checklist" src="projects/bloc-it-off/wireframe-blocitoff-task-history.jpg"></a>
+    
+        
+        
+        
+        
+        <h2>Problem</h2>
+        <p>The user stories I was given provide the individual steps to accomplish this project.</p>
+            <ul>
+                <li>Sync tasks with a persistent back-end.</li>
+                <li>View active tasks in a list for default view.</li>
+                <li>Automatically hide tasks older than 7 days from the active tasks view.</li>
+                <li>View expired and completed tasks in a separate view.</li>
+                <li>Provide a way for users to submit new tasks with description and priority.</li>
+                <li>User needs a way to mark active tasks as complete.</li>
+        </ul>
+        
+    
+
+    
+        <h2>Solution</h2>
+        <p>The easiest and most secure way for me to save tasks in a database without back-end development was to use the Firebase API. I organized my data so that each task entered by the user will have values for entry date, task description, priority, and completion status. </p>
+        <a href="projects/bloc-it-off/firebase.png"><img alt="Firebase" src="projects/bloc-it-off/firebase.png"></a>
+        
+        <p>In order to start my development using AngularJS I cloned <a href="https://github.com/Bloc/bloc-frontend-project-starter">Bloc's Frontend Project Starter</a> for a single page application using UI Router. </p>
+        <p>When a user wants to mark off a task as complete he should only need to click on the task. It shouldn't be complicated or involve multiple steps. I used AngularJS's ngShow to only show tasks where the value of 'completed' is false.</p>
+        <a href="projects/bloc-it-off/HideCompleted.png"><img alt="Firebase" src="projects/bloc-it-off/HideCompleted.png"></a>
+        <p>On each table view I added a paragraph listing all tasks that are in the database. The reason I added this was so that the user would be able to quickly glance over the task history on the default page. If all tasks are completed or expired the user would otherwise see nothing.</p>
+    
+        
+        
+        
+        
+        <h2>Results</h2>
+        <p>When submitting a new task, I altered the wireframe so that users could select a priority instead of adding text for that field. I determined that this would format the data better so that I could assign a number to each value. When displaying the data in a table it would be easier to sort them by a number than text. Alphabetically the text would be listed high, low, then medium and I wanted them to be listed high, medium, then low.</p>
+        <a href="projects/bloc-it-off/SubmissionForm.png"><img alt="Firebase" src="projects/bloc-it-off/SubmissionForm.png"></a>
+    
+        
+            <video width="435" height="446" controls>
+        <source src="projects/bloc-it-off/bloc-it-off.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+        
+        
+        <h2>Conclusion</h2>
+        <p>The MVP was successful. This app works well when using the app on a desktop. Future iterations for this project would include making it responsive and mobile-friendly. In its current state, the text is very small and doesn't maximum the width of a mobile device's screen. An additional improvement is to set log-in information for multiple users. </p>
+        <a class="button-link" href="https://github.com/lfdogan/bloc-it-off" target="_blank">
+                    <div class="button">View Repository on Github</div>
+                </a>
+    
+    </main>
+
+
+    </body>
+</html>
