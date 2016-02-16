@@ -141,31 +141,11 @@ main .one-third {
     background-color: #420D4F;
     color: white;
 }
-.main-project .half-right-align {
-    display: block;
-    width: 100%;
-    text-align: center;
-    vertical-align: middle;
-}
-.main-project .half-left-align {
-    display: block;
-    width: 100%;
-    text-align: center;
-    vertical-align: middle;
-}
+
     
 }
 /* FOR DEVICES AT LEAST 700 PIXELS WIDE
  */
 @media (min-width: 700px) {
-    .main-project .half-right-align {
-        display: inline-block;
-        width: 49%;
-        text-align: right;
-    }
-    .main-project .half-left-align {
-        display: inline-block;
-        width: 49%;
-        text-align: left;
-    }
+
 }
