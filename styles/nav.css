@@ -1,7 +1,5 @@
 /*    color: #420D4F;*/
 
-
-/* UNDER 700 PIXELS WIDE */
 nav {
     display: block;
     font-size: 16px;
@@ -18,29 +16,24 @@ nav {
     border-bottom: 5px solid #420D4F;
     z-index: 1; /* higher than main */
 }
-#nav-left {
-    position: fixed; /* fixed use left and top/bottom */
-    left: 0px;
-    top: 0px;
-    text-align: left;
-    width: 100%;
-    height: 60px;
+#nav-left a {
+    color: whitesmoke;
+    text-decoration: none;
 }
 #nav-logo {
     display: inline-block;
     vertical-align: top;
     width: 50px;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-top: 5px;
+    padding: 5px;
 }
 #logo {
     max-height: 50px;
     max-width: 50px;
+    padding: 5px;
 }
 #nav-name {
     display: inline-block;
-    padding: 0;
+    padding: 0 0 0 5px;
 }
 #myname {
 /*    font-family: 'Julius Sans One', sans-serif;*/
@@ -58,52 +51,86 @@ nav {
     padding: 0 0 10px 0;
     margin: 0;
 }
-#nav-left a {
-    color: whitesmoke;
-/*    color: #420D4F;*/
-    text-decoration: none;
-}
-/* right half for links */
-#nav-right {
+
+
+
+/* UNDER 700 PIXELS WIDE */
+#nav-left {
+    display: inline-block;
     position: fixed; /* fixed use left and top/bottom */
-    right: 0px;
-    width: 100%;
+    left: 0;
+    top: 2px;
+    text-align: left;
+    padding-right: 5px;
+}
+#hamburger {
+    display: inline-block;
+    position: fixed; /* fixed use left and top/bottom */
+    right: 0;
+    top: 0;
+    font-size: 30px;
     text-align: right;
-    padding-right: 3px;
-        padding-top: 55px;
-        height: 15px; /* padding top 20px + height 40px = 60px */
+    padding: 15px 5px 0 0;
 }
-#nav-right a {
+/* Dropdown Content (Hidden by Default) */
+#hamburger .dropdown-content {
+    display: none;
+    position: absolute;  
+    top: 50px;
+    font-size: 20px;
+    right: 0;
+    background-color: #420D4F;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/* Links inside the dropdown */
+#hamburger .dropdown-content a {
     color: #a086a7;
+    padding: 5px 10px 10px 5px;
     text-decoration: none;
-    padding-right: 15px;
+    display: block;
 }
-#nav-right a:hover {
+/* Change color of dropdown links on hover */
+#hamburger .dropdown-content a:hover {
     color: white;
 }
-#active-nav-link {
-    color: white;
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+#hamburger .show {
+    display:block;
+}
+#nav-right {
+    display: none;
 }
 
 
-
-/* FOR DEVICES AT LEAST 700 PIXELS WIDE
+/* FOR WIDER DEVICES -- AT LEAST 700 PIXELS WIDE
 we will NOT use the hamburger icon to click left navigation menu in/out 
 we will have the left navigation menu fixed on screen */
-@media (min-width: 700px) {
-    nav {
-        height: 60px;
-    }
+@media (min-width: 600px) {
     #nav-left {
         width: 49%;
-        display: inline-block;
-        
     }
     #nav-right {
-        width: 49%;
+        display: inline-block;
+        position: fixed; /* fixed use left and top/bottom */
         right: 0;
-        padding-top: 20px;
-        height: 40px; /* padding top 20px + height 40px = 60px */
+        top: 0;
+        width: 49%;
+        text-align: right;
+        padding: 35px 5px 0 0;
     }
-    
+    #nav-right a {
+        color: #a086a7;
+        text-decoration: none;
+        padding-right: 15px;
+    }
+    #nav-right a:hover {
+        color: white;
+    }
+    #active-nav-link {
+        color: white;
+    }
+    #hamburger {
+        display: none;
+    }
 }
