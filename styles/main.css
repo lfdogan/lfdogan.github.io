@@ -141,6 +141,25 @@ main .one-third {
     background-color: #420D4F;
     color: white;
 }
+.main-project .hover_img a { 
+    position:relative;
+}
+.main-project .hover_img a span { 
+    position:absolute; 
+    display:none; 
+    z-index:99; 
+}
+.main-project .hover_img a:hover span { 
+    display:block; 
+}
+.main-project .image-rollover {
+    background-color: whitesmoke;
+    border: 1px solid #420D4F;
+}
+.main-project a {
+    text-decoration: underline;
+}
+
 
     
 }
