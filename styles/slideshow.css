@@ -3,13 +3,15 @@
 }
 .carouselbox .buttons div {
     display: inline-block;
-/*    border: 1px solid #420D4F;*/
     width: 90px;
-    padding: 3px;
-    background: #420D4F;
+    background-color: #420D4F;
     color: white;
     position: relative;
     text-transform: uppercase;
+    padding: 5px; /* between text and border */
+    margin: 3px; /* between border and next element */
+    border-radius: 8px;
+    box-shadow:  5px 5px 5px lightgray;
 }
 .carouselbox figure {
     display: none;
