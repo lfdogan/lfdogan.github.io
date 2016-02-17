@@ -16,20 +16,20 @@
     height: 250px;
 }
 #img-property-management {
-    background-image: url('/projects/property-management/property-open.png');
+    background-image: url('projects/property-management/property-open.png');
 }
 #img-city-style {
-    background-image: url('/projects/city-style-tshirts/citystyle-open.png');
+    background-image: url('projects/city-style-tshirts/citystyle-open.png');
 }
 #img-paycrave {
-    background-image: url('/projects/paycrave/paycrave-open.png');
+    background-image: url('projects/paycrave/paycrave-open.png');
     background-position: center; 
 }
 #img-bloc-it-off {
-    background-image: url('/projects/bloc-it-off/blocitoff-open.png');
+    background-image: url('projects/bloc-it-off/blocitoff-open.png');
 }
 #img-blocjams {
-    background-image: url('/projects/blocjams/blocjams-open.png');
+    background-image: url('projects/blocjams/blocjams-open.png');
 }
 
 
