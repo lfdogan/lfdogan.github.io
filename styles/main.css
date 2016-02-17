@@ -98,7 +98,9 @@ main .one-third {
 
 
 
-
+#main-home-page a {
+    color: black;
+}
 #main-home-page {
     margin: auto;
     text-align: center;

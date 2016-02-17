@@ -122,6 +122,7 @@ we will have the left navigation menu fixed on screen */
     #nav-right a {
         color: #a086a7;
         text-decoration: none;
+        text-transform: uppercase;
         padding-right: 15px;
     }
     #nav-right a:hover {
