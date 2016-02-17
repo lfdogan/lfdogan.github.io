@@ -1,7 +1,7 @@
  /* #420D4F; */
 
 #main-projects-home .project-box {
-    margin-bottom: 10px; /* margin is outside of border */
+    margin-bottom: 40px; /* margin is outside of border */
 }
 #main-projects-home h2,
 #main-projects-home .button {
@@ -23,6 +23,7 @@
 }
 #img-paycrave {
     background-image: url('/projects/paycrave/paycrave-open.png');
+    background-position: center; 
 }
 #img-bloc-it-off {
     background-image: url('/projects/bloc-it-off/blocitoff-open.png');
