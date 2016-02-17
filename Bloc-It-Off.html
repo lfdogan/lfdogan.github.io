@@ -12,8 +12,10 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/print.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
-    <script src="script.js"></script>
- </head>
+    <link rel="stylesheet" type="text/css" href="styles/slideshow.css">
+    <script src="scripts/script.js"></script>
+    <script src="scripts/slideshow.js"></script>
+    </head>
 <body>
     
     
@@ -69,9 +71,35 @@
         
         <h2>Explanation</h2>
         <p>I was provided with wireframes to use as a guide for development. My task in this project was to use JavaScript, AngularJS, and the Firebase API to develop this application. </p>
-        <a href="projects/bloc-it-off/wireframe-blocitoff-active-tasks-with-field.jpg"><img alt="Checklist" src="projects/bloc-it-off/wireframe-blocitoff-active-tasks-with-field.jpg"></a>
-        <a href="projects/bloc-it-off/wireframe-blocitoff-active-tasks-with-completion.jpg"><img alt="Checklist" src="projects/bloc-it-off/wireframe-blocitoff-active-tasks-with-completion.jpg"></a>
-        <a href="projects/bloc-it-off/wireframe-blocitoff-task-history.jpg"><img alt="Checklist" src="projects/bloc-it-off/wireframe-blocitoff-task-history.jpg"></a>
+        
+        
+
+        <div class="carouselbox">
+            <div class="content">
+                <figure class="current">
+                <a href="projects/bloc-it-off/wireframe-blocitoff-active-tasks-with-field.jpg">
+                    <img src="projects/bloc-it-off/wireframe-blocitoff-active-tasks-with-field.jpg">
+                    <figcaption>Wireframe for active tasks</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                <a href="projects/bloc-it-off/wireframe-blocitoff-active-tasks-with-completion.jpg">
+                    <img src="projects/bloc-it-off/wireframe-blocitoff-active-tasks-with-completion.jpg">
+                    <figcaption>Wireframe for active tasks with completion</figcaption>
+                    </a>
+                </figure>
+                <figure>
+                    <a href="projects/bloc-it-off/wireframe-blocitoff-task-history.jpg">
+                        <img src="projects/bloc-it-off/wireframe-blocitoff-task-history.jpg">
+                        <figcaption>Wireframe for task history</figcaption>
+                    </a>
+                </figure>
+            </div>
+            <div class="buttons">
+                <div id="prev">◀ Previous</div>
+                <div id="next">Next ▶</div>
+            </div>
+        </div>
     
         
         

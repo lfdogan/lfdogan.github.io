@@ -1,0 +1,23 @@
+.carouselbox, .carouselbox .content{
+    text-align: center;
+}
+.carouselbox .buttons div {
+    display: inline-block;
+/*    border: 1px solid #420D4F;*/
+    width: 90px;
+    padding: 3px;
+    background: #420D4F;
+    color: white;
+    position: relative;
+    text-transform: uppercase;
+}
+.carouselbox figure {
+    display: none;
+}
+.carouselbox a {
+    text-decoration: none;
+}
+.carouselbox figure.current {
+    border: none;
+    display: block;
+}
