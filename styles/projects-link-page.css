@@ -9,7 +9,7 @@
 }
 #main-projects-home .img {
     margin-top: 20px; /* margin is outside of border */
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; /* By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally. */
     background-size: cover;
     border: 1px solid black;
     width: 100%;
@@ -22,14 +22,14 @@
     background-image: url('citystyle-open.png');
 }
 #img-paycrave {
-    background-image: url('styles/paycrave-open.png');
-    background-position: center; 
+    background-image: url('paycrave-open.png');
+    background-position: 30% 40%; /* IE 12+ If you only specify one keyword/value, the other value will be "center"/50% */
 }
 #img-bloc-it-off {
-    background-image: url('styles/blocitoff-open.png');
+    background-image: url('blocitoff-open.png');
 }
 #img-blocjams {
-    background-image: url('styles/blocjams-open.png');
+    background-image: url('blocjams-open.png');
 }
 
 
