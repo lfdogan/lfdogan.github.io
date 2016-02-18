@@ -152,18 +152,19 @@ main .one-third {
     color: white;
 }
 .main-project .hover_img a { 
-    position:relative;
+    position: relative;
 }
 .main-project .hover_img a span { 
-    position:absolute; 
-    display:none; 
-    z-index:99; 
+    position: absolute; 
+    display: none; 
+    z-index: 10; 
 }
 .main-project .hover_img a:hover span { 
-    display:block; 
+    display: block; 
 }
 .main-project .image-rollover {
     background-color: whitesmoke;
+/*    height: 400px;*/
     border: 1px solid #420D4F;
 }
 
