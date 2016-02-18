@@ -32,6 +32,15 @@ a {
 .right {
     text-align: right;
 }
+/* a.button-link is outside of div.button */
+.button-link {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.button-link:hover {
+    text-decoration: none;
+}
 .button {
     background-color: #c9452b;
     width: 150px;
@@ -42,14 +51,7 @@ a {
     border-radius: 8px;
     box-shadow:  5px 5px 5px lightgray;
 }
-.button-link {
-    text-decoration: none;
-    color: white;
-    text-transform: uppercase;
-}
-.button-link:hover {
-    text-decoration: none;
-}
+
 
 
 
@@ -83,7 +85,7 @@ main img {
     padding: 10px;
 /*    background-color: whitesmoke;*/
 }
-@media (min-width: 300px) {
+@media (min-width: 302px) {
     main img {
         max-width: 300px;
     }
@@ -138,7 +140,9 @@ main .one-third {
 
 
 
-
+.main-project .inline-text-link {
+    text-decoration: underline;
+}
 .main-project .inline-text-link:hover {
     text-decoration: underline;
     background-color: #420D4F;
@@ -159,15 +163,13 @@ main .one-third {
     background-color: whitesmoke;
     border: 1px solid #420D4F;
 }
-.main-project a {
-    text-decoration: underline;
-}
 
 
-    
-}
+
+
 /* FOR DEVICES AT LEAST 700 PIXELS WIDE
  */
+/*
 @media (min-width: 700px) {
 
-}
+}*/

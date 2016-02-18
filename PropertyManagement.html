@@ -12,7 +12,9 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/print.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
+    <link rel="stylesheet" type="text/css" href="styles/slideshow.css">
     <script src="scripts/script.js"></script>
+    <script src="scripts/slideshow.js"></script>
  </head>
 <body>
 
@@ -218,26 +220,54 @@
 
             
         <h3>Remote User Testing</h3>
-        <a href="projects/property-management/UserTestingInstructions-1657256.png"><img alt="user testing of statements page" src="projects/property-management/UserTestingInstructions-1657256.png" style="float: left"></a>
         <p>I requested three remote user tests with ten tasks. These tests ran from 14 to 19 minutes in length. Since my previous tests showed that users didn't understand the difference between work orders and bills I asked my new testers, in Task 5, to explain the difference. These testers were able to understand the difference since they had spent a few minutes already exploring other parts of the project. I also realized that some of my sections didn't specify property location so I added that during this testing phase.</p>
         <br/ style="clear: both">
-        <video width="320" height="195" controls>
-            <source src="projects/property-management/UserTesting-1657256A-LuShell2000(Task4).mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <a href="projects/property-management/UserTestingNotes-1657256A-LuShell2000.png"><img alt="user testing of statements page" src="projects/property-management/UserTestingNotes-1657256A-LuShell2000.png"></a>
-        <br/>
-        <video width="320" height="179" controls>
-            <source src="projects/property-management/UserTesting-1657256B-sine_cera(Task7).mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <a href="projects/property-management/UserTestingNotes-1657256B-sine_cera.png"><img alt="user testing of statements page" src="projects/property-management/UserTestingNotes-1657256B-sine_cera.png"></a>
-        <br/>
-        <video width="320" height="199.5" controls>
-            <source src="projects/property-management/UserTesting-1657256C-iscott(Task9).mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-        <a href="projects/property-management/UserTestingNotes-1657256C-iscott.png"><img alt="user testing of statements page" src="projects/property-management/UserTestingNotes-1657256C-iscott.png"></a>
+        
+        <div class="carouselbox">
+            <div class="content">
+                <figure>
+                    <a href="projects/property-management/UserTestingInstructions-1657256.png"><img alt="user testing of statements page" src="projects/property-management/UserTestingInstructions-1657256.png"></a>
+                    <figcaption>Remote User Test Instructions</figcaption>
+                </figure>
+                <figure>
+                    <video width="320" height="195" controls>
+                        <source src="projects/property-management/UserTesting-1657256A-LuShell2000(Task4).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <a href="projects/property-management/UserTestingNotes-1657256A-LuShell2000.png"><img alt="user testing of statements page" src="projects/property-management/UserTestingNotes-1657256A-LuShell2000.png"></a>
+                    <figcaption>Remote User Test #1 Clip and Notes</figcaption>
+                </figure>
+                <figure>
+                    <video width="320" height="179" controls>
+                        <source src="projects/property-management/UserTesting-1657256B-sine_cera(Task7).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <a href="projects/property-management/UserTestingNotes-1657256B-sine_cera.png"><img alt="user testing of statements page" src="projects/property-management/UserTestingNotes-1657256B-sine_cera.png"></a>
+                    <figcaption>Remote User Test #2 Clip and Notes</figcaption>
+                </figure>
+                <figure>
+                    <video width="320" height="199.5" controls>
+                        <source src="projects/property-management/UserTesting-1657256C-iscott(Task9).mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <a href="projects/property-management/UserTestingNotes-1657256C-iscott.png"><img alt="user testing of statements page" src="projects/property-management/UserTestingNotes-1657256C-iscott.png"></a>
+                    <figcaption>Remote User Test #3 Clip and Notes</figcaption>
+                </figure>
+            </div>
+            <div class="controls">
+                <div id="prev" class="button"><i class="fa fa-chevron-left"></i> Previous</div>
+                <div class="dots">
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                </div>
+                <div id="next" class="button">Next <i class="fa fa-chevron-right"></i></div>
+            </div>
+        </div>
+        
+
+
 
         <p>View the design clickable prototype: 
         <div class="button"><a class="button-link" href="https://marvelapp.com/946a9c" target="_blank">laptop/desktop (Marvel)</a></div>

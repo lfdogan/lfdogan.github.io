@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Julius+Sans+One' rel='stylesheet' type='text/css'>-->
     <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Fauna+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/print.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
@@ -76,7 +77,7 @@
 
         <div class="carouselbox">
             <div class="content">
-                <figure class="current">
+                <figure>
                 <a href="projects/bloc-it-off/wireframe-blocitoff-active-tasks-with-field.jpg">
                     <img src="projects/bloc-it-off/wireframe-blocitoff-active-tasks-with-field.jpg">
                     <figcaption>Wireframe for active tasks</figcaption>
@@ -95,9 +96,14 @@
                     </a>
                 </figure>
             </div>
-            <div class="buttons">
-                <div id="prev">◀ Previous</div>
-                <div id="next">Next ▶</div>
+            <div class="controls">
+                <div id="prev" class="button"><i class="fa fa-chevron-left"></i> Previous</div>
+                <div class="dots">
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                </div>
+                <div id="next" class="button">Next <i class="fa fa-chevron-right"></i></div>
             </div>
         </div>
     

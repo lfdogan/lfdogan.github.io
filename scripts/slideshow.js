@@ -2,9 +2,11 @@ window.onload= function(){
 
     var box = document.querySelector('.carouselbox');
     var items = box.querySelectorAll('.content figure');
+    var dots = box.querySelectorAll('.carouselbox .dots div');
     var counter = 0;
     var amount = items.length;
-    var current = items[0];
+    var currentImage = items[0];
+    var currentDot = dots[0];
     box.classList.add('current');
     
     
@@ -12,16 +14,20 @@ window.onload= function(){
     
     
     function navigate(direction) {
-            current.classList.remove('current');
-            counter = counter + direction;
-            if (direction === -1 && counter < 0) { 
-              counter = amount - 1; 
-            }
-            if (direction === 1 && !items[counter]) { 
-              counter = 0;
-            }
-            current = items[counter];
-            current.classList.add('current');
+        currentImage.classList.remove('current');
+        currentDot.classList.remove('current');
+        counter = counter + direction;
+        if (direction === -1 && counter < 0) { 
+          counter = amount - 1; 
+        }
+        if (direction === 1 && !items[counter]) { 
+          counter = 0;
+        }
+        currentImage = items[counter];
+        currentDot = dots[counter];
+        currentImage.classList.add('current');
+        currentDot.classList.add('current');
+
       }
     var next = document.getElementById('next');
     var prev = document.getElementById('prev');

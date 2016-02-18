@@ -1,9 +1,14 @@
 .carouselbox, .carouselbox .content{
     text-align: center;
+    font-size: 12px;
 }
-.carouselbox .buttons div {
+.carouselbox .controls div {
     display: inline-block;
-    width: 90px;
+}
+.carouselbox .button,
+.carouselbox .dots .dot {
+    display: inline-block;
+    width: 70px;
     background-color: #420D4F;
     color: white;
     position: relative;
@@ -12,6 +17,21 @@
     margin: 3px; /* between border and next element */
     border-radius: 8px;
     box-shadow:  5px 5px 5px lightgray;
+    cursor: pointer;
+    font-size: 10px;
+}
+.carouselbox .dots .dot {
+    width: 12px;
+    padding: 0;
+    border-radius: 20px;
+    color: whitesmoke;
+    background-color: whitesmoke;
+    border: 1px solid #420D4F;
+    cursor: default;
+}
+.carouselbox .dots .current {
+    background-color: #420D4F;
+    color: #420D4F;
 }
 .carouselbox figure {
     display: none;
