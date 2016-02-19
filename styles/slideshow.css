@@ -16,7 +16,7 @@
     padding: 5px; /* between text and border */
     margin: 3px; /* between border and next element */
     border-radius: 8px;
-    box-shadow:  5px 5px 5px lightgray;
+/*    box-shadow:  5px 5px 5px lightgray;*/
     cursor: pointer;
     font-size: 10px;
 }
