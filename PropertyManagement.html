@@ -13,6 +13,7 @@
     <link rel="stylesheet" type="text/css" href="styles/print.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
     <link rel="stylesheet" type="text/css" href="styles/slideshow.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="scripts/script.js"></script>
     <script src="scripts/slideshow.js"></script>
  </head>
@@ -225,7 +226,19 @@
         <p>I requested three remote user tests with ten tasks. These tests ran from 14 to 19 minutes in length. Since my previous tests showed that users didn't understand the difference between work orders and bills I asked my new testers, in Task 5, to explain the difference. These testers were able to understand the difference since they had spent a few minutes already exploring other parts of the project. I also realized that some of my sections didn't specify property location so I added that during this testing phase.</p>
         <br/ style="clear: both">
         
-        <div class="carouselbox">
+        
+        
+        <div class="carouselbox">Remote User Testing
+            <div class="controls">
+                <div class="carousel-prev button"><i class="fa fa-chevron-left"></i> Previous</div>
+                <div class="dots">
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                </div>
+                <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
+            </div>
             <div class="content">
                 <figure>
                     <a href="images/property-management/UserTestingInstructions-1657256(a).png"><img alt="user testing of statements page" src="images/property-management/UserTestingInstructions-1657256(a).png"></a>
@@ -260,16 +273,6 @@
                     <figcaption>Remote User Test #3 Notes and Clip of Task #9</figcaption>
                 </figure>
             </div>
-            <div class="controls">
-                <div id="prev" class="button"><i class="fa fa-chevron-left"></i> Previous</div>
-                <div class="dots">
-                    <div class="dot">*</div>
-                    <div class="dot">*</div>
-                    <div class="dot">*</div>
-                    <div class="dot">*</div>
-                </div>
-                <div id="next" class="button">Next <i class="fa fa-chevron-right"></i></div>
-            </div>
         </div>
         
 
@@ -281,21 +284,45 @@
         </p>
 
     <p>After getting my initial design determined I began development of the project. I ran a few more tests during this process and even made some design changes based on features that I was able to develop. One tester told me that the transactions page was hard to read and suggested I change the color of item costs. I also realized that I needed to display more information regarding the current lease rather than looking through the lease document.</p>
-
-    <a href="images/property-management/firebase.png"><img alt="Firebase" src="images/property-management/firebase.png"></a>
-    <a href="images/property-management/Test_01-28-16_MyProfile.png"><img alt="user testing of my profile page" src="images/property-management/Test_01-28-16_MyProfile.png"></a>
+                <figure><a href="images/property-management/firebase.png"><img alt="Firebase" src="images/property-management/firebase.png"></a>
+                <figcaption>Firebase database</figcaption>
+            </figure>    
     
-    <a href="images/property-management/Test_01-29-2016.png"><img alt="user testing of my profile page" src="images/property-management/Test_01-29-2016.png"></a>
-    
-    <a href="images/property-management/Test_02-04-2016_sump-pump-bill.png"><img alt="user testing of my profile page" src="images/property-management/Test_02-04-2016_sump-pump-bill.png"></a>
-    
-    <!--    <video width="1280" height="716" controls>-->    
-    <video width="320" height="179" controls>
-        <source src="images/property-management/PeekTest_2016-02-04_8029a990.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-   
-    <a href="images/property-management/Test_02-08-16_GraphCompare.png"><img alt="user testing of statements page" src="images/property-management/Test_02-08-16_GraphCompare.png"></a>
+    <div class="carouselbox">Developed project tests
+        <div class="controls">
+            <div class="carousel-prev button"><i class="fa fa-chevron-left"></i> Previous</div>
+            <div class="dots">
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+            </div>
+            <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
+        </div>
+        <div class="content">
+            <figure><a href="images/property-management/Test_01-28-16_MyProfile.png"><img alt="user testing of my profile page" src="images/property-management/Test_01-28-16_MyProfile.png"></a>
+                <figcaption>Usability Testing of My Profile page</figcaption>
+            </figure>
+            <figure><a href="images/property-management/Test_01-29-2016.png"><img alt="user testing of my profile page" src="images/property-management/Test_01-29-2016.png"></a>
+                <figcaption>Usability Testing: compare table styling</figcaption>
+            </figure>
+            <figure><a href="images/property-management/Test_02-04-2016_sump-pump-bill.png"><img alt="user testing of my profile page" src="images/property-management/Test_02-04-2016_sump-pump-bill.png"></a>
+                <figcaption>usability testing: navigational flow</figcaption>
+            </figure>
+            <figure>
+                <!--    <video width="1280" height="716" controls>-->    
+                <video width="320" height="179" controls>
+                    <source src="images/property-management/PeekTest_2016-02-04_8029a990.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <figcaption>Peek Test</figcaption>
+            </figure>
+            <figure><a href="images/property-management/Test_02-08-16_GraphCompare.png"><img alt="user testing of statements page" src="images/property-management/Test_02-08-16_GraphCompare.png"></a>
+                <figcaption>Usability Testing: graph preference</figcaption>
+            </figure>
+        </div>
+    </div>
 
 
     <p>User Testing Methods</p>
@@ -316,13 +343,38 @@
 
         <h2>Conclusion</h2>
         <p>After using my property management company's current owner portal for several years I had a good understanding of the features that are useful, what was frustrating, and what would be good to see. I spent a lot of time designing the pages and had some doubts at how easily I would be able to develop the pages with data and graphs. It surprised to find a JavaScript library that easily created graphs, although I had difficulty pushing my data into the graphs. I created this portal for an owner that only has one property and I would probably change a few of the pages and the scripts to accommodate multiple properties. Based on my time constraints for this student project, I only designed, researched, tested, and developed the experience for an owner. A total software redesign and overhaul would really improve the user experience.</p>
-
-        <a href="images/property-management/Developed(1).png"><img alt="Property Management" src="images/property-management/Developed(1).png"></a> 
-        <a href="images/property-management/Developed(2).png"><img alt="Property Management" src="images/property-management/Developed(2).png"></a>  
-        <a href="images/property-management/Developed(3).png"><img alt="Property Management" src="images/property-management/Developed(3).png"></a>
-        <a href="images/property-management/Developed(4).png"><img alt="Property Management" src="images/property-management/Developed(4).png"></a>
-        <a href="images/property-management/Developed(5).png"><img alt="user testing of statements page" src="images/property-management/Developed(5).png"></a>
-
+        
+    
+    <div class="carouselbox">Developed project screenshots
+        <div class="controls">
+            <div class="carousel-prev button"><i class="fa fa-chevron-left"></i> Previous</div>
+            <div class="dots">
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+            </div>
+            <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
+        </div>
+        <div class="content">
+            <figure><a href="images/property-management/Developed(1).png"><img alt="Property Management" src="images/property-management/Developed(1).png"></a> 
+                <figcaption>Dashboard</figcaption>
+            </figure>
+            <figure><a href="images/property-management/Developed(2).png"><img alt="Property Management" src="images/property-management/Developed(2).png"></a> 
+                <figcaption>Transactions</figcaption>
+            </figure>
+            <figure><a href="images/property-management/Developed(3).png"><img alt="Property Management" src="images/property-management/Developed(3).png"></a>
+                <figcaption>Repair History</figcaption>
+            </figure>
+            <figure><a href="images/property-management/Developed(4).png"><img alt="Property Management" src="images/property-management/Developed(4).png"></a>
+                <figcaption>Maintenance</figcaption>
+            </figure>
+            <figure><a href="images/property-management/Developed(5).png"><img alt="user testing of statements page" src="images/property-management/Developed(5).png"></a>
+                <figcaption>Documents</figcaption>
+            </figure>
+        </div>
+    </div>
 
                     
     <a class="button-link" href="http://protected-caverns-84956.herokuapp.com/" target="_blank">
