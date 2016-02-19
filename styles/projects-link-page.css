@@ -1,0 +1,59 @@
+ /* #420D4F; */
+
+#main-projects-home .project-box {
+    margin-bottom: 40px; /* margin is outside of border */
+}
+#main-projects-home h2,
+#main-projects-home .button {
+    text-transform: uppercase;
+}
+#main-projects-home .img {
+    margin-top: 20px; /* margin is outside of border */
+    background-repeat: no-repeat; /* By default, a background-image is placed at the top-left corner of an element, and repeated both vertically and horizontally. */
+    background-size: cover;
+    border: 1px solid black;
+    width: 100%;
+    height: 250px;
+}
+#img-property-management {
+    background-image: url('propertymanage-open.png');
+}
+#img-city-style {
+    background-image: url('citystyle-open.png');
+}
+#img-paycrave {
+    background-image: url('paycrave-open.png');
+    background-position: 30% 40%; /* IE 12+ If you only specify one keyword/value, the other value will be "center"/50% */
+}
+#img-bloc-it-off {
+    background-image: url('blocitoff-open.png');
+}
+#img-blocjams {
+    background-image: url('blocjams-open.png');
+}
+
+
+
+
+
+/* FOR DEVICES UNDER 700 PIXELS WIDE */
+#main-projects-home .one-half {
+    display: block;
+    width: 100%;
+    vertical-align: bottom;
+}
+#main-projects-home .text {
+    
+}
+/* FOR DEVICES AT LEAST 700 PIXELS WIDE
+we will NOT use the hamburger icon to click left navigation menu in/out 
+we will have the left navigation menu fixed on screen */
+@media (min-width: 700px) {
+    #main-projects-home .one-half {
+    display: inline-block;
+    width: 49%;
+    }
+    #main-projects-home .text {
+        padding-left: 20px;
+    }
+}

@@ -1,4 +1,6 @@
 /* MAIN.CSS is for GLOBAL styles */
+/*    color: #420D4F;*/
+
 
 html {
     font-family: 'Carrois Gothic', sans-serif;
@@ -57,4 +59,140 @@ main {
 }
 .right {
     text-align: right;
+/*    color: #420D4F;*/
+}
+nav {
+    display: block;
+    font-size: 16px;
+/*    color: #420D4F;*/
+    color: whitesmoke;
+    text-align: center; /* aligns div elements and their contents to center */
+/*    background-color: whitesmoke;*/
+    background-color: #420D4F;
+    position: fixed; /* fixed use left and top/bottom */
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 70px;
+    border-bottom: 5px solid #420D4F;
+    z-index: 1; /* higher than main */
+}
+#nav-left a {
+    color: whitesmoke;
+    text-decoration: none;
+}
+#nav-logo {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    padding: 5px;
+}
+#logo {
+    max-height: 50px;
+    max-width: 50px;
+    padding: 5px;
+}
+#nav-name {
+    display: inline-block;
+    padding: 0 0 0 5px;
+}
+#myname {
+    font-family: 'Julius Sans One', sans-serif;
+/*    font-family: 'Fauna One', serif;*/
+/*    color: black;*/
+    color: white;
+    padding: 10px 0 0 0;
+    margin: 0;
+}
+#myrole {
+    font-family: 'Julius Sans One', sans-serif;
+/*    font-family: 'Fauna One', serif;*/
+/*    color: black;*/
+    color: white;
+    padding: 0 0 10px 0;
+    margin: 0;
+}
+
+
+
+/* UNDER 700 PIXELS WIDE */
+#nav-left {
+    display: inline-block;
+    position: fixed; /* fixed use left and top/bottom */
+    left: 0;
+    top: 2px;
+    text-align: left;
+    padding-right: 5px;
+}
+#hamburger {
+    display: inline-block;
+    position: fixed; /* fixed use left and top/bottom */
+    right: 0;
+    top: 0;
+    font-size: 30px;
+    text-align: right;
+    padding: 15px 5px 0 0;
+}
+/* Dropdown Content (Hidden by Default) */
+#hamburger .dropdown-content {
+    display: none;
+    position: absolute;  
+    top: 50px;
+    font-size: 20px;
+    right: 0;
+    background-color: #420D4F;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/* Links inside the dropdown */
+#hamburger .dropdown-content a {
+    color: #a086a7;
+    padding: 5px 10px 10px 5px;
+    text-decoration: none;
+    display: block;
+}
+/* Change color of dropdown links on hover */
+#hamburger .dropdown-content a:hover {
+    color: white;
+}
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+#hamburger .show {
+    display:block;
+}
+#nav-right {
+    display: none;
+}
+
+
+/* FOR WIDER DEVICES -- AT LEAST 700 PIXELS WIDE
+we will NOT use the hamburger icon to click left navigation menu in/out 
+we will have the left navigation menu fixed on screen */
+@media (min-width: 600px) {
+    #nav-left {
+        width: 49%;
+    }
+    #nav-right {
+        display: inline-block;
+        position: fixed; /* fixed use left and top/bottom */
+        right: 0;
+        top: 0;
+        width: 49%;
+        text-align: right;
+        padding: 35px 5px 0 0;
+    }
+    #nav-right a {
+        color: #a086a7;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding-right: 15px;
+    }
+    #nav-right a:hover {
+        color: white;
+    }
+    #active-nav-link {
+        color: white;
+    }
+    #hamburger {
+        display: none;
+    }
 }
