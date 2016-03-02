@@ -17,7 +17,6 @@ a {
     text-decoration: none;
     color: #420D4F;
 }
-
 .one-half { /* 49*2 = 98% */
     display: inline-block;
     width: 49%;
@@ -55,7 +54,9 @@ a {
     border-radius: 8px;
 /*    box-shadow:  5px 5px 5px lightgray;*/
 }
-
+.print-only {
+    display: none;
+}
 
 
 
@@ -65,11 +66,11 @@ a {
 
 
 main {
-    padding: 60px 5px;
+    padding: 60px 5px 10px 5px;
     background-color: white;
-    width: 95%;
-    max-width: 1200px;
-    margin: auto;
+    width: 100%;
+    max-width: 900px; /* previous 1200px; */
+    margin: auto; /* center on page */
 }
 main h1 {
     font-family: 'Julius Sans One', sans-serif;
@@ -80,18 +81,15 @@ main h2 {
 /*    clear: both;*/
     padding-top: 40px;
 }
-main p {
-    max-width: 40em;
-}
 main img {
     max-width: 100%;
-    max-height: 300px;
     padding: 10px;
 /*    background-color: whitesmoke;*/
 }
 @media (min-width: 302px) {
     main img {
-        max-width: 300px;
+        max-width: 400px;
+        max-height: 400px;
     }
 }
 main .one-third {
@@ -100,7 +98,14 @@ main .one-third {
     vertical-align: middle;
 /*    background-color: white;*/
 }
-
+main .inline-text-link {
+    text-decoration: underline;
+}
+main .inline-text-link:hover {
+    text-decoration: underline;
+    background-color: #420D4F;
+    color: white;
+}
 
 
 
@@ -129,9 +134,15 @@ main .one-third {
 #main-home-page a:hover {
     text-decoration: none;
 }
-#main-home-page #project-links img:hover {
-
+#main-home-page .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
 }
+#main-home-page .tabcontent {
+    height: 40px;
+}
+
 
 
 
@@ -146,14 +157,6 @@ main .one-third {
 
 
 
-.main-project .inline-text-link {
-    text-decoration: underline;
-}
-.main-project .inline-text-link:hover {
-    text-decoration: underline;
-    background-color: #420D4F;
-    color: white;
-}
 .main-project .hover_img a { 
     position: relative;
 }
@@ -170,6 +173,20 @@ main .one-third {
 /*    height: 400px;*/
     border: 1px solid #420D4F;
 }
+
+/* For screen widths of 700px and wider show 2 columns for paragraphs */
+@media all and (min-width: 700px) {
+    .main-project p {
+        -webkit-column-count: 2;
+        -webkit-column-gap: 10px; /* Safari 3, Chrome*/
+        -moz-column-count: 2;   
+        -moz-column-gap: 10px; /* Firefox 3.5+ */
+        column-count: 2;        
+        column-gap: 10px; /* Opera 11+*/
+      }
+}
+
+
 
 
 

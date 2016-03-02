@@ -10,16 +10,18 @@
     <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Julius+Sans+One' rel='stylesheet' type='text/css'>
 <!--    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Fauna+One' rel='stylesheet' type='text/css'>-->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/print.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
+    <link rel="stylesheet" type="text/css" href="styles/carousel.css">
+    <link rel="stylesheet" type="text/css" href="styles/print.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="scripts/script.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/projects.js"></script>
  </head>
 <body>
     
     
     <!-- Navigation Bar -->
-    <nav>
+    <nav><div id="nav-container">
         <div id="nav-left">
             <a href="index.html">
                 <div id="nav-logo"><img id="logo" alt="LFD" src="lfd02-11-16.png"></div>
@@ -43,7 +45,7 @@
                 <a href="projects.html">Projects</a>
             </div>
         </div>
-    </nav>
+        </div></nav>
     
     
     
@@ -57,14 +59,69 @@
         </div>
     
     
-        <h2>Summary</h2>
-        <p>While working and playing, we like to listen to music from our mobile devices and computers. BlocJams allows users to stream music from its album library.</p>
+        <h2>Description</h2>
+        <p>While working and playing, we like to listen to music from our mobile devices and computers. BlocJams is a replica of Spotify which allows users to stream music from its album library.</p>
     
-        <h2>Explanation</h2>
-        <p>BlocJams allows users to scroll through the library's album listings. The user can select an album to view a list of its tracks and play its music. Users have the ability to play, pause, and skip songs. My role in this project was to follow step-by-step instructions to learn how to rewrite original jQuery code into AngularJS while implementing a new file organization system. </p>
+
+        <p>BlocJams allows users to scroll through the library's album listings. The user can select an album to view a list of its tracks and play its music. Users have the ability to play, pause, and skip songs. My role in this project was to create wireframes for 8 different views. </p>
     
-        <h2>Problem</h2>
-        <p>The user stories I was given provide the individual steps to accomplish this project.</p>
+    
+ 
+<div class="carouselbox">High fidelity wireframes for mobile version
+        <div class="controls">
+            <div class="carousel-prev button"><i class="fa fa-chevron-left"></i> Previous</div>
+            <div class="dots">
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+            </div>
+            <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
+        </div>
+        <div class="content">
+            <figure>
+                <a href="images/blocjams/BlocJams-Wireframe-09-10-15_1.png"><img src="images/blocjams/BlocJams-Wireframe-09-10-15_1.png"></a>
+                <figcaption>Discover New Music based on the artist Simple Plan</figcaption>
+            </figure>
+            <figure>
+                <a href="images/blocjams/BlocJams-Wireframe-09-10-15_2.png"><img src="images/blocjams/BlocJams-Wireframe-09-10-15_2.png"></a>
+                <figcaption>Albums. List of all availabla albums</figcaption>
+            </figure>
+            <figure>
+                <a href="images/blocjams/BlocJams-Wireframe-09-10-15_3.png"><img src="images/blocjams/BlocJams-Wireframe-09-10-15_3.png"></a>
+                <figcaption>Album with its list of songs. Links to discover similar music.</figcaption>
+            </figure>
+            <figure>
+                <a href="images/blocjams/BlocJams-Wireframe-09-10-15_4.png"><img src="images/blocjams/BlocJams-Wireframe-09-10-15_4.png"></a>
+                <figcaption>Currently Playing. The current song.</figcaption>
+            </figure>
+            <figure>
+                <a href="images/blocjams/BlocJams-Wireframe-09-10-15_5.png"><img src="images/blocjams/BlocJams-Wireframe-09-10-15_5.png"></a>
+                <figcaption>Search by keyword will search in artist name, album name, and song title</figcaption>
+            </figure>
+            <figure>
+                <a href="images/blocjams/BlocJams-Wireframe-09-10-15_6.png"><img src="images/blocjams/BlocJams-Wireframe-09-10-15_6.png"></a>
+                <figcaption>Search Results show artists, albums, and songs</figcaption>
+            </figure>
+            <figure>
+                <a href="images/blocjams/BlocJams-Wireframe-09-10-15_7.png"><img src="images/blocjams/BlocJams-Wireframe-09-10-15_7.png"></a>
+                <figcaption>View a Playlist. This one is called The Best</figcaption>
+            </figure>
+            <figure>
+                <a href="images/blocjams/BlocJams-Wireframe-09-10-15_8.png"><img src="images/blocjams/BlocJams-Wireframe-09-10-15_8.png"></a>
+                <figcaption>Playlists is a list containing the user's custom playlists plus system playlists</figcaption>
+            </figure>
+        </div>
+    </div>
+
+
+        <p>After creating multiple wireframes, I followed step-by-step instructions to develop 2 of the views plus a landing page. I used the instructions to learn how to write JavaScript and jQuery code, then I reworked the code for those pages into AngularJS while implementing a new organization system for the development files. </p>
+        
+        <p>The user stories I was given for the AngularJS development phase provide the individual steps to accomplish this project.</p>
             <ul>
                 <li>Bootstrap AngularJS to my original version of <a href="https://github.com/lfdogan/bloc-jams" target="_blank" class="inline-text-link">BlocJams</a>.</li>
                 <li>Configure routing and states.</li>
@@ -78,11 +135,11 @@
         <p>I used UI Router to display the slide bar so that I could reference it twice in the music player function bar without repeating code. I created a controller for each of the three main views of this project to hold functions for each page. In order to play the music correctly using Buzz Library, the song length needed to be saved in total number of seconds rather than m:ss format. To account for this I created a filter that would receive the total number of seconds and format it in the m:ss format for better display.</p>
         <img alt="BlocJams" src="images/blocjams/TimeCodeFilter.png">
     
-        <h2>Results</h2>
-        <p>In addition to the completing the user stories I also added functionality to allow the user to mute the volume. </p>
+        <p>In addition to completing the user stories I also added functionality to allow the user to mute the volume. </p>
     
+        
         <h2>Conclusion</h2>
-        <p>The MVP of this project was successful. In its current form it is very limited. Future improvements for this project include user accounts to allow for multiple users' preferences, custom playlists, and ratings. Another useful improvement would be the ability to search the music library for a certain artist, album, or song. </p>
+        <p>The development MVP of this project was successful. In its current form it is very limited. Future development for this project will be to develop the additional wireframes to include user accounts, user preferences, custom playlists, ratings, and to search the music library for a certain artist, album, or song. </p>
     
          
         <a class="button-link" href="https://shrouded-river-85724.herokuapp.com/" target="_blank">

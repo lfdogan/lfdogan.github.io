@@ -10,19 +10,19 @@
     <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Julius+Sans+One' rel='stylesheet' type='text/css'>
 <!--    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Fauna+One' rel='stylesheet' type='text/css'>-->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/print.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
-    <link rel="stylesheet" type="text/css" href="styles/slideshow.css">
+    <link rel="stylesheet" type="text/css" href="styles/carousel.css">
+    <link rel="stylesheet" type="text/css" href="styles/print.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="scripts/script.js"></script>
-    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/projects.js"></script>
  </head>
 <body>
     
 
     
     <!-- Navigation Bar -->
-    <nav>
+    <nav><div id="nav-container">
         <div id="nav-left">
             <a href="index.html">
                 <div id="nav-logo"><img id="logo" alt="LFD" src="lfd02-11-16.png"></div>
@@ -46,7 +46,7 @@
                 <a href="projects.html">Projects</a>
             </div>
         </div>
-    </nav>
+        </div></nav>
     
     
     
@@ -61,27 +61,17 @@
             </a>
         </div>
     
-    <h2>Summary</h2>
+    <h2>Description</h2>
         <img style="float: right" alt="T-Shirt Design" src="images/city-style-tshirts/Men's_T-Shirt_BlueDark_Sydney.png">
-    <p>I wanted to create an e-commerce website for a company selling T-Shirts that shared my passion for travel.</p>
-        
-        
-    <h2>Explanation</h2>
-    <p>The goal was to create a user-friendly e-commerce website for T-shirts with a quick and easy checkout process.</p>
-    
-        
-        <h2>Problem</h2>
-    <p>My first goal was to create a brand and products. I chose to sell T-shirts with images of landmarks to display tourist cities around the world. I used Photoshop to design the shirts in different colors and designs. The site will also sell sweatshirts and tote bags with the same designs. My target audience is men and women between the ages of 20 and 50. After determining products, I needed to display the products in an easy to use format and create an easy shopping cart and checkout process.</p>
+    <p>I wanted to create an e-commerce website for a company selling T-Shirts that shared my passion for travel. The goal was to create a user-friendly e-commerce website for T-shirts with a quick and easy checkout process.
+
+    <br/><br/>My first goal was to create a brand and products. I chose to sell T-shirts with images of landmarks to display tourist cities around the world. I used Photoshop to design the shirts in different colors and designs. The site will also sell sweatshirts and tote bags with the same designs. My target audience is men and women between the ages of 20 and 50. After determining products, I needed to display the products in an easy to use format and create an easy shopping cart and checkout process.</p>
         
         
     <h2>Solution</h2>
-            
-            
-            
-        
-        
-        <p>In order to determine the best way to display my products I compared other e-commerce websites including 
-            <a target="_blank" class="inline-text-link" href="http://www.fansedge.com">FansEdge</a>, 
+    
+    <p>In order to determine the best way to display my products I compared other e-commerce websites including 
+            <a href="http://www.fansedge.com" target="_blank" class="inline-text-link">FansEdge</a>, 
             <a target="_blank" class="inline-text-link" href="https://www.threadless.com">Threadless</a>, and 
             <a target="_blank" class="inline-text-link" href="http://www.hardgraft.com">Hard Graft</a>. 
             
@@ -129,46 +119,56 @@
     </div>
 
     
-        
-        <h2>Results</h2>
-    <p>I ran several usability tests on branding, layout, and navigational flow. I also published my prototype with limited click capabilities on Marvel App in order to do some Peek testing. </p>
+
+    <p>I ran several usability tests on branding, layout, and navigational flow. I also published my prototype with limited click capabilities on Marvel App in order to do some <a href="http://peek.usertesting.com/" class="inline-text-link" target="_blank">Peek</a> testing. </p>
         <h3>Logo Design</h3>
     
-        <p>For branding, I asked testers to compare potential page headers. </p>
         <a href="images/city-style-tshirts/logodesign.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/logodesign.png"></a>
         
+        <p>For branding, I asked testers to compare potential page headers. </p>
+        
+        
 
-    <div class="carouselbox">Logo Testing
-        <div class="controls">
-            <div class="carousel-prev button"><i class="fa fa-chevron-left"></i> Previous</div>
-            <div class="dots">
-                <div class="dot">*</div>
-                <div class="dot">*</div>
-                <div class="dot">*</div>
+        <div class="carouselbox">Logo Testing
+            <div class="controls">
+                <div class="carousel-prev button"><i class="fa fa-chevron-left"></i> Previous</div>
+                <div class="dots">
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                </div>
+                <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
             </div>
-            <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
+            <div class="content">
+                <figure><a href="images/city-style-tshirts/Test_10-07-2015(Test1)_Brand.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Test_10-07-2015(Test1)_Brand.png"></a>
+                    <figcaption>Branding Test #1: Select top 2 choices for page header</figcaption>
+                </figure>
+                <figure><a href="images/city-style-tshirts/Test_10-07-2015(Test2)_HomepageV3&V7.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Test_10-07-2015(Test2)_HomepageV3&V7.png"></a>
+                    <figcaption>Branding Test #2: I used the top two winners from previous test to compare. There wasn't a clear winner. I'll need to run another test.</figcaption>
+                </figure>
+                <figure><a href="images/city-style-tshirts/Test_10-08-2015_LogoTest3.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Test_10-08-2015_LogoTest3.png"></a>
+                    <figcaption>Branding Test #3: I reworked the previous test and got a clear winner.</figcaption>
+                </figure>
+            </div>
         </div>
-        <div class="content">
-            <figure><a href="images/city-style-tshirts/Test_10-07-2015(Test1)_Brand.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Test_10-07-2015(Test1)_Brand.png"></a>
-                <figcaption>Branding Test #1: Select top 2 choices for page header</figcaption>
-            </figure>
-            <figure><a href="images/city-style-tshirts/Test_10-07-2015(Test2)_HomepageV3&V7.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Test_10-07-2015(Test2)_HomepageV3&V7.png"></a>
-                <figcaption>Branding Test #2: I used the top two winners from previous test to compare. There wasn't a clear winner. I'll need to run another test.</figcaption>
-            </figure>
-            <figure><a href="images/city-style-tshirts/Test_10-08-2015_LogoTest3.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Test_10-08-2015_LogoTest3.png"></a>
-                <figcaption>Branding Test #3: I reworked the previous test and got a clear winner.</figcaption>
-            </figure>
-        </div>
-    </div>
 
         <a href="images/city-style-tshirts/Style_Tile_Blocshop2015-10-07.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Style_Tile_Blocshop2015-10-07.png"></a>
 
   
         <h3>User Flow</h3>
         <p>For layout, I found that most users first looked at the at the top of the page to find the type of product they wanted to view. I also found that users preferred the home page to show a large photo in addition to a few product examples rather than lots of examples. On the product page it was best to display the options in a single line rather than a group.  I also learned that users expect to see the product update for each selection made. </p>
-        <a href="images/city-style-tshirts/original-layout.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/original-layout.png"></a>            
-        <a href="images/city-style-tshirts/AthensProducts.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/AthensProducts.png"></a>
-
+        <figure>
+            <a href="images/city-style-tshirts/original-layout.png">
+                <img alt="City Style T-Shirts" src="images/city-style-tshirts/original-layout.png">
+            </a>
+            <figcaption>Original layout of the four products pages</figcaption>
+            </figure>
+        <figure>
+            <a href="images/city-style-tshirts/AthensProducts.png">
+                <img alt="City Style T-Shirts" src="images/city-style-tshirts/AthensProducts.png">
+            </a>
+            <figcaption>When users click on the link they will be able to see all products with the same design</figcaption>
+        </figure>
         
         
         <div class="carouselbox">User Flow Testing
@@ -221,53 +221,77 @@
  
         <h3>Cart and Checkout</h3>  
         <p>I found that after adding an item to their shopping cart, users tended to click on the pop-up cart box or back to the navigational links to continue shopping, and radio style selection for shipping options worked best.</p>
-        <a href="images/city-style-tshirts/Test_10-09-2015_CheckOutItems.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Test_10-09-2015_CheckOutItems.png"></a>
-        <a href="images/city-style-tshirts/Test_10-13-2015_FullNavFlow.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Test_10-13-2015_FullNavFlow.png"></a>
-        <a href="images/city-style-tshirts/Test_10-15-2015_NavFlow3.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Test_10-15-2015_NavFlow3.png"></a>
-        <p>I got feedback from 3 Peek Tests. </p>
-    <div class="carouselbox">Peek Tests
-        <div class="controls">
-            <div class="carousel-prev button"><i class="fa fa-chevron-left"></i> Previous</div>
-            <div class="dots">
-                <div class="dot">*</div>
-                <div class="dot">*</div>
-                <div class="dot">*</div>
+        
+        <div class="carouselbox">Navigational Flow Tests
+            <div class="controls">
+                <div class="carousel-prev button"><i class="fa fa-chevron-left"></i> Previous</div>
+                <div class="dots">
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                </div>
+                <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
             </div>
-            <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
+            <div class="content">
+                <figure>
+                    <a href="images/city-style-tshirts/Test_10-09-2015_CheckOutItems.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Test_10-09-2015_CheckOutItems.png"></a>
+                    <figcaption>Test #1 for checkout cart: 12% completion of 9 steps</figcaption>
+                </figure>
+                <figure>
+                    <a href="images/city-style-tshirts/Test_10-13-2015_FullNavFlow.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Test_10-13-2015_FullNavFlow.png"></a>
+                    <figcaption>Test #2 for adding an item and checkout</figcaption>
+                </figure>
+                <figure>
+                    <a href="images/city-style-tshirts/Test_10-15-2015_NavFlow3.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Test_10-15-2015_NavFlow3.png"></a>
+                    <figcaption>Test #3 complete order of 2 items in cart</figcaption>
+                </figure>
+            </div>
         </div>
-        <div class="content">
-            <figure><video width="320" height="180" controls>
-            <source src="images/city-style-tshirts/PeekTest2015-10-14_14d0a99d.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-                <figcaption>Clip from Peek Test #1</figcaption>
-            </figure>
-            <figure><video width="320" height="196" controls>
-            <source src="images/city-style-tshirts/PeekTest2015-10-15_1d94a99d.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-                <figcaption>Clip from Peek Test #2</figcaption>
-            </figure>
-            <figure><video width="320" height="195" controls>
-            <source src="images/city-style-tshirts/PeekTest2015-10-16_1a9ca99d.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-                <figcaption>Clip from Peek Test #3</figcaption>
-            </figure>
+        
+        <p>I got feedback from 3 <a href="http://peek.usertesting.com/" class="inline-text-link" target="_blank">Peek</a> Tests. </p>
+        <div class="carouselbox">Peek Tests
+            <div class="controls">
+                <div class="carousel-prev button"><i class="fa fa-chevron-left"></i> Previous</div>
+                <div class="dots">
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                </div>
+                <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
+            </div>
+            <div class="content">
+                <figure><video width="320" height="180" controls>
+                <source src="images/city-style-tshirts/PeekTest2015-10-14_14d0a99d.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+                    <figcaption>Clip from Peek Test #1</figcaption>
+                </figure>
+                <figure><video width="320" height="196" controls>
+                <source src="images/city-style-tshirts/PeekTest2015-10-15_1d94a99d.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+                    <figcaption>Clip from Peek Test #2</figcaption>
+                </figure>
+                <figure><video width="320" height="195" controls>
+                <source src="images/city-style-tshirts/PeekTest2015-10-16_1a9ca99d.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+                    <figcaption>Clip from Peek Test #3</figcaption>
+                </figure>
+            </div>
         </div>
-    </div>
         
         
         
     
         
+        
         <h2>Conclusion</h2>
-    <p>
-        According to my usability tests I feel that the MVP is successful. 
+        <p>According to my usability tests I feel that the MVP is successful. 
         
         For future improvements I would include professionally shot photography with models wearing each of the different products to show customers how the clothing fits on a regular person and provide multiple angles.
         
-        For future design projects I would use less design, color, and size options for the clickable prototype. I found that using InVision or Marvel to publish a clickable prototype only works well with fewer than 75 screens. 
+        For future design projects I would use less design, color, and size options for the clickable prototype. I found that using <a href="http://www.invisionapp.com/" target="_blank" class="inline-text-link">InVision</a> or <a href="https://marvelapp.com/" target="_blank" class="inline-text-link">Marvel</a> to publish a clickable prototype only works well with fewer than 75 screens. 
         
         When developing this site it would be best to disable the add to cart button until the user has made a selection for each product option (design, color, and size). </p>
 
@@ -280,14 +304,13 @@
         
     </main>
     <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-74068591-1', 'auto');
-  ga('send', 'pageview');
-
+      ga('create', 'UA-74068591-1', 'auto');
+      ga('send', 'pageview');
 </script>
 
     </body>

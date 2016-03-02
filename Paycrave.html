@@ -10,17 +10,18 @@
     <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Julius+Sans+One' rel='stylesheet' type='text/css'>
 <!--    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Fauna+One' rel='stylesheet' type='text/css'>-->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/print.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
-    <link rel="stylesheet" type="text/css" href="styles/slideshow.css">
+    <link rel="stylesheet" type="text/css" href="styles/carousel.css">
+    <link rel="stylesheet" type="text/css" href="styles/modal.css">
+    <link rel="stylesheet" type="text/css" href="styles/print.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="scripts/script.js"></script>
-    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/projects.js"></script>
  </head>
 <body>
     
     <!-- Navigation Bar -->
-    <nav>
+    <nav><div id="nav-container">
         <div id="nav-left">
             <a href="index.html">
                 <div id="nav-logo"><img id="logo" alt="LFD" src="lfd02-11-16.png"></div>
@@ -44,7 +45,7 @@
                 <a href="projects.html">Projects</a>
             </div>
         </div>
-    </nav>
+        </div></nav>
     
     
     
@@ -54,65 +55,65 @@
     
         <h1>Paycrave</h1>
         <div class="first-image">
-            <a class="button-link" href="https://projects.invisionapp.com/share/GR49242SC" target="_blank">
-                <img alt="Paycrave" src="images/paycrave/paycrave-multiscreen.png" onmouseover="this.src='images/paycrave/paycrave-multiscreen-alt.png'" onmouseout="this.src='images/paycrave/paycrave-multiscreen.png'">
+            <a href="https://projects.invisionapp.com/share/GR49242SC" class="button-link" target="_blank">
+                <img alt="Paycrave" 
+                     src="images/paycrave/paycrave-multiscreen.png" onmouseover="this.src='images/paycrave/paycrave-multiscreen-alt.png'" 
+                     onmouseout="this.src='images/paycrave/paycrave-multiscreen.png'">
             </a>
         </div>
         
 
         
 
-        <h2>Summary</h2>
-        <p>Food trucks are a great place to get lunch in a city, unfortunately there is no unified way to pre-order, read reviews, or pay with a credit card. This mobile application will provide users a way to view these trucks on a map and submit orders.</p>
+        <h2>Description</h2>
+        <p>Food trucks are a great place to get lunch in a city. There are many apps available to search for trucks in certain cities, unfortunately there is no unified way to pre-order, read reviews, or pay with a credit card. This mobile application will provide users a way to view these trucks on a map and submit orders. For this project, I was provided with the style tile for the company and the task of creating this application so that users could search for nearby trucks, read and create reviews, view and order from menus, and pay by credit card. </p>
         
-        
-        
-        
-        
-        <h2>Explanation</h2>
-        <p>For this project, I was given the <span class="hover_img">
-            <a href="images/paycrave/StyleGuide.png" class="inline-text-link" >
-                style tile
-                <span>
-                    <img class="image-rollover" src="images/paycrave/StyleGuide.png" alt="image" height="100" />
-                </span>
-            </a>
-            </span>
-            
-             for the company and the task of creating this application so that users could search for nearby trucks, read and create reviews, view and order from menus, and pay by credit card.</p>
-        
-        
-        
-        
-        
-        <h2>Problem</h2>
-        <p>Some research needed to be done to determine what was important to people who would possibly use this application. I created user stories for three potential people. A college student wants to find the least expensive food truck, wants to sort out the types of food he doesn't like, and wants a way to repeat an order. A patrolling police officer wants the fastest way to check out and what is nearest him. An office worker wants to view food trucks with high ratings.</p>
-        
-        
+
+                
+        <figure>
+            <img src="images/paycrave/StyleGuide.png"
+             alt="provided style tile" 
+            id="myImg">
+            <figcaption>provided style tile</figcaption>
+        </figure>
+        <div id="myModal" class="modal">  
+            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+            <div id="caption"></div>
+            <img class="modal-content" id="img01">
+        </div>
         
         
         
         <h2>Solution</h2>
-        <p>I ran competitive analysis on <a target="_blank" class="inline-text-link" href="https://www.lyft.com">Lyft</a> and <a target="_blank" class="inline-text-link" href="https://www.uber.com/">Uber</a> taxi services, designed a user flow diagram, and ran a few user tests. </p>
-        
+        <h3>Layout</h3>
+        <p>I ran competitive analysis on <a target="_blank" class="inline-text-link" href="https://www.lyft.com">Lyft</a> and <a target="_blank" class="inline-text-link" href="https://www.uber.com/">Uber</a> taxi services. </p>
         <a href="images/paycrave/lyft/Lyft-home.png"><img alt="Paycrave" src="images/paycrave/lyft/Lyft-home.png"></a>
         <a href="images/paycrave/uber/uber.png"><img alt="Paycrave" src="images/paycrave/uber/uber.png"></a>
+        
+        <p>Some research needed to be done to determine what was important to people who would possibly use this application.  </p>
+        <a href="images/paycrave/Test_09-15-15_RankingFunctions.png"><img alt="Paycrave" src="images/paycrave/Test_09-15-15_RankingFunctions.png"></a>
+        <a href="images/paycrave/Test_09-15-15_RankingFunctions-Results.png"><img alt="Paycrave" src="images/paycrave/Test_09-15-15_RankingFunctions-Results.png"></a>
+
+
+        <p>My user tests determined what features are most important and I found that the priority would be to find food trucks near the user, so this should be the opening screen. I created user stories for three potential people.</p>
+        <a href="images/paycrave/UserStories.png"><img alt="Paycrave" src="images/paycrave/UserStories.png"></a>
+        
+        <p>I asked users about different pin head options. I found that the most useful information to have on the pin head was the average rating which would be related to the color of the pin with the darkest pin being the best rated.</p>
+        <a href="images/paycrave/Test_09-20-15_Pin-Results.png"><img alt="Paycrave" src="images/paycrave/Test_09-20-15_Pin-Results.png"></a>    
+        
+        <h3>User Flow</h3>
+        <p>I designed a user flow diagram.</p>
+                
         <a href="images/paycrave/UserFlowDiagramSearch.png"><img alt="Paycrave" src="images/paycrave/UserFlowDiagramSearch.png"></a>
         <a href="images/paycrave/UserFlowDiagramOrder.png"><img alt="Paycrave" src="images/paycrave/UserFlowDiagramOrder.png"></a>
+<!--        <a href="images/paycrave/Test_09-20-15_Pin.png"><img alt="Paycrave" src="images/paycrave/Test_09-20-15_Pin.png"></a>-->
+        
+        
+        
+        
+        
+        
 
-        <p>My user tests determined what features are most important and I found that the priority would be to find food trucks near the user, so this should be the opening screen. Then I tested different pin options. I found that the most useful information to have on the pin head was the average rating which would be related to the color of the pin with the darkest pin being the best rated.</p>
-
-        
-        
-        
-        <a href="images/paycrave/Test_09-15-15_RankingFunctions.png"><img alt="Paycrave" src="images/paycrave/Test_09-15-15_RankingFunctions.png"></a>
-        <a href="images/paycrave/Test_09-20-15_Pin.png"><img alt="Paycrave" src="images/paycrave/Test_09-20-15_Pin.png"></a>
-        
-        
-        
-        
-        
-        <h2>Results</h2>
         <p>I ran some tests on navigation and flow. I asked testers to order a specified list of items and found that the most difficult part for the majority of users was finding the specified food truck from a list. I determined that I needed more padding around the trucks and that the truck's name should be larger. I also ran a test to see if users would be able to make a repeat order from a history of orders.</p>
                 <a href="images/paycrave/Test_09-16-15_NavFlowOrder.png"><img alt="Paycrave" src="images/paycrave/Test_09-16-15_NavFlowOrder.png"></a>
         
@@ -156,7 +157,7 @@
         </div>
 
         <a href="images/paycrave/Test_09-18-15(Test2)_CompareList.png"><img alt="Paycrave" src="images/paycrave/Test_09-18-15(Test2)_CompareList.png"></a>
-        <p>I also did a Peek test and found that my testing user generally liked the design and layout. "I think this is a brilliant app. I would definitely use it, endorse it, and share it."</p>
+        <p>I created a clickable prototype using <a href="http://www.invisionapp.com/" target="_blank" class="inline-text-link">InVision</a> App and did a <a href="http://peek.usertesting.com/" class="inline-text-link" target="_blank">Peek</a> test. My testing user generally liked the design and layout. "I think this is a brilliant app. I would definitely use it, endorse it, and share it."</p>
         <a href="images/paycrave/InVisionSetup.png"><img alt="Paycrave" src="images/paycrave/InVisionSetup.png"></a>
             <!--    <video width="1280" height="780" controls>-->    
     <video width="320" height="195" controls>
@@ -184,8 +185,7 @@
         
         
     </main>
-
-    <script>
+<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -195,5 +195,6 @@
   ga('send', 'pageview');
 
 </script>
+    
     </body>
 </html>

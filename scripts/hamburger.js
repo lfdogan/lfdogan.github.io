@@ -1,4 +1,4 @@
-/* When the user clicks on the button, 
+/* When the user clicks on the hamburger, 
 toggle between hiding and showing the dropdown content */
 function openHamburger() {
     document.getElementById("hamburger-content").classList.toggle("show");

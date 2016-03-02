@@ -10,12 +10,13 @@
     <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Julius+Sans+One' rel='stylesheet' type='text/css'>
 <!--    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Fauna+One' rel='stylesheet' type='text/css'>-->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/print.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
-    <link rel="stylesheet" type="text/css" href="styles/slideshow.css">
+    <link rel="stylesheet" type="text/css" href="styles/carousel.css">
+    <link rel="stylesheet" type="text/css" href="styles/modal.css">
+    <link rel="stylesheet" type="text/css" href="styles/print.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="scripts/script.js"></script>
-    <script src="scripts/slideshow.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/projects.js"></script>
  </head>
 <body>
 
@@ -24,27 +25,30 @@
     
     <!-- Navigation Bar -->
     <nav>
-        <div id="nav-left">
-            <a href="index.html">
-                <div id="nav-logo"><img id="logo" alt="LFD" src="lfd02-11-16.png"></div>
-                <div id="nav-name">
-                    <h3 id="myname">Lauren Fritz Dogan</h3>
-                    <h5 id="myrole">UX Researcher / Engineer</h5>
-                </div>
-            </a>
-        </div>
-        <div id="nav-right">
-            <a href="AboutMe.html">About Me</a>
-            <a href="resume.html">Resume</a>
-            <a href="projects.html">Projects</a>
-        </div>
-        <!-- Hamburger For Narrow Screens -->
-        <div id="hamburger">
-            <div class="dropbtn" onclick="openHamburger()">&#9776;</div>
-            <div id="hamburger-content" class="dropdown-content">
+        <div id="nav-container">
+            <div id="nav-left">
+                <a href="index.html">
+                    <div id="nav-logo"><img id="logo" alt="LFD" src="lfd02-11-16.png"></div>
+                    <div id="nav-name">
+                        <h3 id="myname">Lauren Fritz Dogan</h3>
+                        <h5 id="myrole">UX Researcher / Engineer</h5>
+                    </div>
+                </a>
+            </div>
+            <!-- Navigation Links For Wider Screens -->
+            <div id="nav-right">
                 <a href="AboutMe.html">About Me</a>
                 <a href="resume.html">Resume</a>
                 <a href="projects.html">Projects</a>
+            </div>
+            <!-- Hamburger For Narrow Screens -->
+            <div id="hamburger">
+                <div class="dropbtn" onclick="openHamburger()">&#9776;</div>
+                <div id="hamburger-content" class="dropdown-content">
+                    <a href="AboutMe.html">About Me</a>
+                    <a href="resume.html">Resume</a>
+                    <a href="projects.html">Projects</a>
+                </div>
             </div>
         </div>
     </nav>
@@ -53,11 +57,11 @@
     
     
     <main class="main-project">
-    
-    
-        <h1>Property Management</h1>
+
+        
+        <h1>Property Management Owner's Portal</h1>
         <div class="first-image">
-            <a class="button-link" href="http://protected-caverns-84956.herokuapp.com/" target="_blank">
+            <a href="http://protected-caverns-84956.herokuapp.com/" class="button-link" target="_blank">
                 <img alt="Property Management Owner's Portal" src="images/property-management/PropertyManagement-mixscreens.png" onmouseover="this.src='images/property-management/PropertyManagement-mixscreens-alt.png'" onmouseout="this.src='images/property-management/PropertyManagement-mixscreens.png'">
             </a>
         </div>
@@ -68,17 +72,9 @@
         
         
         
-        <h2>Summary</h2>
-        <p>Rental property owners hire companies to manage their properties for them for various reasons. Even though the owners have hired a company to lease the property and manage the income and expenses, they still would like to access and view income, expenses, and documents about their rentals, however the information is not very user friendly.</p>
-    
-        
-        
-        
-        
-        
-        
-        <h2>Explanation</h2>
-        <p>Since I've been using a property management company for my rental home for the past 5 years I've come across many issues with their current system. I get frustrated trying to switch between viewing 
+        <h2>Description</h2>
+        <p>Some rental property owners hire companies to manage their properties. Even though the owners have hired a company to find and secure tenants and manage repairs, they are often able to access and view income, expenses, and documents about their rentals, however accessing the information is not very user friendly.
+        <br/><br/>Since I've been using a property management company for my rental home for the past 6 years I've come across many issues with their current system. I get frustrated trying to switch between viewing 
         <span class="hover_img">
             <a href="images/property-management/currentstate/CurrentStateMaintenance.png" class="inline-text-link" >
                 maintenance work orders
@@ -86,33 +82,31 @@
                     <img class="image-rollover" src="images/property-management/currentstate/CurrentStateMaintenance.png" alt="image" height="100" />
                 </span>
             </a>
-            </span> and its associated 
-            <span class="hover_img">
-            <a href="images/property-management/currentstate/CurrentStateMaintenance.png" class="inline-text-link" >
+        </span> and its associated 
+        <span class="hover_img">
+            <a href="images/property-management/currentstate/CurrentStateBills.png" class="inline-text-link" >
                 bills
                 <span>
                     <img class="image-rollover" src="images/property-management/currentstate/CurrentStateMaintenance.png" alt="image" height="100" />
                 </span>
             </a>
-            </span>
-            , getting useful information from 
-            <span class="hover_img">
+        </span>
+        , getting useful information from 
+        <span class="hover_img">
             <a href="images/property-management/currentstate/CurrentStateDocuments.png" class="inline-text-link" >
                 inspection reports
                 <span>
                     <img class="image-rollover" src="images/property-management/currentstate/CurrentStateDocuments.png" alt="image" height="100" />
                 </span>
             </a>
-            </span>
-            , and needing to speak with the property management team for other information that should easily be accessible to me. Therefore, I decided to make an unsolicited redesign of their owner's portal and then develop the project.</p>
+        </span>
+        , and needing to speak with the property management team for other information that should easily be accessible to me. Therefore, I decided to make an unsolicited redesign of their owner's portal and then develop the project.</p>
+
     
+
         
-        
-        
-        
-        
-        
-        <h2>Problem</h2>
+
+        <h2>Solution</h2>
         <p>My list of the current design's problems:</p>
         <ul>
             <li>The <span class="hover_img">
@@ -123,7 +117,14 @@
                 </span>
             </a>
             </span> after logging in doesn't show important or useful information.</li>
-            <li>The user has to reselect a date range when switching between pages.</li>
+            <li>The user must change the date range to view the monthly <span class="hover_img">
+            <a href="images/property-management/currentstate/CurrentStateStatementsThisYear.png" class="inline-text-link" >
+                statements
+                <span>
+                    <img class="image-rollover" src="images/property-management/currentstate/CurrentStateStatementsThisYear.png" alt="image" height="100" />
+                </span>
+            </a>
+            </span>.</li>
             <li>Some navigational links are rarely used or poorly named.</li>
             <li>Some information is only accessible by downloading and opening a <span class="hover_img">
             <a href="images/property-management/currentstate/CurrentStateDocuments.png" class="inline-text-link" >
@@ -138,22 +139,23 @@
             <li>Table data cannot be reordered.</li>
             <li>There is no visual representation of data.</li>
         </ul>
-        <p>Current state flow diagram and additional screenshot:</p>
-        <a href="images/property-management/currentstate/CurrentStateUserFlow.png"><img alt="current state flow diagram" src="images/property-management/currentstate/CurrentStateUserFlow.png"></a>
-        <a href="images/property-management/currentstate/CurrentStateStatementsThisYear.png"><img alt="current state statements page" src="images/property-management/currentstate/CurrentStateStatementsThisYear.png"></a>
+        <figure>
+            <img src="images/property-management/currentstate/CurrentStateUserFlow.png"
+             alt="Current state flow diagram with most frequently used sections highlighted" 
+            id="myImg">
+            <figcaption>Current state flow diagram with most frequently used sections highlighted</figcaption>
+        </figure>
+        <div id="myModal" class="modal">  
+            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+            <div id="caption"></div>
+            <img class="modal-content" id="img01">
+        </div>
         
     
     
     
-    
-        
-        
-        
-    
-        
-    
-        <h2>Solution</h2>
-        <p>I did some competitive analysis between PropertyWare and other property management software companies (
+
+        <p>I did some competitive analysis between PropertyWare, the software my property management company uses, and other property management software companies (
             
             <span class="hover_img">
             <a href="images/property-management/buildium/BuildiumOwnerPortalDescription_Financials.png" class="inline-text-link" >
@@ -200,31 +202,104 @@
             </a>
             </span>). 
             All of these software programs were designed for the landlord rather than the owner or tenant. I found that not all of the these even have an online portal for owners and those that do generally lack raw data and customization. </p>  
-        <a href="images/property-management/CompetitiveAnalysisNotes.png"><img alt="current state statements page" src="images/property-management/CompetitiveAnalysisNotes.png"></a>
+        <a href="images/property-management/CompetitiveAnalysisNotes.png">
+            <img alt="current state statements page" src="images/property-management/CompetitiveAnalysisNotes.png">
+        </a>
         <p>When an owner logs in to his portal he should be able to see items needing his attention plus a snapshot of other useful information. If a work order has been requested, the owner will see this work order request on the opening page so that he can approve or reject it without having to navigate through the system. He should also be able to download his monthly statement and view the recent income and expenses regarding his properties.</p>
-        <a href="images/property-management/WireframeOpeningPageHierarchy.png"><img alt="wireframe of opening page" src="images/property-management/WireframeOpeningPageHierarchy.png"></a>
-        <a href="images/property-management/WireframeOpeningPageHierarchy(v2).png"><img alt="wireframe of opening page" src="images/property-management/WireframeOpeningPageHierarchy(v2).png"></a>
-        <a href="images/property-management/Style%20Tile.jpg"><img alt="style tile" src="images/property-management/Style%20Tile.jpg"></a>
-        <a href="images/property-management/WireframeOpeningPageHierarchy(v3).png"><img alt="wireframe of opening page" src="images/property-management/WireframeOpeningPageHierarchy(v3).png"></a>
-        
-
-
-
         
         
+        <div class="carouselbox">Opening Page Wireframe Progression
+            <div class="controls">
+                <div class="carousel-prev button"><i class="fa fa-chevron-left"></i> Previous</div>
+                <div class="dots">
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                </div>
+                <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
+            </div>
+            <div class="content">
+                <figure>
+                    <a href="images/property-management/WireframeOpeningPageHierarchy.png"><img alt="wireframe of opening page" src="images/property-management/WireframeOpeningPageHierarchy.png"></a>
+                    <figcaption>Initial design</figcaption>
+                </figure>
+                <figure>
+                    <a href="images/property-management/WireframeOpeningPageHierarchy(v2).png"><img alt="wireframe of opening page" src="images/property-management/WireframeOpeningPageHierarchy(v2).png"></a>
+                    <figcaption>Version 2</figcaption>
+                </figure>
+                <figure>
+                    <a href="images/property-management/PropManStyleTile.jpg"><img alt="style tile" src="images/property-management/PropManStyleTile.jpg"></a>
+                    <figcaption>Style Tile</figcaption>
+                </figure>
+                <figure>
+                    <a href="images/property-management/WireframeOpeningPageHierarchy(v3).png"><img alt="wireframe of opening page" src="images/property-management/WireframeOpeningPageHierarchy(v3).png"></a>
+                    <figcaption>Version 3</figcaption>
+                </figure>
+            </div>
+        </div>
+
+
+
+     
+        <p>After designing new pages and features I ran usability tests. I found that on the opening page, users preferred to see the pending work order in a larger box than the other information. Users also didn't seem to understand the different between Maintenance Work Orders and Bills. I tested some different graphs. </p>
+
+
+        <div class="carouselbox">Usability Testing
+            <div class="controls">
+                <div class="carousel-prev button"><i class="fa fa-chevron-left"></i> Previous</div>
+                <div class="dots">
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                </div>
+                <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
+            </div>
+            <div class="content">
+                <figure>
+                    <a href="images/property-management/Test_10-21-15_FiveSecondLandingPage.png"><img alt="Property Management User's Portal Usability Testing" src="images/property-management/Test_10-21-15_FiveSecondLandingPage.png"></a>
+                    <figcaption>Test #1: After viewing the image for 5 seconds, I asked testers 3 questions:
+                        <br/>What was most prominent element on the page? What actions could you take? What item is most critical for the property owner? </figcaption>
+                </figure>
+                <figure>
+                    <a href="images/property-management/Test_10-22-15_ABTestLandingPage.png"><img alt="Property Management User's Portal Usability Testing" src="images/property-management/Test_10-22-15_ABTestLandingPage.png"></a>
+                    <figcaption>Test #2: A/B Test of opening page. 72% chose the side-by-side version and 28% chose stacked version.</figcaption>
+                </figure>
+                <figure>
+                    <a href="images/property-management/Test_10-23-15(Test1)_Statements.png"><img alt="Property Management User's Portal Usability Testing" src="images/property-management/Test_10-23-15(Test1)_Statements.png"></a> <figcaption>Test #3: I asked testers to click where to view/download the monthly statement for which no rental income was received.</figcaption>
+                </figure>
+                <figure>
+                    <a href="images/property-management/Test_10-23-15(Test2)_Statements.png"><img alt="Property Management User's Portal Usability Testing" src="images/property-management/Test_10-23-15(Test2)_Statements.png"></a>
+                    <figcaption>Test #4: I asked users where they would click to view statements from 2014. </figcaption>
+                </figure>
+                <figure>
+                    <a href="images/property-management/Test_10-24-16_ABCompareTitle.png"><img alt="Property Management User's Portal Usability Testing" src="images/property-management/Test_10-24-16_ABCompareTitle.png"></a>
+                    <figcaption>Test #5: A/B Test to compare page title on one or two lines. Results were very close so I decided to use two lines for wide screens and one line for narrow screens. </figcaption>
+                </figure>
+                <figure>
+                    <a href="images/property-management/Test_10-29-15_NavFlowRepairInvoices.png"><img alt="Property Management User's Portal Usability Testing" src="images/property-management/Test_10-29-15_NavFlowRepairInvoices.png"></a>
+                    <figcaption>Test #6: Navigational Flow to test if users could find any recent repair work completed and view details. I had intended for users to click on the Bills tab in the top navigation but none of my testers clicked there. Most clicked on the Maintenance Work Orders tab.</figcaption>
+                </figure>
+                <figure>
+                    <a href="images/property-management/Test_10-29-16_DownloadStatement.png"><img alt="Property Management User's Portal Usability Testing" src="images/property-management/Test_10-29-16_DownloadStatement.png"></a>
+                    <figcaption>Test #7: Navigational Flow to test if users could find an old monthly statement. My success rate was 19%. </figcaption>
+                </figure>
+                <figure>
+                    <a href="images/property-management/Test_10-30-15_ViewBillsDetails.png"><img alt="Property Management User's Portal Usability Testing" src="images/property-management/Test_10-30-15_ViewBillsDetails.png"></a>
+                    <figcaption>Test #8: This was a variation of the previous navigational flow of Test #6. I changed the instructions a bit and had 4% success. </figcaption>
+                </figure>
+            </div>
+        </div>
         
-
-
-
-        <h2>Results</h2>
-        <p>After designing new pages and features I ran many usability tests. I found that on the opening page, users preferred to see the pending work order in a larger box than the other information. Users also didn't seem to understand the different between Maintenance Work Orders and Bills. I tested some different graphs. </p>
-
-        <a href="images/property-management/Test_10-23-15(Test1)_Statements.png"><img alt="user testing of statements page" src="images/property-management/Test_10-23-15(Test1)_Statements.png"></a>
 
             
         <h3>Remote User Testing</h3>
-        <p>I requested three remote user tests with ten tasks. These tests ran from 14 to 19 minutes in length. Since my previous tests showed that users didn't understand the difference between work orders and bills I asked my new testers, in Task 5, to explain the difference. These testers were able to understand the difference since they had spent a few minutes already exploring other parts of the project. I also realized that some of my sections didn't specify property location so I added that during this testing phase.</p>
-        <br/ style="clear: both">
+        <p>I created a remote user test with 10 tasks and tested it with 3 users. These 3 tests ran from 14 to 19 minutes in length. Since my previous tests showed that users didn't understand the difference between work orders and bills I asked my new testers, in Task 5, to explain the difference. These testers were able to understand the difference since they had spent a few minutes already exploring other parts of the owner's portal. One of my testers noticed that some of my sections didn't specify property location so I added that during this testing phase.</p>
         
         
         
@@ -278,108 +353,133 @@
 
 
 
+
+
         <p>View the design clickable prototype: 
-        <div class="button"><a class="button-link" href="https://marvelapp.com/946a9c" target="_blank">laptop/desktop (Marvel)</a></div>
-        <div class="button"><a class="button-link" href="https://projects.invisionapp.com/share/254PCLKBS#/screens" target="_blank">mobile (InVision)</a></div>
+            <div class="button">
+                <a class="button-link" href="https://marvelapp.com/946a9c" target="_blank">laptop/desktop (Marvel)</a>
+            </div>
+            <div class="button">
+                <a class="button-link" href="https://projects.invisionapp.com/share/254PCLKBS#/screens" target="_blank">mobile (InVision)</a>
+            </div>
         </p>
 
-    <p>After getting my initial design determined I began development of the project. I ran a few more tests during this process and even made some design changes based on features that I was able to develop. One tester told me that the transactions page was hard to read and suggested I change the color of item costs. I also realized that I needed to display more information regarding the current lease rather than looking through the lease document.</p>
-                <figure><a href="images/property-management/firebase.png"><img alt="Firebase" src="images/property-management/firebase.png"></a>
-                <figcaption>Firebase database</figcaption>
-            </figure>    
-    
-    <div class="carouselbox">Developed project tests
-        <div class="controls">
-            <div class="carousel-prev button"><i class="fa fa-chevron-left"></i> Previous</div>
-            <div class="dots">
-                <div class="dot">*</div>
-                <div class="dot">*</div>
-                <div class="dot">*</div>
-                <div class="dot">*</div>
-                <div class="dot">*</div>
+
+
+        <p>After getting my initial design determined I began development of the project. I ran a few more tests during this process and even made some design changes based on features that I was able to develop. One tester told me that the transactions page was hard to read and suggested I change the color of item costs. I also realized that I needed to display more information regarding the current lease rather than looking through the lease document.</p>
+
+
+        <figure>       
+            <a href="images/property-management/firebase.png"><img alt="Firebase" src="images/property-management/firebase.png"></a>
+            <figcaption>Firebase database</figcaption>
+        </figure>    
+
+        <div class="carouselbox">Developed project tests
+            <div class="controls">
+                <div class="carousel-prev button"><i class="fa fa-chevron-left"></i> Previous</div>
+                <div class="dots">
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                </div>
+                <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
             </div>
-            <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
-        </div>
-        <div class="content">
-            <figure><a href="images/property-management/Test_01-28-16_MyProfile.png"><img alt="user testing of my profile page" src="images/property-management/Test_01-28-16_MyProfile.png"></a>
-                <figcaption>Usability Testing of My Profile page</figcaption>
-            </figure>
-            <figure><a href="images/property-management/Test_01-29-2016.png"><img alt="user testing of my profile page" src="images/property-management/Test_01-29-2016.png"></a>
-                <figcaption>Usability Testing: compare table styling</figcaption>
-            </figure>
-            <figure><a href="images/property-management/Test_02-04-2016_sump-pump-bill.png"><img alt="user testing of my profile page" src="images/property-management/Test_02-04-2016_sump-pump-bill.png"></a>
-                <figcaption>usability testing: navigational flow</figcaption>
-            </figure>
-            <figure>
-                <!--    <video width="1280" height="716" controls>-->    
-                <video width="320" height="179" controls>
-                    <source src="images/property-management/PeekTest_2016-02-04_8029a990.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <figcaption>Peek Test</figcaption>
-            </figure>
-            <figure><a href="images/property-management/Test_02-08-16_GraphCompare.png"><img alt="user testing of statements page" src="images/property-management/Test_02-08-16_GraphCompare.png"></a>
-                <figcaption>Usability Testing: graph preference</figcaption>
-            </figure>
-        </div>
-    </div>
+            <div class="content">
+                <figure>
+                    <a href="images/property-management/Test_01-28-16_MyProfile.png"><img alt="user testing of my profile page" src="images/property-management/Test_01-28-16_MyProfile.png"></a>
+                    <figcaption>Usability Testing of My Profile page</figcaption>
+                </figure>
+                <figure>
+                    <a href="images/property-management/Test_01-29-2016.png"><img alt="user testing of my profile page" src="images/property-management/Test_01-29-2016.png"></a>
+                    <figcaption>Usability Testing: compare table styling</figcaption>
+                </figure>
+                <figure>
+                    <a href="images/property-management/Test_02-04-2016_sump-pump-bill.png"><img alt="user testing of my profile page" src="images/property-management/Test_02-04-2016_sump-pump-bill.png"></a>
+                    <figcaption>usability testing: navigational flow</figcaption>
+                </figure>
+                <figure>
+                    <a href="images/property-management/UserTesting2016-02-04-Instructions(a).png"><img alt="Informal 1-on-1 remote testing" src="images/property-management/UserTesting2016-02-04-Instructions(a).png"</a>
+                    <a href="images/property-management/UserTesting2016-02-04-Instructions(b).png"><img alt="Informal 1-on-1 remote testing" src="images/property-management/UserTesting2016-02-04-Instructions(b).png"</a>
+                    <a href="images/property-management/UserTesting2016-02-04-Notes(1).png"><img alt="Informal 1-on-1 remote testing" src="images/property-management/UserTesting2016-02-04-Notes(1).png"</a>
+                    <a href="images/property-management/UserTesting2016-02-04-Notes(2).png"><img alt="Informal 1-on-1 remote testing" src="images/property-management/UserTesting2016-02-04-Notes(2).png"</a>
+                    <figcaption>Informal 1-on-1 remote user testing instructions and notes from 2 users</figcaption>
+                </figure>
+                <figure>
+                    <!--    <video width="1280" height="716" controls>-->    
+                    <video width="320" height="179" controls>
+                        <source src="images/property-management/PeekTest_2016-02-04_8029a990.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <figcaption>Peek Test</figcaption>
+                </figure>
+                <figure><a href="images/property-management/Test_02-08-16_GraphCompare.png"><img alt="user testing of statements page" src="images/property-management/Test_02-08-16_GraphCompare.png"></a>
+                    <figcaption>Usability Testing: graph preference</figcaption>
+                </figure>
+            </div>
+        </div>  
 
 
-    <p>User Testing Methods</p>
-    <ul>
-        <li>1 Five Second</li>
-        <li>3 Click</li>
-        <li>3 Preference</li>
-        <li>4 Navigation Flow</li>
-        <li>1 Question</li>
-        <li>3 Remote User</li>
-        <li>2 One-on-One</li>
-        <li>1 Remote Peek</li>
-    </ul>
+        <p>User Testing Methods</p>
+        <ul>
+            <li>1 Five Second</li>
+            <li>3 Click</li>
+            <li>3 Preference</li>
+            <li>4 Navigation Flow</li>
+            <li>1 Question</li>
+            <li>3 Remote User</li>
+            <li>2 One-on-One</li>
+            <li>1 Remote Peek</li>
+        </ul>
     
     
     
     
 
+        
+        
         <h2>Conclusion</h2>
-        <p>After using my property management company's current owner portal for several years I had a good understanding of the features that are useful, what was frustrating, and what would be good to see. I spent a lot of time designing the pages and had some doubts at how easily I would be able to develop the pages with data and graphs. It surprised to find a JavaScript library that easily created graphs, although I had difficulty pushing my data into the graphs. I created this portal for an owner that only has one property and I would probably change a few of the pages and the scripts to accommodate multiple properties. Based on my time constraints for this student project, I only designed, researched, tested, and developed the experience for an owner. A total software redesign and overhaul would really improve the user experience.</p>
+        <p>After using my property management company's current owner portal for several years I had a good understanding of the features that are useful, what was frustrating, and what would be good to see. I spent a lot of time designing the pages and had some doubts at how easily I would be able to develop the pages with data and graphs. I was surprised to find a JavaScript library, <a href="http://canvasjs.com/assets/script/canvasjs.min.js" class="inline-text-link" target="_blank">CanvasJS</a>, that easily created graphs, although I had difficulty pushing my data into the graphs. I created this portal for an owner that only has one property and to accommodate multiple properties I would probably change a few of the pages and the scripts. Based on time constraints for this project while a <a href="http://www.bloc.io" class="inline-text-link" target="_blank">Bloc</a> student, I designed, researched, tested, and developed the experience for an owner. A total software redesign and overhaul would really improve the user experience.</p>
         
     
-    <div class="carouselbox">Developed project screenshots
-        <div class="controls">
-            <div class="carousel-prev button"><i class="fa fa-chevron-left"></i> Previous</div>
-            <div class="dots">
-                <div class="dot">*</div>
-                <div class="dot">*</div>
-                <div class="dot">*</div>
-                <div class="dot">*</div>
-                <div class="dot">*</div>
+        <div class="carouselbox">Developed project screenshots
+            <div class="controls">
+                <div class="carousel-prev button"><i class="fa fa-chevron-left"></i> Previous</div>
+                <div class="dots">
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                </div>
+                <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
             </div>
-            <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
+            <div class="content">
+                <figure><a href="images/property-management/Developed(1).png"><img alt="Property Management" src="images/property-management/Developed(1).png"></a> 
+                    <figcaption>Dashboard</figcaption>
+                </figure>
+                <figure><a href="images/property-management/Developed(2).png"><img alt="Property Management" src="images/property-management/Developed(2).png"></a> 
+                    <figcaption>Transactions</figcaption>
+                </figure>
+                <figure><a href="images/property-management/Developed(3).png"><img alt="Property Management" src="images/property-management/Developed(3).png"></a>
+                    <figcaption>Repair History</figcaption>
+                </figure>
+                <figure><a href="images/property-management/Developed(4).png"><img alt="Property Management" src="images/property-management/Developed(4).png"></a>
+                    <figcaption>Maintenance</figcaption>
+                </figure>
+                <figure><a href="images/property-management/Developed(5).png"><img alt="user testing of statements page" src="images/property-management/Developed(5).png"></a>
+                    <figcaption>Documents</figcaption>
+                </figure>
+            </div>
         </div>
-        <div class="content">
-            <figure><a href="images/property-management/Developed(1).png"><img alt="Property Management" src="images/property-management/Developed(1).png"></a> 
-                <figcaption>Dashboard</figcaption>
-            </figure>
-            <figure><a href="images/property-management/Developed(2).png"><img alt="Property Management" src="images/property-management/Developed(2).png"></a> 
-                <figcaption>Transactions</figcaption>
-            </figure>
-            <figure><a href="images/property-management/Developed(3).png"><img alt="Property Management" src="images/property-management/Developed(3).png"></a>
-                <figcaption>Repair History</figcaption>
-            </figure>
-            <figure><a href="images/property-management/Developed(4).png"><img alt="Property Management" src="images/property-management/Developed(4).png"></a>
-                <figcaption>Maintenance</figcaption>
-            </figure>
-            <figure><a href="images/property-management/Developed(5).png"><img alt="user testing of statements page" src="images/property-management/Developed(5).png"></a>
-                <figcaption>Documents</figcaption>
-            </figure>
-        </div>
-    </div>
 
-                    
-    <a class="button-link" href="http://protected-caverns-84956.herokuapp.com/" target="_blank">
-        <div class="button">Use the App</div>            
-    </a>
+
+        <a class="button-link" href="http://protected-caverns-84956.herokuapp.com/" target="_blank">
+            <div class="button">Use the App</div>            
+        </a>
+    
     
     </main>
 
@@ -392,7 +492,7 @@
 
   ga('create', 'UA-74068591-1', 'auto');
   ga('send', 'pageview');
-
 </script>
-    </body>
+
+</body>
 </html>

@@ -1,6 +1,11 @@
 .carouselbox, .carouselbox .content{
     text-align: center;
+    font-size: 16px;
+    background-color: whitesmoke;
+}
+figcaption {
     font-size: 12px;
+    color: black;
 }
 .carouselbox .controls div {
     display: inline-block;

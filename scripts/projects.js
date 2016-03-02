@@ -34,8 +34,7 @@ window.onload= function(){
         currentImage[carousel].classList.add('current');
         currentDot[carousel].classList.add('current');
       }
-    
-    
+
     //On page load set all carousel boxes to disply the first (index=0) image
     for (var i=0; i<boxes.length; i++){
         navigate(i, 0);    
@@ -61,6 +60,11 @@ window.onload= function(){
             navigate(3, 1);
         });
     };
+    if (next[4]){
+        next[4].addEventListener('click', function(ev) {
+            navigate(4, 1);
+        });
+    };
 
     var prev = document.getElementsByClassName('carousel-prev');
     prev[0].addEventListener('click', function(ev) {
@@ -81,5 +85,36 @@ window.onload= function(){
             navigate(3, -1);
         });
     };
+    if (prev[4]){
+        prev[4].addEventListener('click', function(ev) {
+            navigate(4, -1);
+        });
+    };
+    
+    
+    
+    /* IMAGE MODAL */    
+    var modal = document.getElementById('myModal');
+    //var modals = document.getElementsByClassName('modal'); // an array of multiple modals
+
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+    var myImg = document.getElementById('myImg');
+    var modalImage = document.getElementById("img01");
+    var modalCaptionText = document.getElementById("caption");
+    myImg.onclick = function(){
+        modal.style.display = "block";
+        modalImage.src = this.src; /* get image source from html */
+        modalImage.alt = this.alt; /* get image alt text from html */
+        modalCaptionText.innerHTML = this.alt; /* get image alt text from html */
+    }
+
+    // Get the <span> element that closes the modal
+    var modalClose = document.getElementsByClassName("close")[0];
+
+
+    // When the user clicks on <span> (x), close the modal
+    modalClose.onclick = function() {
+        modal.style.display = "none";
+    }
 
 };

@@ -50,8 +50,8 @@ we will NOT use the hamburger icon to click left navigation menu in/out
 we will have the left navigation menu fixed on screen */
 @media (min-width: 700px) {
     #main-projects-home .one-half {
-    display: inline-block;
-    width: 49%;
+        display: inline-block;
+        width: 49%;
     }
     #main-projects-home .text {
         padding-left: 20px;
