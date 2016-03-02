@@ -6,7 +6,10 @@
 #myImg:hover {
     opacity: 0.7; /* dim the image on hover */
 }
-
+.modal img {
+    max-width: 100%;
+    max-height: 100%;
+}
 
 /* The Modal (background) */
 .modal {
@@ -28,6 +31,12 @@
     margin: auto;
     display: block;
     max-width: 100%;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
 }
 
 /* Caption of Modal Image (Image Text) - Same Width as the Image */
@@ -59,11 +68,4 @@
     color: whitesmoke;
     text-decoration: none;
     cursor: pointer;
-}
-
-/* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
 }
