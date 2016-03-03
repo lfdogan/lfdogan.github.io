@@ -81,11 +81,12 @@ main h2 {
 /*    clear: both;*/
     padding-top: 40px;
 }
+/* for narrow screens*/
 main img {
     max-width: 100%;
-    padding: 10px;
+    padding: 10px 0;
 /*    background-color: whitesmoke;*/
-}
+}/* for wider screens*/
 @media (min-width: 302px) { /*for both project page AND modal! */
     main img {
         max-width: 400px;

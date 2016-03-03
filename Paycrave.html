@@ -70,17 +70,19 @@
         
 
                 
-        <figure>
-            <img src="images/paycrave/StyleGuide.png"
-             alt="provided style tile" 
-            id="myImg">
+        <figure class="modal-figure">
+            <img src="images/paycrave/StyleGuide.png" alt="provided style tile" id="myImg" class="image-for-modal">
             <figcaption>provided style tile</figcaption> 
-            <div id="myModal" class="modal">  
-                <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+            <div id="myModal" class="modal">
+<!--                <span class="modal-close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>-->
+<!--                <span class="modal-close" onclick="document.getElementsByClassName('modal')[0].style.display='none'">&times;</span>-->
+                <span class="modal-close" onclick="closeModal(0)">&times;</span>
                 <div id="caption" class="modal-caption"></div>
-                <img class="modal-content" id="img01">
+                <img id="img01" class="modal-img">
             </div>
         </figure>
+        
+        
 
         
         
@@ -88,10 +90,27 @@
         <h2>Solution</h2>
         <h3>Layout</h3>
         <p>I ran competitive analysis on <a target="_blank" class="inline-text-link" href="https://www.lyft.com">Lyft</a> and <a target="_blank" class="inline-text-link" href="https://www.uber.com/">Uber</a> taxi services. </p>
-        <a href="images/paycrave/lyft/Lyft-home.png"><img alt="Paycrave" src="images/paycrave/lyft/Lyft-home.png"></a>
-        <a href="images/paycrave/uber/uber.png"><img alt="Paycrave" src="images/paycrave/uber/uber.png"></a>
+
+        <figure onclick="openModal(1)" class="modal-figure">
+            <img src="images/paycrave/lyft/Lyft-home.png" class="image-for-modal">
+            <figcaption>Competitive Analysis - Lyft</figcaption> 
+            <div class="modal">
+                <span class="modal-close" onclick="closeModal(1)">&times;</span>
+                <div class="modal-caption"></div>
+                <img class="modal-img">
+            </div>
+        </figure>
+        <figure onclick="openModal(2)" class="modal-figure">
+            <img src="images/paycrave/uber/uber.png" class="image-for-modal">
+            <figcaption>Competitive Analysis - Uber</figcaption> 
+            <div class="modal">
+                <span class="modal-close" onclick="closeModal(2)">&times;</span>
+                <div class="modal-caption"></div>
+                <img class="modal-img">
+            </div>
+        </figure>
         
-        <p>Some research needed to be done to determine what was important to people who would possibly use this application.  </p>
+        <p>Some research needed to be done to determine what was important to people who would possibly use this application.</p>
         <a href="images/paycrave/Test_09-15-15_RankingFunctions.png"><img alt="Paycrave" src="images/paycrave/Test_09-15-15_RankingFunctions.png"></a>
         <a href="images/paycrave/Test_09-15-15_RankingFunctions-Results.png"><img alt="Paycrave" src="images/paycrave/Test_09-15-15_RankingFunctions-Results.png"></a>
 

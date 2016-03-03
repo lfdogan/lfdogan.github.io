@@ -63,7 +63,10 @@
         <h1>Property Management Owner's Portal</h1>
         <div class="first-image">
             <a href="http://protected-caverns-84956.herokuapp.com/" class="button-link" target="_blank">
-                <img alt="Property Management Owner's Portal" src="images/property-management/PropertyManagement-mixscreens.png" onmouseover="this.src='images/property-management/PropertyManagement-mixscreens-alt.png'" onmouseout="this.src='images/property-management/PropertyManagement-mixscreens.png'">
+                <img alt="Property Management Owner's Portal" 
+                     src="images/property-management/PropertyManagement-mixscreens.png" 
+                     onmouseover="this.src='images/property-management/PropertyManagement-mixscreens-alt.png'" 
+                     onmouseout="this.src='images/property-management/PropertyManagement-mixscreens.png'">
             </a>
         </div>
 
@@ -140,17 +143,16 @@
             <li>Table data cannot be reordered.</li>
             <li>There is no visual representation of data.</li>
         </ul>
-        <figure>
-            <img src="images/property-management/currentstate/CurrentStateUserFlow.png"
-             alt="Current state flow diagram with most frequently used sections highlighted" 
-            id="myImg">
-            <figcaption>Current state flow diagram with most frequently used sections highlighted</figcaption>
+
+        <figure class="modal-figure">
+            <img src="images/property-management/currentstate/CurrentStateUserFlow.png" class="image-for-modal" onclick="openModal(0)">
+            <figcaption>Current state flow diagram with most frequently used sections highlighted</figcaption> 
+            <div class="modal">
+                <span class="modal-close" onclick="closeModal(0)">&times;</span>
+                <div class="modal-caption"></div>
+                <img class="modal-img">
+            </div>
         </figure>
-        <div id="myModal" class="modal">  
-            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-            <div id="caption"></div>
-            <img class="modal-content" id="img01">
-        </div>
         
     
     
@@ -203,9 +205,18 @@
             </a>
             </span>). 
             All of these software programs were designed for the landlord rather than the owner or tenant. I found that not all of the these even have an online portal for owners and those that do generally lack raw data and customization. </p>  
-        <a href="images/property-management/CompetitiveAnalysisNotes.png">
-            <img alt="current state statements page" src="images/property-management/CompetitiveAnalysisNotes.png">
-        </a>
+        
+        <figure class="modal-figure">
+            <img src="images/property-management/CompetitiveAnalysisNotes.png" class="image-for-modal" onclick="openModal(1)">
+            <figcaption>Competitive Analysis notes</figcaption> 
+            <div class="modal">
+                <span class="modal-close" onclick="closeModal(1)">&times;</span>
+                <div class="modal-caption"></div>
+                <img class="modal-img">
+            </div>
+        </figure>
+
+
         <p>When an owner logs in to his portal he should be able to see items needing his attention plus a snapshot of other useful information. If a work order has been requested, the owner will see this work order request on the opening page so that he can approve or reject it without having to navigate through the system. He should also be able to download his monthly statement and view the recent income and expenses regarding his properties.</p>
         
         
@@ -217,17 +228,37 @@
                     <div class="dot">*</div>
                     <div class="dot">*</div>
                     <div class="dot">*</div>
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
                 </div>
                 <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
             </div>
             <div class="content">
-                <figure>
-                    <a href="images/property-management/WireframeOpeningPageHierarchy.png"><img alt="wireframe of opening page" src="images/property-management/WireframeOpeningPageHierarchy.png"></a>
-                    <figcaption>Initial design</figcaption>
+                <figure class="modal-figure">
+                    <img src="images/property-management/WireframeOpeningPageHierarchy2015-10-19.png" class="image-for-modal" onclick="openModal(2)">
+                    <figcaption>Initial design</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(2)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
+                </figure>
+                <figure class="modal-figure">
+                    <img src="images/property-management/WireframeOpeningPageHierarchy2015-10-20.png" class="image-for-modal" onclick="openModal(3)">
+                    <figcaption>Version 2</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(3)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
                 </figure>
                 <figure>
-                    <a href="images/property-management/WireframeOpeningPageHierarchy(v2).png"><img alt="wireframe of opening page" src="images/property-management/WireframeOpeningPageHierarchy(v2).png"></a>
-                    <figcaption>Version 2</figcaption>
+                    <a href="images/property-management/WireframeOpeningPageHierarchy2015-10-21.png"><img alt="wireframe of opening page" src="images/property-management/WireframeOpeningPageHierarchy2015-10-21.png"></a>
+                    <figcaption>Version 3</figcaption>
+                </figure>
+                <figure>
+                    <a href="images/property-management/WireframeOpeningPageHierarchy2015-10-22(v2).png"><img alt="wireframe of opening page" src="images/property-management/WireframeOpeningPageHierarchy2015-10-22(v2).png"></a>
+                    <figcaption>Version 4</figcaption>
                 </figure>
                 <figure>
                     <a href="images/property-management/PropManStyleTile.jpg"><img alt="style tile" src="images/property-management/PropManStyleTile.jpg"></a>
@@ -235,7 +266,7 @@
                 </figure>
                 <figure>
                     <a href="images/property-management/WireframeOpeningPageHierarchy(v3).png"><img alt="wireframe of opening page" src="images/property-management/WireframeOpeningPageHierarchy(v3).png"></a>
-                    <figcaption>Version 3</figcaption>
+                    <figcaption>Version 5</figcaption>
                 </figure>
             </div>
         </div>

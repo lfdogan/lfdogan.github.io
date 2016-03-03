@@ -1,12 +1,20 @@
-window.onload= function(){
+var images = [];
+var dots = [];
+var counter = [];
+var countOfImages = [];
+var currentImage = [];
+var currentDot = [];
+var modalFigures = [];
+var modals = [];
+var imagesForModal = [];
+var modalsCaption = [];
+var modalsImg = [];
+    
+
+
+window.onload = function () {
 
     var boxes = document.getElementsByClassName('carouselbox'); // an array of multiple carousels
-    var images = [];
-    var dots = [];
-    var counter = [];
-    var countOfImages = [];
-    var currentImage = [];
-    var currentDot = [];
     for (var i=0; i<boxes.length; i++){//for each carousel of the box array, set new array variables
         images.push(boxes[i].querySelectorAll('.carouselbox .content figure'));
         dots.push(boxes[i].querySelectorAll('.carouselbox .dots div'));
@@ -92,29 +100,37 @@ window.onload= function(){
     };
     
     
+
     
-    /* IMAGE MODAL */    
-    var modal = document.getElementById('myModal');
-    //var modals = document.getElementsByClassName('modal'); // an array of multiple modals
+    /* IMAGE MODAL
+     * http://www.w3schools.com/howto/howto_css_modal_images.asp
+     * Get the image and insert it inside the modal - use its "alt" text as a caption.
+     * Get the <span> element that closes the modal.
+     * When the user clicks on <span> (x), close the modal
+     */
+//    document.getElementById('myImg').onclick = function(){
+//        document.getElementById('myModal').style.display = "block";
+//        document.getElementById("img01").src = this.src; /* get image source from html */
+//        document.getElementById("img01").alt = this.alt; /* get image alt text from html */
+//        document.getElementById("caption").innerHTML = this.alt; /* get image alt text from html */
+//    }
 
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var myImg = document.getElementById('myImg');
-    var modalImage = document.getElementById("img01");
-    var modalCaptionText = document.getElementById("caption");
-    myImg.onclick = function(){
-        modal.style.display = "block";
-        modalImage.src = this.src; /* get image source from html */
-        modalImage.alt = this.alt; /* get image alt text from html */
-        modalCaptionText.innerHTML = this.alt; /* get image alt text from html */
-    }
+    modalFigures = document.getElementsByClassName('modal-figure');
+    imagesForModal = document.getElementsByClassName('image-for-modal');    
+    modals = document.getElementsByClassName('modal');
+    modalsCaption = document.getElementsByClassName("modal-caption");
+    modalsImg = document.getElementsByClassName('modal-img');
 
-    // Get the <span> element that closes the modal
-    var modalClose = document.getElementsByClassName("close")[0];
+};
 
 
-    // When the user clicks on <span> (x), close the modal
-    modalClose.onclick = function() {
-        modal.style.display = "none";
-    }
+var closeModal = function(index) {
+    modals[index].style.display = "none";
+};
 
+var openModal = function(index) {
+    modals[index].style.display = "block";
+    modalsImg[index].alt = modalFigures[index].getElementsByTagName('figcaption')[0].innerHTML;
+    modalsImg[index].src = imagesForModal[index].src;
+    modalsCaption[index].innerHTML = modalFigures[index].getElementsByTagName('figcaption')[0].innerHTML;
 };
