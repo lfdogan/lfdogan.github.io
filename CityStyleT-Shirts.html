@@ -12,10 +12,12 @@
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
     <link rel="stylesheet" type="text/css" href="styles/carousel.css">
+    <link rel="stylesheet" type="text/css" href="styles/modal.css">
     <link rel="stylesheet" type="text/css" href="styles/print.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/projects.js"></script>
+<!--    <script src="scripts/retina.js"></script>-->
  </head>
 <body>
     
@@ -106,15 +108,33 @@
             <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
         </div>
         <div class="content">
-            <figure><a href="images/city-style-tshirts/SWOTHardGraft.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/SWOTHardGraft.png"></a>
-                <figcaption>SWOT: HardGraft</figcaption>
-            </figure>
-            <figure><a href="images/city-style-tshirts/SWOTFansEdge.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/SWOTFansEdge.png"></a>
-                <figcaption>SWOT: FansEdge</figcaption>
-            </figure>
-            <figure><a href="images/city-style-tshirts/SWOTThreadless.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/SWOTThreadless.png"></a>
-                <figcaption>SWOT: Threadless</figcaption>
-            </figure>
+                <figure class="modal-figure">
+                    <img src="images/city-style-tshirts/SWOTHardGraft.png" class="image-for-modal" onclick="openModal(0)">
+                    <figcaption>SWOT: HardGraft</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(0)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
+                </figure>
+                <figure class="modal-figure">
+                    <img src="images/city-style-tshirts/SWOTFansEdge.png" class="image-for-modal" onclick="openModal(1)">
+                    <figcaption>SWOT: FansEdge</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(1)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
+                </figure>
+                <figure class="modal-figure">
+                    <img src="images/city-style-tshirts/SWOTThreadless.png" class="image-for-modal" onclick="openModal(2)">
+                    <figcaption>SWOT: Threadless</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(2)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
+                </figure>
         </div>
     </div>
 
@@ -123,7 +143,16 @@
     <p>I ran several usability tests on branding, layout, and navigational flow. I also published my prototype with limited click capabilities on Marvel App in order to do some <a href="http://peek.usertesting.com/" class="inline-text-link" target="_blank">Peek</a> testing. </p>
         <h3>Logo Design</h3>
     
-        <a href="images/city-style-tshirts/logodesign.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/logodesign.png"></a>
+
+                <figure class="modal-figure">
+                    <img src="images/city-style-tshirts/logodesign.png" class="image-for-modal" onclick="openModal(3)">
+                    <figcaption>Logo Design</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(3)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
+                </figure>
         
         <p>For branding, I asked testers to compare potential page headers. </p>
         
@@ -140,36 +169,74 @@
                 <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
             </div>
             <div class="content">
-                <figure><a href="images/city-style-tshirts/Test_10-07-2015(Test1)_Brand.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Test_10-07-2015(Test1)_Brand.png"></a>
-                    <figcaption>Branding Test #1: Select top 2 choices for page header</figcaption>
+                <figure class="modal-figure">
+                    <img src="images/city-style-tshirts/Test_10-07-2015(Test1)_Brand.png" class="image-for-modal" onclick="openModal(4)">
+                    <figcaption>Branding Test #1: Select top 2 choices for page header</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(4)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
                 </figure>
-                <figure><a href="images/city-style-tshirts/Test_10-07-2015(Test2)_HomepageV3&V7.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Test_10-07-2015(Test2)_HomepageV3&V7.png"></a>
-                    <figcaption>Branding Test #2: I used the top two winners from previous test to compare. There wasn't a clear winner. I'll need to run another test.</figcaption>
+                <figure class="modal-figure">
+                    <img src="images/city-style-tshirts/Test_10-07-2015(Test2)_HomepageV3&V7.png" class="image-for-modal" onclick="openModal(5)">
+                    <figcaption>Branding Test #2: I used the top two winners from previous test to compare. There wasn't a clear winner. I'll need to run another test.</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(5)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
                 </figure>
-                <figure><a href="images/city-style-tshirts/Test_10-08-2015_LogoTest3.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Test_10-08-2015_LogoTest3.png"></a>
-                    <figcaption>Branding Test #3: I reworked the previous test and got a clear winner.</figcaption>
+                <figure class="modal-figure">
+                    <img src="images/city-style-tshirts/Test_10-08-2015_LogoTest3.png" class="image-for-modal" onclick="openModal(6)">
+                    <figcaption>Branding Test #3: I reworked the previous test and got a clear winner.</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(6)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
                 </figure>
             </div>
         </div>
 
-        <a href="images/city-style-tshirts/Style_Tile_Blocshop2015-10-07.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Style_Tile_Blocshop2015-10-07.png"></a>
+        
+        <figure class="modal-figure">
+            <img src="images/city-style-tshirts/Style_Tile_Blocshop2015-10-07.png" class="image-for-modal" onclick="openModal(7)">
+            <figcaption>Style Tile</figcaption> 
+            <div class="modal">
+                <span class="modal-close" onclick="closeModal(7)">&times;</span>
+                <div class="modal-caption"></div>
+                <img class="modal-img">
+            </div>
+        </figure>
+
 
   
         <h3>User Flow</h3>
         <p>For layout, I found that most users first looked at the at the top of the page to find the type of product they wanted to view. I also found that users preferred the home page to show a large photo in addition to a few product examples rather than lots of examples. On the product page it was best to display the options in a single line rather than a group.  I also learned that users expect to see the product update for each selection made. </p>
-        <figure>
-            <a href="images/city-style-tshirts/original-layout.png">
-                <img alt="City Style T-Shirts" src="images/city-style-tshirts/original-layout.png">
-            </a>
-            <figcaption>Original layout of the four products pages</figcaption>
-            </figure>
-        <figure>
-            <a href="images/city-style-tshirts/AthensProducts.png">
-                <img alt="City Style T-Shirts" src="images/city-style-tshirts/AthensProducts.png">
-            </a>
-            <figcaption>When users click on the link they will be able to see all products with the same design</figcaption>
+        <figure class="modal-figure">
+            <img src="images/city-style-tshirts/OriginalLayout_09-25-2015.png" class="image-for-modal" onclick="openModal(8)">
+            <figcaption>Original layout of the four products pages</figcaption> 
+            <div class="modal">
+                <span class="modal-close" onclick="closeModal(8)">&times;</span>
+                <div class="modal-caption"></div>
+                <img class="modal-img">
+            </div>
         </figure>
+        <figure class="modal-figure">
+            <img src="images/city-style-tshirts/AthensProducts_10-16-2015.png" class="image-for-modal" onclick="openModal(9)">
+            <figcaption>When users click on the link they will be able to see all products with the same design</figcaption> 
+            <div class="modal">
+                <span class="modal-close" onclick="closeModal(9)">&times;</span>
+                <div class="modal-caption"></div>
+                <img class="modal-img">
+            </div>
+        </figure>
+
         
+
+
+
         
         <div class="carouselbox">User Flow Testing
             <div class="controls">
@@ -184,35 +251,50 @@
                 <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
             </div>
             <div class="content">
-                <figure>
-                <a href="images/city-style-tshirts/Test_09-28-2015_Homepage.png">
-                    <img src="images/city-style-tshirts/Test_09-28-2015_Homepage.png">
-                    <figcaption>Test Homepage: Where would you click to begin shopping for a Woman's T-Shirt with the New York design?</figcaption>
-                    </a>
+                <figure class="modal-figure">
+                    <img src="images/city-style-tshirts/Test_09-28-2015_Homepage.png" class="image-for-modal" onclick="openModal(10)">
+                    <figcaption>Test Homepage: Where would you click to begin shopping for a Woman's T-Shirt with the New York design?</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(10)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
                 </figure>
-                <figure>
-                    <a href="images/city-style-tshirts/Test_09-30-2015(Test1)_Homepage.png">
-                        <img src="images/city-style-tshirts/Test_09-30-2015(Test1)_Homepage.png">
-                        <figcaption>Test Homepage: Which design do you prefer?</figcaption>
-                    </a>
+                <figure class="modal-figure">
+                    <img src="images/city-style-tshirts/Test_09-30-2015(Test1)_Homepage.png" class="image-for-modal" onclick="openModal(11)">
+                    <figcaption>Test Homepage: Which design do you prefer?</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(11)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
                 </figure>
-                <figure>
-                    <a href="images/city-style-tshirts/Test_09-30-2015(Test2)_MenTShirt.png">
-                        <img src="images/city-style-tshirts/Test_09-30-2015(Test2)_MenTShirt.png">
-                        <figcaption>Test product page: What do you expect to happen when you click on the green square? What do you expect to happen when you click on the Amsterdam building icon? What would you need to do in order to add this item to your cart?</figcaption>
-                    </a>
+                <figure class="modal-figure">
+                    <img src="images/city-style-tshirts/Test_09-30-2015(Test2)_MenTShirt.png" class="image-for-modal" onclick="openModal(12)">
+                    <figcaption>Test product page: What do you expect to happen when you click on the green square? What do you expect to happen when you click on the Amsterdam building icon? What would you need to do in order to add this item to your cart?</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(12)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
                 </figure>
-                <figure>
-                    <a href="images/city-style-tshirts/Test_10-01-2015(Test1)_FilterOrder.png">
-                        <img src="images/city-style-tshirts/Test_10-01-2015(Test1)_FilterOrder.png">
-                        <figcaption>Test for variations for options: If you were shopping this website for a shirt to buy, would you select size, color, or design first? On other websites, in what order do you typically select size, color, and design? Do you prefer this website's top or bottom variation?</figcaption>
-                    </a>
+                <figure class="modal-figure">
+                    <img src="images/city-style-tshirts/Test_10-01-2015(Test1)_FilterOrder.png" class="image-for-modal" onclick="openModal(13)">
+                    <figcaption>Test for variations for options: If you were shopping this website for a shirt to buy, would you select size, color, or design first? On other websites, in what order do you typically select size, color, and design? Do you prefer this website's top or bottom variation?</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(13)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
                 </figure>
-                <figure>
-                    <a href="images/city-style-tshirts/Test_10-01-2015(Test2)_LayoutAddtoCart.png">
-                        <img src="images/city-style-tshirts/Test_10-01-2015(Test2)_LayoutAddtoCart.png">
-                        <figcaption>Test layout for Add to Cart button location preference</figcaption>
-                    </a>
+                <figure class="modal-figure">
+                    <img src="images/city-style-tshirts/Test_10-01-2015(Test2)_LayoutAddtoCart.png" class="image-for-modal" onclick="openModal(14)">
+                    <figcaption>Test</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(14)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
                 </figure>
             </div>
         </div>
@@ -233,17 +315,32 @@
                 <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
             </div>
             <div class="content">
-                <figure>
-                    <a href="images/city-style-tshirts/Test_10-09-2015_CheckOutItems.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Test_10-09-2015_CheckOutItems.png"></a>
-                    <figcaption>Test #1 for checkout cart: 12% completion of 9 steps</figcaption>
+                <figure class="modal-figure">
+                    <img src="images/city-style-tshirts/Test_10-09-2015_CheckOutItems.png" class="image-for-modal" onclick="openModal(15)">
+                    <figcaption>Test #1 for checkout cart: 12% completion of 9 steps</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(15)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
                 </figure>
-                <figure>
-                    <a href="images/city-style-tshirts/Test_10-13-2015_FullNavFlow.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Test_10-13-2015_FullNavFlow.png"></a>
-                    <figcaption>Test #2 for adding an item and checkout</figcaption>
+                <figure class="modal-figure">
+                    <img src="images/city-style-tshirts/Test_10-13-2015_FullNavFlow.png" class="image-for-modal" onclick="openModal(16)">
+                    <figcaption>Test #2 for adding an item and checkout</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(16)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
                 </figure>
-                <figure>
-                    <a href="images/city-style-tshirts/Test_10-15-2015_NavFlow3.png"><img alt="City Style T-Shirts" src="images/city-style-tshirts/Test_10-15-2015_NavFlow3.png"></a>
-                    <figcaption>Test #3 complete order of 2 items in cart</figcaption>
+                <figure class="modal-figure">
+                    <img src="images/city-style-tshirts/Test_10-15-2015_NavFlow3.png" class="image-for-modal" onclick="openModal(17)">
+                    <figcaption>Test #3 complete order of 2 items in cart</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(17)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
                 </figure>
             </div>
         </div>
@@ -260,19 +357,19 @@
                 <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
             </div>
             <div class="content">
-                <figure><video width="320" height="180" controls>
+                <figure><video class="video1280x720" controls>
                 <source src="images/city-style-tshirts/PeekTest2015-10-14_14d0a99d.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
                     <figcaption>Clip from Peek Test #1</figcaption>
                 </figure>
-                <figure><video width="320" height="196" controls>
+                <figure><video class="video1280x720" controls>
                 <source src="images/city-style-tshirts/PeekTest2015-10-15_1d94a99d.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
                     <figcaption>Clip from Peek Test #2</figcaption>
                 </figure>
-                <figure><video width="320" height="195" controls>
+                <figure><video class="video1280x720" controls>
                 <source src="images/city-style-tshirts/PeekTest2015-10-16_1a9ca99d.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
