@@ -87,7 +87,7 @@ main img {
     padding: 10px 0;
 /*    background-color: whitesmoke;*/
 }/* for wider screens*/
-@media (min-width: 302px) { /*for both project page AND modal! */
+@media (min-width: 400px) { /*for both project page AND modal! */
     main img {
         max-width: 400px;
         max-height: 400px;
@@ -107,7 +107,16 @@ main .inline-text-link:hover {
     background-color: #420D4F;
     color: white;
 }
-
+#main-about-me img {
+    max-width: 100%;
+    max-height: 100%;
+    padding: 5px;
+}
+@media (min-width: 400px) { /*for both project page AND modal! */
+    #main-about-me img {
+        max-width: 400px;
+    }
+}
 
 
 
