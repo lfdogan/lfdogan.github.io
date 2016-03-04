@@ -9,6 +9,7 @@ var modals = [];
 var imagesForModal = [];
 var modalsCaption = [];
 var modalsImg = [];
+
     
 
 
@@ -108,24 +109,16 @@ window.onload = function () {
      * Get the <span> element that closes the modal.
      * When the user clicks on <span> (x), close the modal
      */
-//    document.getElementById('myImg').onclick = function(){
-//        document.getElementById('myModal').style.display = "block";
-//        document.getElementById("img01").src = this.src; /* get image source from html */
-//        document.getElementById("img01").alt = this.alt; /* get image alt text from html */
-//        document.getElementById("caption").innerHTML = this.alt; /* get image alt text from html */
-//    }
+
 
     modalFigures = document.getElementsByClassName('modal-figure');
     imagesForModal = document.getElementsByClassName('image-for-modal');    
     modals = document.getElementsByClassName('modal');
     modalsCaption = document.getElementsByClassName("modal-caption");
     modalsImg = document.getElementsByClassName('modal-img');
+    
 
-};
 
-
-var closeModal = function(index) {
-    modals[index].style.display = "none";
 };
 
 var openModal = function(index) {
@@ -133,4 +126,7 @@ var openModal = function(index) {
     modalsImg[index].alt = modalFigures[index].getElementsByTagName('figcaption')[0].innerHTML;
     modalsImg[index].src = imagesForModal[index].src;
     modalsCaption[index].innerHTML = modalFigures[index].getElementsByTagName('figcaption')[0].innerHTML;
+};
+var closeModal = function(index) {
+    modals[index].style.display = "none";
 };

@@ -49,26 +49,3 @@ figcaption {
     display: block;
 }
 
-/* VIDEO SIZES */
-.video1280x720 {
-    width: 290px;
-    height: 163px;
-}
-@media (min-width: 500px) {
-    .video1280x720 {
-        width: 470px;
-        height: 264px;
-    }
-}
-@media (min-width: 700px) {
-    .video1280x720 {
-        width: 670px;
-        height: 377px;
-    }
-}
-@media (min-width: 900px) {
-    .video1280x720 {
-        width: 870px;
-        height: 489px;
-    }
-}

@@ -1,7 +1,7 @@
  /* #420D4F; */
 
 #main-projects-home .project-box {
-    margin: 40px 0; /* margin is outside of border */
+    margin: 40px 0 60px 0; /* margin is outside of border */
 }
 #main-projects-home h2 {
     text-transform: uppercase;

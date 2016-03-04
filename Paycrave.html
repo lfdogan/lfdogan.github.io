@@ -9,12 +9,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Julius+Sans+One' rel='stylesheet' type='text/css'>
 <!--    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Fauna+One' rel='stylesheet' type='text/css'>-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="styles/main.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
     <link rel="stylesheet" type="text/css" href="styles/carousel.css">
     <link rel="stylesheet" type="text/css" href="styles/modal.css">
     <link rel="stylesheet" type="text/css" href="styles/print.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/projects.js"></script>
     <script src="scripts/retina.js"></script>
@@ -90,8 +90,8 @@
         
         <h2>Solution</h2>
         <h3>Layout</h3>
-        <p>I ran competitive analysis on <a target="_blank" class="inline-text-link" href="https://www.lyft.com">Lyft</a> and <a target="_blank" class="inline-text-link" href="https://www.uber.com/">Uber</a> taxi services. </p>
-
+        <p class="no-columns">I ran competitive analysis on <a target="_blank" class="inline-text-link" href="https://www.lyft.com">Lyft</a> and <a target="_blank" class="inline-text-link" href="https://www.uber.com/">Uber</a> taxi services. </p>
+<div class="one-half">
         <figure class="modal-figure">
             <img src="images/paycrave/lyft/Lyft-home.png" class="image-for-modal" onclick="openModal(1)">
             <figcaption>Competitive Analysis - Lyft</figcaption> 
@@ -101,6 +101,8 @@
                 <img class="modal-img">
             </div>
         </figure>
+    </div>
+    <div class="one-half">
         <figure class="modal-figure">
             <img src="images/paycrave/uber/uber.png" class="image-for-modal" onclick="openModal(2)">
             <figcaption>Competitive Analysis - Uber</figcaption> 
@@ -110,11 +112,11 @@
                 <img class="modal-img">
             </div>
         </figure>
- 
+        </div>
         
 
                 
-<p>Some research needed to be done to determine what was important to people who would possibly use this application.</p>
+<p class="no-columns">Some research needed to be done to determine what was important to people who would possibly use this application.</p>
         
         <div class="carouselbox">Usability Question Test
             <div class="controls">
@@ -296,7 +298,7 @@
         
     
     
-            <!--    <video width="1280" height="780" controls>-->    
+
     <video class="video1280x720" controls>
         <source src="images/paycrave/PeekTest2015-09-18_891fa99d.mp4" type="video/mp4">
         Your browser does not support the video tag.
@@ -304,47 +306,56 @@
         
     
             
+<!--
     <figure class="modal-figure">
-        <img src="images/paycrave/PeekTestNotes09-18-15.png" class="image-for-modal" onclick="openModal(15)">
+        <img src="images/paycrave/PeekTestNotes09-18-15.png" class="image-for-modal" onclick="openModal(XX)">
         <figcaption>Usability Peek Test notes</figcaption> 
         <div class="modal">
-            <span class="modal-close" onclick="closeModal(15)">&times;</span>
+            <span class="modal-close" onclick="closeModal(XX)">&times;</span>
             <div class="modal-caption"></div>
             <img class="modal-img">
         </div>
     </figure>    
+-->
         
         
         
         <h2>Conclusion</h2>
         <p>This project was useful for me to see how size is incredibly important while designing for mobile. I found that when testing the clickable prototype on a phone I had to increase the size of nearly all of my text. My original design flow changed after I was implementing features. Images are extremely useful. Overall I found it slightly difficult to determine how much I wanted to follow the current tradition of flow versus create something new. </p>
+
+    <div class="one-third">
         <figure class="modal-figure">
-            <img src="images/paycrave/ViewMap.jpg" class="image-for-modal" onclick="openModal(16)">
+            <img src="images/paycrave/ViewMap.jpg" class="image-for-modal" onclick="openModal(15)">
             <figcaption>Opening Screen - Map view of food trucks</figcaption> 
+            <div class="modal">
+                <span class="modal-close" onclick="closeModal(15)">&times;</span>
+                <div class="modal-caption"></div>
+                <img class="modal-img">
+            </div>
+        </figure>
+        </div>
+    <div class="one-third">
+        <figure class="modal-figure">
+            <img src="images/paycrave/Menu.jpg" class="image-for-modal" onclick="openModal(16)">
+            <figcaption>Menu</figcaption> 
             <div class="modal">
                 <span class="modal-close" onclick="closeModal(16)">&times;</span>
                 <div class="modal-caption"></div>
                 <img class="modal-img">
             </div>
-        </figure> 
+        </figure>
+        </div>
+    <div class="one-third">
         <figure class="modal-figure">
-            <img src="images/paycrave/Menu.jpg" class="image-for-modal" onclick="openModal(17)">
-            <figcaption>Menu</figcaption> 
+            <img src="images/paycrave/OrderDetail.jpg" class="image-for-modal" onclick="openModal(17)">
+            <figcaption>Order detail</figcaption> 
             <div class="modal">
                 <span class="modal-close" onclick="closeModal(17)">&times;</span>
                 <div class="modal-caption"></div>
                 <img class="modal-img">
             </div>
         </figure> 
-        <figure class="modal-figure">
-            <img src="images/paycrave/OrderDetail.jpg" class="image-for-modal" onclick="openModal(18)">
-            <figcaption>Order detail</figcaption> 
-            <div class="modal">
-                <span class="modal-close" onclick="closeModal(18)">&times;</span>
-                <div class="modal-caption"></div>
-                <img class="modal-img">
-            </div>
-        </figure> 
+        </div>
 
 
         
@@ -355,16 +366,17 @@
         
         
     </main>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-74068591-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
+      ga('create', 'UA-74068591-1', 'auto');
+      ga('send', 'pageview');
+    </script>
     
     </body>
 </html>
