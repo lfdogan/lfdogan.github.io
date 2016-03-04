@@ -58,7 +58,8 @@
         <div class="first-image">
             <a href="https://projects.invisionapp.com/share/GR49242SC" class="button-link" target="_blank">
                 <img alt="Paycrave" 
-                     src="images/paycrave/paycrave-multiscreen.png" onmouseover="this.src='images/paycrave/paycrave-multiscreen-alt.png'" 
+                     src="images/paycrave/paycrave-multiscreen.png" 
+                     onmouseover="this.src='images/paycrave/paycrave-multiscreen-alt.png'" 
                      onmouseout="this.src='images/paycrave/paycrave-multiscreen.png'">
             </a>
         </div>
@@ -71,15 +72,14 @@
         
 
                 
+
         <figure class="modal-figure">
-            <img src="images/paycrave/StyleGuide.png" alt="provided style tile" id="myImg" class="image-for-modal">
-            <figcaption>provided style tile</figcaption> 
-            <div id="myModal" class="modal">
-<!--                <span class="modal-close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>-->
-<!--                <span class="modal-close" onclick="document.getElementsByClassName('modal')[0].style.display='none'">&times;</span>-->
+            <img src="images/paycrave/StyleGuide.png" class="image-for-modal" onclick="openModal(0)">
+            <figcaption>provided style guide</figcaption> 
+            <div class="modal">
                 <span class="modal-close" onclick="closeModal(0)">&times;</span>
-                <div id="caption" class="modal-caption"></div>
-                <img id="img01" class="modal-img">
+                <div class="modal-caption"></div>
+                <img class="modal-img">
             </div>
         </figure>
         
@@ -92,8 +92,8 @@
         <h3>Layout</h3>
         <p>I ran competitive analysis on <a target="_blank" class="inline-text-link" href="https://www.lyft.com">Lyft</a> and <a target="_blank" class="inline-text-link" href="https://www.uber.com/">Uber</a> taxi services. </p>
 
-        <figure onclick="openModal(1)" class="modal-figure">
-            <img src="images/paycrave/lyft/Lyft-home.png" class="image-for-modal">
+        <figure class="modal-figure">
+            <img src="images/paycrave/lyft/Lyft-home.png" class="image-for-modal" onclick="openModal(1)">
             <figcaption>Competitive Analysis - Lyft</figcaption> 
             <div class="modal">
                 <span class="modal-close" onclick="closeModal(1)">&times;</span>
@@ -101,8 +101,8 @@
                 <img class="modal-img">
             </div>
         </figure>
-        <figure onclick="openModal(2)" class="modal-figure">
-            <img src="images/paycrave/uber/uber.png" class="image-for-modal">
+        <figure class="modal-figure">
+            <img src="images/paycrave/uber/uber.png" class="image-for-modal" onclick="openModal(2)">
             <figcaption>Competitive Analysis - Uber</figcaption> 
             <div class="modal">
                 <span class="modal-close" onclick="closeModal(2)">&times;</span>
@@ -110,33 +110,121 @@
                 <img class="modal-img">
             </div>
         </figure>
+ 
         
-        <p>Some research needed to be done to determine what was important to people who would possibly use this application.</p>
-        <a href="images/paycrave/Test_09-15-15_RankingFunctions.png"><img alt="Paycrave" src="images/paycrave/Test_09-15-15_RankingFunctions.png"></a>
-        <a href="images/paycrave/Test_09-15-15_RankingFunctions-Results.png"><img alt="Paycrave" src="images/paycrave/Test_09-15-15_RankingFunctions-Results.png"></a>
+
+                
+<p>Some research needed to be done to determine what was important to people who would possibly use this application.</p>
+        
+        <div class="carouselbox">Usability Question Test
+            <div class="controls">
+                <div class="carousel-prev button"><i class="fa fa-chevron-left"></i> Previous</div>
+                <div class="dots">
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                </div>
+                <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
+            </div>
+            <div class="content">
+        <figure class="modal-figure">
+            <img src="images/paycrave/Test_09-15-15_RankingFunctions.png" class="image-for-modal" onclick="openModal(3)">
+            <figcaption>Test</figcaption> 
+            <div class="modal">
+                <span class="modal-close" onclick="closeModal(3)">&times;</span>
+                <div class="modal-caption"></div>
+                <img class="modal-img">
+            </div>
+        </figure>
+        <figure class="modal-figure">
+            <img src="images/paycrave/Test_09-15-15_RankingFunctions-Results.png" class="image-for-modal" onclick="openModal(4)">
+            <figcaption>Results</figcaption> 
+            <div class="modal">
+                <span class="modal-close" onclick="closeModal(4)">&times;</span>
+                <div class="modal-caption"></div>
+                <img class="modal-img">
+            </div>
+        </figure>
+        </figure>
+            </div>
+        </div>
 
 
         <p>My user tests determined what features are most important and I found that the priority would be to find food trucks near the user, so this should be the opening screen. I created user stories for three potential people.</p>
-        <a href="images/paycrave/UserStories.png"><img alt="Paycrave" src="images/paycrave/UserStories.png"></a>
+                
+        <figure class="modal-figure">
+            <img src="images/paycrave/UserStories.png" class="image-for-modal" onclick="openModal(5)">
+            <figcaption>User Stories</figcaption> 
+            <div class="modal">
+                <span class="modal-close" onclick="closeModal(5)">&times;</span>
+                <div class="modal-caption"></div>
+                <img class="modal-img">
+            </div>
+        </figure>
         
         <p>I asked users about different pin head options. I found that the most useful information to have on the pin head was the average rating which would be related to the color of the pin with the darkest pin being the best rated.</p>
-        <a href="images/paycrave/Test_09-20-15_Pin-Results.png"><img alt="Paycrave" src="images/paycrave/Test_09-20-15_Pin-Results.png"></a>    
+        <figure class="modal-figure">
+            <img src="images/paycrave/Test_09-20-15_Pin-Results.png" class="image-for-modal" onclick="openModal(6)">
+            <figcaption>Usability Test for map pin heads</figcaption> 
+            <div class="modal">
+                <span class="modal-close" onclick="closeModal(6)">&times;</span>
+                <div class="modal-caption"></div>
+                <img class="modal-img">
+            </div>
+        </figure>
         
         <h3>User Flow</h3>
-        <p>I designed a user flow diagram.</p>
+        <p></p>
                 
-        <a href="images/paycrave/UserFlowDiagramSearch.png"><img alt="Paycrave" src="images/paycrave/UserFlowDiagramSearch.png"></a>
-        <a href="images/paycrave/UserFlowDiagramOrder.png"><img alt="Paycrave" src="images/paycrave/UserFlowDiagramOrder.png"></a>
+
 <!--        <a href="images/paycrave/Test_09-20-15_Pin.png"><img alt="Paycrave" src="images/paycrave/Test_09-20-15_Pin.png"></a>-->
         
-        
+        <div class="carouselbox">I designed a user flow diagram.
+            <div class="controls">
+                <div class="carousel-prev button"><i class="fa fa-chevron-left"></i> Previous</div>
+                <div class="dots">
+                    <div class="dot">*</div>
+                    <div class="dot">*</div>
+                </div>
+                <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
+            </div>
+            <div class="content">
+            <figure class="modal-figure">
+                <img src="images/paycrave/UserFlowDiagramSearch.png" class="image-for-modal" onclick="openModal(7)">
+                <figcaption>User Flow - Search</figcaption> 
+                <div class="modal">
+                    <span class="modal-close" onclick="closeModal(7)">&times;</span>
+                    <div class="modal-caption"></div>
+                    <img class="modal-img">
+                </div>
+            </figure>
+            <figure class="modal-figure">
+                <img src="images/paycrave/UserFlowDiagramOrder.png" class="image-for-modal" onclick="openModal(8)">
+                <figcaption>User Flow - Order</figcaption> 
+                <div class="modal">
+                    <span class="modal-close" onclick="closeModal(8)">&times;</span>
+                    <div class="modal-caption"></div>
+                    <img class="modal-img">
+                </div>
+            </figure>
+            </div>
+        </div>
         
         
         
         
 
         <p>I ran some tests on navigation and flow. I asked testers to order a specified list of items and found that the most difficult part for the majority of users was finding the specified food truck from a list. I determined that I needed more padding around the trucks and that the truck's name should be larger. I also ran a test to see if users would be able to make a repeat order from a history of orders.</p>
-                <a href="images/paycrave/Test_09-16-15_NavFlowOrder.png"><img alt="Paycrave" src="images/paycrave/Test_09-16-15_NavFlowOrder.png"></a>
+    
+        <figure class="modal-figure">
+            <img src="images/paycrave/Test_09-16-15_NavFlowOrder.png" class="image-for-modal" onclick="openModal(9)">
+            <figcaption>Usability Test for navigational flow</figcaption> 
+            <div class="modal">
+                <span class="modal-close" onclick="closeModal(9)">&times;</span>
+                <div class="modal-caption"></div>
+                <img class="modal-img">
+            </div>
+        </figure>
+
         
         <div class="carouselbox">Navigational flow test
             <div class="controls">
@@ -150,57 +238,118 @@
                 <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
             </div>
             <div class="content">
-                <figure>
-                <a href="images/paycrave/Test_09-18-15(Test1)_NavFlow.png">
-                    <img src="images/paycrave/Test_09-18-15(Test1)_NavFlow.png">
-                    <figcaption>Instructions: You are logged in to your food truck ordering app. You want to repeat an order you made on June 5th at Oh My Grill. How would you do this?</figcaption>
-                    </a>
+                <figure class="modal-figure">
+                    <img src="images/paycrave/Test_09-18-15(Test1)_NavFlow.png" class="image-for-modal" onclick="openModal(10)">
+                    <figcaption>Instructions: You are logged in to your food truck ordering app. You want to repeat an order you made on June 5th at Oh My Grill. How would you do this?</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(10)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
                 </figure>
-                <figure>
-                    <a href="images/paycrave/Test_09-18-15(Test1)_NavFlowStep1.png">
-                        <img src="images/paycrave/Test_09-18-15(Test1)_NavFlowStep1.png">
-                        <figcaption>Step 1: Click on 'My Orders'</figcaption>
-                    </a>
+                <figure class="modal-figure">
+                    <img src="images/paycrave/Test_09-18-15(Test1)_NavFlowStep1.png" class="image-for-modal" onclick="openModal(11)">
+                    <figcaption>Step 1: Click on 'My Orders'</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(11)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
                 </figure>
-                <figure>
-                    <a href="images/paycrave/Test_09-18-15(Test1)_NavFlowStep2.png">
-                        <img src="images/paycrave/Test_09-18-15(Test1)_NavFlowStep2.png">
-                        <figcaption>Step 2: Click on the June 5th order</figcaption>
-                    </a>
+                <figure class="modal-figure">
+                    <img src="images/paycrave/Test_09-18-15(Test1)_NavFlowStep2.png" class="image-for-modal" onclick="openModal(12)">
+                    <figcaption>Step 2: Click on the June 5th order</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(12)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
                 </figure>
-                <figure>
-                    <a href="images/paycrave/Test_09-18-15(Test1)_NavFlowStep3.png">
-                        <img src="images/paycrave/Test_09-18-15(Test1)_NavFlowStep3.png">
-                        <figcaption>Step 3: Review credit card info then click to proceed with order</figcaption>
-                    </a>
+                <figure class="modal-figure">
+                    <img src="images/paycrave/Test_09-18-15(Test1)_NavFlowStep3.png" class="image-for-modal" onclick="openModal(13)">
+                    <figcaption>Step 3: Review credit card info then click to proceed with order</figcaption> 
+                    <div class="modal">
+                        <span class="modal-close" onclick="closeModal(13)">&times;</span>
+                        <div class="modal-caption"></div>
+                        <img class="modal-img">
+                    </div>
                 </figure>
             </div>
         </div>
 
-        <a href="images/paycrave/Test_09-18-15(Test2)_CompareList.png"><img alt="Paycrave" src="images/paycrave/Test_09-18-15(Test2)_CompareList.png"></a>
+    
+        <figure class="modal-figure">
+            <img src="images/paycrave/Test_09-18-15(Test2)_CompareList.png" class="image-for-modal" onclick="openModal(14)">
+            <figcaption>Usability Test - compare list of food truck versions</figcaption> 
+            <div class="modal">
+                <span class="modal-close" onclick="closeModal(14)">&times;</span>
+                <div class="modal-caption"></div>
+                <img class="modal-img">
+            </div>
+        </figure>    
+    
+
         <p>I created a clickable prototype using <a href="http://www.invisionapp.com/" target="_blank" class="inline-text-link">InVision</a> App and did a <a href="http://peek.usertesting.com/" class="inline-text-link" target="_blank">Peek</a> test. My testing user generally liked the design and layout. "I think this is a brilliant app. I would definitely use it, endorse it, and share it."</p>
-        <a href="images/paycrave/InVisionSetup.png"><img alt="Paycrave" src="images/paycrave/InVisionSetup.png"></a>
+    
+
+
+        
+    
+    
             <!--    <video width="1280" height="780" controls>-->    
-    <video width="320" height="195" controls>
+    <video class="video1280x720" controls>
         <source src="images/paycrave/PeekTest2015-09-18_891fa99d.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-        <a href="images/paycrave/PeekTestNotes09-18-15.png"><img alt="Paycrave" src="images/paycrave/PeekTestNotes09-18-15.png"></a>
         
-        
+    
+            
+    <figure class="modal-figure">
+        <img src="images/paycrave/PeekTestNotes09-18-15.png" class="image-for-modal" onclick="openModal(15)">
+        <figcaption>Usability Peek Test notes</figcaption> 
+        <div class="modal">
+            <span class="modal-close" onclick="closeModal(15)">&times;</span>
+            <div class="modal-caption"></div>
+            <img class="modal-img">
+        </div>
+    </figure>    
         
         
         
         <h2>Conclusion</h2>
         <p>This project was useful for me to see how size is incredibly important while designing for mobile. I found that when testing the clickable prototype on a phone I had to increase the size of nearly all of my text. My original design flow changed after I was implementing features. Images are extremely useful. Overall I found it slightly difficult to determine how much I wanted to follow the current tradition of flow versus create something new. </p>
-            
-        <a href="images/paycrave/ViewMap.jpg"><img alt="Paycrave" src="images/paycrave/ViewMap.jpg"></a>
-        <a href="images/paycrave/OrderDetail.jpg"><img alt="Paycrave" src="images/paycrave/OrderDetail.jpg"></a>
-        <a href="images/paycrave/Menu.jpg"><img alt="Paycrave" src="images/paycrave/Menu.jpg"></a>
+        <figure class="modal-figure">
+            <img src="images/paycrave/ViewMap.jpg" class="image-for-modal" onclick="openModal(16)">
+            <figcaption>Opening Screen - Map view of food trucks</figcaption> 
+            <div class="modal">
+                <span class="modal-close" onclick="closeModal(16)">&times;</span>
+                <div class="modal-caption"></div>
+                <img class="modal-img">
+            </div>
+        </figure> 
+        <figure class="modal-figure">
+            <img src="images/paycrave/Menu.jpg" class="image-for-modal" onclick="openModal(17)">
+            <figcaption>Menu</figcaption> 
+            <div class="modal">
+                <span class="modal-close" onclick="closeModal(17)">&times;</span>
+                <div class="modal-caption"></div>
+                <img class="modal-img">
+            </div>
+        </figure> 
+        <figure class="modal-figure">
+            <img src="images/paycrave/OrderDetail.jpg" class="image-for-modal" onclick="openModal(18)">
+            <figcaption>Order detail</figcaption> 
+            <div class="modal">
+                <span class="modal-close" onclick="closeModal(18)">&times;</span>
+                <div class="modal-caption"></div>
+                <img class="modal-img">
+            </div>
+        </figure> 
+
 
         
         
-        <a class="button-link" href="https://projects.invisionapp.com/share/GR49242SC" target="_blank">
+        <a class="button-link" href="https://projects.invisionapp.com/share/AW49FGQMB" target="_blank">
             <div class="button">Use the Prototype</div>
         </a>
         
