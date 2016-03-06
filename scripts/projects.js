@@ -46,7 +46,7 @@ window.onload = function () {
 
     //On page load set all carousel boxes to disply the first (index=0) image
     for (var i=0; i<boxes.length; i++){
-        navigate(i, 0);    
+        navigate(i, 0);
     };
 
     
@@ -73,8 +73,19 @@ window.onload = function () {
         next[4].addEventListener('click', function(ev) {
             navigate(4, 1);
         });
+    };                          
+    if (next[5]){
+        next[5].addEventListener('click', function(ev) {
+            navigate(5, 1);
+        });
     };
-
+    if (next[6]){
+        next[6].addEventListener('click', function(ev) {
+            navigate(6, 1);
+        });
+    };
+    
+    
     var prev = document.getElementsByClassName('carousel-prev');
     prev[0].addEventListener('click', function(ev) {
         navigate(0,-1);
@@ -99,8 +110,16 @@ window.onload = function () {
             navigate(4, -1);
         });
     };
-    
-    
+    if (prev[5]){
+        prev[5].addEventListener('click', function(ev) {
+            navigate(5, -1);
+        });
+    };
+    if (prev[6]){
+        prev[6].addEventListener('click', function(ev) {
+            navigate(6, -1);
+        });
+    };
 
     
     /* IMAGE MODAL
@@ -120,6 +139,8 @@ window.onload = function () {
 
 
 };
+
+
 
 var openModal = function(index) {
     modals[index].style.display = "block";
