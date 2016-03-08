@@ -3,24 +3,7 @@
 
 
 
-/* PROJECT PAGES FOR INLINE TEXT, HOVER OVER TO SEE A THUMBNAIL OF IMAGE */
-.main-project .hover_img a { 
-/*    position: relative;*/
-}
-.main-project .hover_img a span { 
-    position: fixed; 
-    top: 40px;
-    left: 40px;
-    display: none; 
-    z-index: 10; 
-}
-.main-project .hover_img a:hover span { 
-    display: block; 
-}
-.main-project .image-rollover {
-    background-color: whitesmoke;
-    border: 1px solid #420D4F;
-}
+
 
 
 
@@ -43,6 +26,7 @@ main .inline {
         max-height: 400px;
     }
 }
+/* image snapshot <figure> */
 .modal-figure {
     display: block;
     margin-left: auto;
@@ -50,20 +34,23 @@ main .inline {
     padding: 0;
     text-align: center; /* center the figcaption within figure */
 }
+
 /* image snapshot  <img id="myImg" class="image-for-modal"> */
 .image-for-modal {
     display: inline-block;
     cursor: pointer;
     transition: 0.3s; /* dim the image in 0.3 seconds */
 }
-
-
+.inline-text-link {
+    cursor: pointer;
+}
 
 
 
 /* THE MODAL */
 /* The Modal (background) <div id="myModal" class="modal"> */
-.modal {
+.modal,
+.modalSpan {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
@@ -89,8 +76,18 @@ main .inline {
     padding: 0;
     min-height: 15px;
 }
+.modal-caption-span {
+    margin: auto;
+    color: white;
+    display: block;
+    width: 80%;
+    max-width: 900px;
+    padding: 0;
+    min-height: 15px;
+}
 /* Modal Content (Image)  <img id="img01" class="modal-img"> */
-.modal-img  {
+.modal-img,
+.modal-img-span {
     padding-top: 5px;
     max-width: 100%;
     max-height: 90%;

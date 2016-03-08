@@ -10,6 +10,10 @@ var imagesForModal = [];
 var modalsCaption = [];
 var modalsImg = [];
 
+
+var modalSpan = [];
+
+
     
 
 
@@ -136,6 +140,7 @@ window.onload = function () {
     modalsCaption = document.getElementsByClassName("modal-caption");
     modalsImg = document.getElementsByClassName('modal-img');
     
+    modalsSpan = document.getElementsByClassName('modalSpan');
 
 
 };
@@ -150,4 +155,11 @@ var openModal = function(index) {
 };
 var closeModal = function(index) {
     modals[index].style.display = "none";
+};
+
+var openModalSpanInline = function(index){
+    modalsSpan[index].style.display = "block";
+};
+var closeModalSpanInline = function(index){
+    modalsSpan[index].style.display = "none";
 };

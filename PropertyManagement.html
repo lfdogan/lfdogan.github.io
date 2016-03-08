@@ -70,81 +70,61 @@
     
     
         
-        
-        
+
         
         <h2>Description</h2>
         <p>Some rental property owners hire companies to manage their properties. Even though the owners have hired a company to find and secure tenants and manage repairs, they are often able to access and view income, expenses, and documents about their rentals, however accessing the information is not very user friendly.
-        <br/><br/>Since I've been using a property management company for my rental home for the past 6 years I've come across many issues with their current system. I get frustrated trying to switch between viewing 
-        <span class="hover_img">
-            <a href="images/property-management/currentstate/CurrentStateMaintenance.png" class="inline-text-link" >
-                maintenance work orders
-                <span>
-                    <img class="image-rollover" src="images/property-management/currentstate/CurrentStateMaintenance.png" alt="image" />
-                </span>
-            </a>
-        </span>            
+        <br/><br/>Since I've been using a property management company for my rental home for the past 6 years I've come across many issues with their current system. I get frustrated trying to switch between viewing <span class="spanInline inline-text-link" onclick="openModalSpanInline(0)">maintenance work orders</span> and its associated <span class="spanInline inline-text-link" onclick="openModalSpanInline(1)">bills</span>, getting useful information from <span class="spanInline inline-text-link" onclick="openModalSpanInline(2)">inspection reports</span>, and needing to speak with the property management team for other information that should easily be accessible to me. Therefore, I decided to make an unsolicited redesign of their owner's portal and then develop the project.</p>
 
-            and its associated 
-        <span class="hover_img">
-            <a href="images/property-management/currentstate/CurrentStateBills.png" class="inline-text-link" >
-                bills
-                <span>
-                    <img class="image-rollover" src="images/property-management/currentstate/CurrentStateMaintenance.png" alt="image"  />
-                </span>
-            </a>
-        </span>
-        , getting useful information from 
-        <span class="hover_img">
-            <a href="images/property-management/currentstate/CurrentStateDocuments.png" class="inline-text-link" >
-                inspection reports
-                <span>
-                    <img class="image-rollover" src="images/property-management/currentstate/CurrentStateDocuments.png" alt="image" />
-                </span>
-            </a>
-        </span>
-        , and needing to speak with the property management team for other information that should easily be accessible to me. Therefore, I decided to make an unsolicited redesign of their owner's portal and then develop the project.</p>
-
-    
-
-        
+    <!-- Associated <div> modal elements for above paragraph -->
+        <div class="modalSpan">
+            <span class="modal-close" onclick="closeModalSpanInline(0)">&times;</span>
+            <div class="modal-caption-span">Current State - Maintenance</div>
+            <img src="images/property-management/currentstate/CurrentStateMaintenance.png" class="modal-img-span">
+        </div>
+        <div class="modalSpan">
+            <span class="modal-close" onclick="closeModalSpanInline(1)">&times;</span>
+            <div class="modal-caption-span">Current State - Bills</div>
+            <img src="images/property-management/currentstate/CurrentStateBills.png" class="modal-img-span">
+        </div>
+        <div class="modalSpan">
+            <span class="modal-close" onclick="closeModalSpanInline(2)">&times;</span>
+            <div class="modal-caption-span">Current State - Documents</div>
+            <img src="images/property-management/currentstate/CurrentStateDocuments.png" class="modal-img-span">
+        </div>
 
         <h2>Solution</h2>
         <p class="no-columns">My list of the current design's problems:</p>
         <ul>
-            <li>The <span class="hover_img">
-            <a href="images/property-management/currentstate/CurrentStateMyAccount.png" class="inline-text-link" >
-                opening page
-                <span>
-                    <img class="image-rollover" src="images/property-management/currentstate/CurrentStateMyAccount.png" alt="image" />
-                </span>
-            </a>
-            </span> after logging in doesn't show important or useful information.</li>
-            <li>The user must change the date range to view the monthly <span class="hover_img">
-            <a href="images/property-management/currentstate/CurrentStateStatementsThisYear.png" class="inline-text-link" >
-                statements
-                <span>
-                    <img class="image-rollover" src="images/property-management/currentstate/CurrentStateStatementsThisYear.png" alt="image" />
-                </span>
-            </a>
-            </span>.</li>
+            <li>The <span class="spanInline inline-text-link" onclick="openModalSpanInline(3)">opening page</span> after logging in doesn't show important or useful information.</li>
+            <li>The user must change the date range to view the monthly <span class="spanInline inline-text-link" onclick="openModalSpanInline(4)">statements</span>.</li>
             <li>Some navigational links are rarely used or poorly named.</li>
-            <li>Some information is only accessible by downloading and opening a <span class="hover_img">
-            <a href="images/property-management/currentstate/CurrentStateDocuments.png" class="inline-text-link" >
-                PDF document
-                <span>
-                    <img class="image-rollover" src="images/property-management/currentstate/CurrentStateDocuments.png" alt="image"  />
-                </span>
-            </a>
-            </span>.</li>
+            <li>Some information is only accessible by downloading and opening a <span class="spanInline inline-text-link" onclick="openModalSpanInline(5)">PDF document</span>.</li>
             <li>Some tables show more information than necessary for a property owner.</li>
             <li>Bills and work orders are not linked across pages.</li>
             <li>Table data cannot be reordered.</li>
             <li>There is no visual representation of data.</li>
         </ul>
 
-    
-    
+    <!-- Associated <div> modal elements for above <ul> -->
+        <div class="modalSpan">
+            <span class="modal-close" onclick="closeModalSpanInline(3)">&times;</span>
+            <div class="modal-caption-span">Current State - Opening Page is My Account</div>
+            <img src="images/property-management/currentstate/CurrentStateMyAccount.png" class="modal-img-span">    
+        </div>
+        <div class="modalSpan">
+            <span class="modal-close" onclick="closeModalSpanInline(4)">&times;</span>
+            <div class="modal-caption-span">Current State - Statements this year</div>
+            <img src="images/property-management/currentstate/CurrentStateStatementsThisYear.png" class="modal-img-span">
+        </div>
+        <div class="modalSpan">
+            <span class="modal-close" onclick="closeModalSpanInline(5)">&times;</span>
+                <div class="modal-caption-span">Current State - Documents</div>
+                <img src="images/property-management/currentstate/CurrentStateDocuments.png" class="modal-img-span">    
+        </div>
+        
+        
+        
     
         <figure class="modal-figure">
             <img src="images/property-management/currentstate/CurrentStateUserFlow.png" class="image-for-modal" onclick="openModal(0)">
@@ -160,53 +140,39 @@
     
     
 
-        <p>I did some competitive analysis between PropertyWare, the software my property management company uses, and other property management software companies (
-            
-            <span class="hover_img">
-            <a href="images/property-management/buildium/BuildiumOwnerPortalDescription_Financials.png" class="inline-text-link" >
-                Buildium
-                <span>
-                    <img class="image-rollover" src="images/property-management/buildium/BuildiumOwnerPortalDescription_Financials.png" alt="image" />
-                </span>
-            </a>
-            </span>, 
-                        
-            <span class="hover_img">
-            <a href="images/property-management/totalmanagement/TotalManagement_Dashboard.png" class="inline-text-link" >
-                Total Management
-                <span>
-                    <img class="image-rollover" src="images/property-management/totalmanagement/TotalManagement_Dashboard.png" alt="image"  />
-                </span>
-            </a>
-            </span>, 
-                        
-            <span class="hover_img">
-            <a href="images/property-management/appfolio/Appfolio_OwnerPortal.png" class="inline-text-link" >
-                AppFolio Property Manager
-                <span>
-                    <img class="image-rollover" src="images/property-management/appfolio/Appfolio_OwnerPortal.png" alt="image"  />
-                </span>
-            </a>
-            </span>, 
-            
-            <span class="hover_img">
-            <a href="images/property-management/rentpost/RentPost_dashboard.png" class="inline-text-link" >
-                Rent Post
-                <span>
-                    <img class="image-rollover" src="images/property-management/rentpost/RentPost_dashboard.png" alt="image"  />
-                </span>
-            </a>
-            </span>, and 
-            
-            <span class="hover_img">
-            <a href="images/property-management/123landlord/123Landlord_Dashboard.png" class="inline-text-link" >
-                123Landlord
-                <span>
-                    <img class="image-rollover" src="images/property-management/123landlord/123Landlord_Dashboard.png" alt="image"  />
-                </span>
-            </a>
-            </span>). 
-            All of these software programs were designed for the landlord rather than the owner or tenant. I found that not all of the these even have an online portal for owners and those that do generally lack raw data and customization. </p>  
+        <p>I did some competitive analysis between PropertyWare, the software my property management company uses, and other property management software companies (<span class="spanInline inline-text-link" onclick="openModalSpanInline(6)">Buildium</span>, <span class="spanInline inline-text-link" onclick="openModalSpanInline(7)">Total Management</span>, <span class="spanInline inline-text-link" onclick="openModalSpanInline(8)">AppFolio Property Manager</span>, <span class="spanInline inline-text-link" onclick="openModalSpanInline(9)">Rent Post</span>, and <span class="spanInline inline-text-link" onclick="openModalSpanInline(10)">123Landlord</span>). All of these software programs were designed for the landlord rather than the owner or tenant. I found that not all of the these even have an online portal for owners and those that do generally lack raw data and customization. </p>  
+        
+        <!-- Associated <div> modal elements for above paragraph -->
+        <div class="modalSpan">
+            <span class="modal-close" onclick="closeModalSpanInline(6)">&times;</span>
+            <div class="modal-caption-span">Buildium owner's portal - financials</div>
+            <img src="images/property-management/competitors/BuildiumOwnerPortalDescription_Financials.png" class="modal-img-span">    
+        </div>        
+        <div class="modalSpan">
+            <span class="modal-close" onclick="closeModalSpanInline(7)">&times;</span>
+                <div class="modal-caption-span">Total Management owner's portal dashboard</div>
+                <img src="images/property-management/competitors/TotalManagement_Dashboard.png" class="modal-img-span">    
+        </div>
+        <div class="modalSpan">
+            <span class="modal-close" onclick="closeModalSpanInline(8)">&times;</span>
+                <div class="modal-caption-span">AppFolio Property Manager owner's portal</div>
+                <img src="images/property-management/competitors/Appfolio_OwnerPortal.png" class="modal-img-span">    
+        </div>
+        <div class="modalSpan">
+            <span class="modal-close" onclick="closeModalSpanInline(9)">&times;</span>
+                <div class="modal-caption-span">Rent Post dashboard</div>
+                <img src="images/property-management/competitors/RentPost_dashboard.png" class="modal-img-span">    
+        </div>
+        <div class="modalSpan">
+            <span class="modal-close" onclick="closeModalSpanInline(10)">&times;</span>
+                <div class="modal-caption-span">123Landlord dashboard</div>
+                <img src="images/property-management/competitors/123Landlord_Dashboard.png" class="modal-img-span">    
+        </div>        
+        
+        
+        
+        
+        
         
         <figure class="modal-figure">
             <img src="images/property-management/CompetitiveAnalysisNotes.png" class="image-for-modal" onclick="openModal(1)">
