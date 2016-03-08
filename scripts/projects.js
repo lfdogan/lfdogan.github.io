@@ -157,6 +157,7 @@ var closeModal = function(index) {
     modals[index].style.display = "none";
 };
 
+
 var openModalSpanInline = function(index){
     modalsSpan[index].style.display = "block";
 };

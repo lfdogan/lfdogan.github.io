@@ -53,15 +53,34 @@ a {
     padding: 8px;
     margin: 5px;
     border-radius: 8px;
-/*    box-shadow:  5px 5px 5px lightgray;*/
 }
 .button:hover {
     opacity: 0.9;
 }
-.print-only {
-    display: none;
+/* for the button at bottom of project pages */
+div.right-align {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+/* for the prototype buttons within project pages */
+@media (min-width: 360px) {
+    div.center-align {
+        margin: auto;
+        width: 360px;
+    }
 }
 
+
+
+
+
+/* github, invision, email buttons */
+#main-resume .button,
+main .button-fa {
+    width: 50px;
+    display: inline-block;
+}
 
 
 
@@ -70,7 +89,7 @@ a {
 
 
 main {
-    padding: 60px 5px 10px 5px;
+    padding: 60px 5px 30px 5px;
     background-color: white;
     width: 100%;
     max-width: 900px; /* previous 1200px; */
@@ -94,6 +113,8 @@ main .inline-text-link:hover {
     color: white;
 }
 
+
+/* narrow screens single column, medium screens 2 columns, wide screens 3 columns */
 main .one-half,
 main .one-third {
     display: block;
@@ -113,6 +134,8 @@ main .one-third {
         vertical-align: middle;
     }
 }
+
+
 
 
 
@@ -169,12 +192,7 @@ main .one-third {
 }
 
 
-/* RESUME.HTML github, invision, email buttons */
-#main-resume .button,
-main .button-fa {
-    width: 50px;
-    display: inline-block;
-}
+
 
 
 
