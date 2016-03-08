@@ -19,15 +19,23 @@ nav {
     margin: auto;
     height: inherit;
 }
+/* NAV-LEFT FOR SMALL MOBILE (IPHONE4) */
 #nav-left {
     width: 100%;
     display: inline-block;
     /* position: fixed use left and top/bottom */
     position: fixed;
     top: 0;
-    left: 5%;
+    left: 1%;
     text-align: left;
 }
+/* NAV-LEFT FOR MEDIUM MOBILE */
+@media (min-width: 335px) {
+    #nav-left {
+        left: 5%;
+    }
+}
+/* NAV-LEFT FOR LARGER SCREENS */
 @media (min-width: 600px) {
     #nav-left {
         width: 49%;
@@ -39,20 +47,23 @@ nav {
     color: whitesmoke;
     text-decoration: none;
 }
+/* LOGO FOR SMALL MOBILE (IPHONE4) */
 #nav-logo {
     display: inline-block;
     vertical-align: top;
     width: 30px;
-    padding: 5px;
+    padding: 15px 2px;
 }
 #logo {
     max-height: 30px;
     max-width: 30px;
     padding: 10px 0;
 }
+/* LOGO FOR LARGER SCREENS */
 @media (min-width: 335px) {
     #nav-logo {
         width: 50px;
+        padding: 5px;
     }
     #logo {
         max-height: 50px;
