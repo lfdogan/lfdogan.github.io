@@ -28,6 +28,13 @@ nav {
     left: 5%;
     text-align: left;
 }
+@media (min-width: 600px) {
+    #nav-left {
+        width: 49%;
+        margin-right: 50%;
+        left:auto;
+    }
+}
 #nav-left a {
     color: whitesmoke;
     text-decoration: none;
@@ -35,13 +42,22 @@ nav {
 #nav-logo {
     display: inline-block;
     vertical-align: top;
-    width: 50px;
+    width: 30px;
     padding: 5px;
 }
 #logo {
-    max-height: 50px;
-    max-width: 50px;
+    max-height: 30px;
+    max-width: 30px;
     padding: 10px 0;
+}
+@media (min-width: 335px) {
+    #nav-logo {
+        width: 50px;
+    }
+    #logo {
+        max-height: 50px;
+        max-width: 50px;
+    }
 }
 #nav-name {
     display: inline-block;
@@ -66,7 +82,7 @@ nav {
 
 
 
-/* UNDER 700 PIXELS WIDE */
+/* HAMBURGER UNDER 600 PIXELS WIDE */
 #hamburger {
     display: inline-block;
     position: fixed; /* fixed use left and top/bottom */
@@ -76,6 +92,11 @@ nav {
     text-align: right;
     cursor: pointer;
     padding: 15px 5px 0 0;
+}
+@media (min-width: 600px) {
+    #hamburger {
+        display: none;
+    }
 }
 /* Dropdown Content (Hidden by Default) */
 #hamburger .dropdown-content {
@@ -104,20 +125,12 @@ nav {
 #hamburger .show {
     display: block;
 }
+
+/* NAV-RIGHT OVER 600 PIXELS WIDE */
 #nav-right {
     display: none;
 }
-
-
-/* FOR WIDER DEVICES -- AT LEAST 700 PIXELS WIDE
-we will NOT use the hamburger icon to click left navigation menu in/out 
-we will have the left navigation menu fixed on screen */
 @media (min-width: 600px) {
-    #nav-left {
-        width: 49%;
-        margin-right: 50%;
-        left:auto;
-    }
     #nav-right {
         display: inline-block;
         margin-left: 50%;
@@ -139,8 +152,5 @@ we will have the left navigation menu fixed on screen */
     }
     #active-nav-link {
         color: white;
-    }
-    #hamburger {
-        display: none;
     }
 }
