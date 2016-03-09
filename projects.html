@@ -10,10 +10,11 @@
     <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Julius+Sans+One' rel='stylesheet' type='text/css'>
 <!--    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Fauna+One' rel='stylesheet' type='text/css'>-->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/print.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
     <link rel="stylesheet" type="text/css" href="styles/projects-link-page.css">
-    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/print.css">
+    <script src="scripts/hamburger.js"></script>
+<!--    <script src="scripts/retina.js"></script>-->
  </head>
 <body>
     
@@ -21,7 +22,7 @@
     
     
     <!-- Navigation Bar -->
-    <nav>
+    <nav><div id="nav-container">
         <div id="nav-left">
             <a href="index.html">
                 <div id="nav-logo"><img id="logo" alt="LFD" src="lfd02-11-16.png"></div>
@@ -45,81 +46,118 @@
                 <a href="projects.html">Projects</a>
             </div>
         </div>
-    </nav>
+        </div></nav>
     
     
     
     
     <main id="main-projects-home">
         
+        
         <h1 style="text-align: center">Projects</h1>
     
+        
+        
         <div class="project-box">
-                <div id="img-property-management" class="one-half img">
+            <a href="PropertyManagement.html"><div class="one-half img" id="img-property-management"></div></a>
+            <div class="one-half">
+                <div class="text">
+                    <h2>Property Management Owner's Portal</h2>
+                    <p>Rental property owners hire companies to manage their properties for them. They would still like to access and view income, expenses, and documents about their rentals.</p>
+                    <p>Skills I used: UX, prototyping, and HTML development using CSS, JavaScript, AngularJS, and Firebase</p>    
+                    <a class="button-link" href="PropertyManagement.html">
+                        <div class="button">View</div>
+                    </a>
                 </div>
-                <div class="one-half"><div class="text">
-                        <h2>Property Management Owner's Portal</h2>
-                        <p>Rental property owners hire companies to manage their properties for them. They would still like to access and view income, expenses, and documents about their rentals.</p>
-                        <p>Skills I used: UX, prototyping, and html development using CSS, JavaScript, AngularJS, Firebase</p>    
-                        <a class="button-link" href="PropertyManagement.html"><div class="button">View</div></a>
-                    </div></div>
+            </div>
         </div>
 
         
         
         <div class="project-box">
-                <div class="one-half img" id="img-city-style">
-                </div>
-                <div class="one-half"><div class="text">
+            <a href="CityStyleT-Shirts.html"><div class="one-half img" id="img-city-style"></div></a>
+            <div class="one-half">
+                <div class="text">
                     <h2>City Style T-Shirts</h2>
                     <p>I wanted to create an e-commerce website for a company selling T-Shirts that shared my passion for travel.</p>
                     <p>Skills I used: UX, branding, prototyping</p>
-                    <a class="button-link" href="CityStyleT-Shirts.html"><div class="button">View</div></a>
-                    </div></div>
+                    <a class="button-link" href="CityStyleT-Shirts.html">
+                        <div class="button">View</div>
+                    </a>
+                </div>
+            </div>
         </div>
         
         
         
+        
         <div class="project-box">
-                <div class="one-half img" id="img-paycrave">
-                </div>
-                <div class="one-half"><div class="text">
+            <a href="Paycrave.html"><div class="one-half img" id="img-paycrave"></div></a>
+            <div class="one-half">
+                <div class="text">
                     <h2>Paycrave</h2>
                     <p>Food trucks are a great place to get lunch in a city, unfortunately there is no unified way to pre-order, read reviews, or pay with a credit card. This mobile application will provide users a way to view these trucks on a map and submit orders.</p>
                     <p>Skills I used: UX, mobile, prototyping</p>
-                    <a class="button-link" href="Paycrave.html"><div class="button">View</div></a>
-                    </div></div>
+                    <a class="button-link" href="Paycrave.html">
+                        <div class="button">View</div>
+                    </a>
+                </div>
+            </div>
         </div>
         
         
         
+        
         <div class="project-box">
-                <div class="one-half img" id="img-bloc-it-off">
-                </div>
-                <div class="one-half"><div class="text">
+            <a href="Bloc-It-Off.html"><div class="one-half img" id="img-bloc-it-off"></div></a>
+            <div class="one-half">
+                <div class="text">
                     <h2>Bloc It Off</h2>
                     <p>Writing a list of tasks that need to be completed is a great way to get organized. Unfortunately, sometimes our to-do lists end of being "would be nice to-do" lists that are very long. A way to keep the list short is to give them an expiration date.</p>
-                    <p>Skills I used: html development using CSS, JavaScript, AngularJS, Firebase</p>
-                    <a class="button-link" href="Bloc-It-Off.html"><div class="button">View</div></a>
-                    </div></div>
+                    <p>Skills I used: HTML development using CSS, JavaScript, AngularJS, and Firebase</p>
+                    <a class="button-link" href="Bloc-It-Off.html">
+                        <div class="button">View</div>
+                    </a>
+                </div>
+            </div>
         </div>
 
         
         
+        
         <div class="project-box">
-                <div class="one-half img" id="img-blocjams">
-                </div>
-                <div class="one-half"><div class="text">
+            <a href="BlocJams.html"><div class="one-half img" id="img-blocjams"></div></a>
+            <div class="one-half">
+                <div class="text">
                     <h2>BlocJams</h2>
                     <p>While working and playing, we like to listen to music from our mobile devices and computers. BlocJams allows users to stream music from its album library.</p>
-                    <p>Skills I used: html development using CSS, JavaScript, AngularJS</p>
-                    <a class="button-link" href="BlocJams.html"><div class="button">View</div></a>
-                    </div></div>
+                    <p>Skills I used: HTML development using CSS, JavaScript, jQuery, and AngularJS</p>
+                    <a class="button-link" href="BlocJams.html">
+                        <div class="button">View</div>
+                    </a>
+                </div>
+            </div>
         </div>
     
     
         
     </main>
+    
+    
+    
+    
+    
         
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-74068591-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+    
+    
     </body>
 </html>

@@ -64,44 +64,83 @@ main {
 nav {
     display: block;
     font-size: 16px;
-/*    color: #420D4F;*/
     color: whitesmoke;
     text-align: center; /* aligns div elements and their contents to center */
-/*    background-color: whitesmoke;*/
     background-color: #420D4F;
     position: fixed; /* fixed use left and top/bottom */
     left: 0px;
     top: 0px;
     width: 100%;
-    height: 70px;
-    border-bottom: 5px solid #420D4F;
+    height: 80px;
     z-index: 1; /* higher than main */
+}
+#nav-container {
+    width: 95%;
+    max-width: 900px;
+    margin: auto;
+    height: inherit;
+}
+/* NAV-LEFT FOR SMALL MOBILE (IPHONE4) */
+#nav-left {
+    width: 100%;
+    display: inline-block;
+    /* position: fixed use left and top/bottom */
+    position: fixed;
+    top: 0;
+    left: 1%;
+    text-align: left;
+}
+/* NAV-LEFT FOR MEDIUM MOBILE */
+@media (min-width: 335px) {
+    #nav-left {
+        left: 5%;
+    }
+}
+/* NAV-LEFT FOR LARGER SCREENS */
+@media (min-width: 600px) {
+    #nav-left {
+        width: 49%;
+        margin-right: 50%;
+        left:auto;
+    }
 }
 #nav-left a {
     color: whitesmoke;
     text-decoration: none;
 }
+/* LOGO FOR SMALL MOBILE (IPHONE4) */
 #nav-logo {
     display: inline-block;
     vertical-align: top;
-    width: 50px;
-    padding: 5px;
+    width: 30px;
+    padding: 15px 2px;
 }
 #logo {
-    max-height: 50px;
-    max-width: 50px;
-    padding: 5px;
+    max-height: 30px;
+    max-width: 30px;
+    padding: 10px 0;
+}
+/* LOGO FOR LARGER SCREENS */
+@media (min-width: 335px) {
+    #nav-logo {
+        width: 50px;
+        padding: 5px;
+    }
+    #logo {
+        max-height: 50px;
+        max-width: 50px;
+    }
 }
 #nav-name {
     display: inline-block;
-    padding: 0 0 0 5px;
+    padding-left: 5px;
 }
 #myname {
     font-family: 'Julius Sans One', sans-serif;
 /*    font-family: 'Fauna One', serif;*/
 /*    color: black;*/
     color: white;
-    padding: 10px 0 0 0;
+    padding: 20px 0 0 0;
     margin: 0;
 }
 #myrole {
@@ -115,15 +154,7 @@ nav {
 
 
 
-/* UNDER 700 PIXELS WIDE */
-#nav-left {
-    display: inline-block;
-    position: fixed; /* fixed use left and top/bottom */
-    left: 0;
-    top: 2px;
-    text-align: left;
-    padding-right: 5px;
-}
+/* HAMBURGER UNDER 600 PIXELS WIDE */
 #hamburger {
     display: inline-block;
     position: fixed; /* fixed use left and top/bottom */
@@ -131,7 +162,13 @@ nav {
     top: 0;
     font-size: 30px;
     text-align: right;
+    cursor: pointer;
     padding: 15px 5px 0 0;
+}
+@media (min-width: 600px) {
+    #hamburger {
+        display: none;
+    }
 }
 /* Dropdown Content (Hidden by Default) */
 #hamburger .dropdown-content {
@@ -141,7 +178,7 @@ nav {
     font-size: 20px;
     right: 0;
     background-color: #420D4F;
-    min-width: 100px;
+    min-width: 110px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 /* Links inside the dropdown */
@@ -149,6 +186,7 @@ nav {
     color: #a086a7;
     padding: 5px 10px 10px 5px;
     text-decoration: none;
+    text-transform: uppercase;
     display: block;
 }
 /* Change color of dropdown links on hover */
@@ -157,42 +195,34 @@ nav {
 }
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 #hamburger .show {
-    display:block;
+    display: block;
 }
+
+/* NAV-RIGHT OVER 600 PIXELS WIDE */
 #nav-right {
     display: none;
 }
-
-
-/* FOR WIDER DEVICES -- AT LEAST 700 PIXELS WIDE
-we will NOT use the hamburger icon to click left navigation menu in/out 
-we will have the left navigation menu fixed on screen */
 @media (min-width: 600px) {
-    #nav-left {
-        width: 49%;
-    }
     #nav-right {
         display: inline-block;
-        position: fixed; /* fixed use left and top/bottom */
-        right: 0;
-        top: 0;
+        margin-left: 50%;
         width: 49%;
+        /* fixed/relative use left and top/bottom */
+/*        height: inherit;*/
         text-align: right;
-        padding: 35px 5px 0 0;
+        padding-top: 31px;
+/*        padding: 35px 5px 0 0;*/
     }
     #nav-right a {
         color: #a086a7;
         text-decoration: none;
         text-transform: uppercase;
-        padding-right: 15px;
+        padding-left: 15px; /*left of each link. within div*/
     }
     #nav-right a:hover {
         color: white;
     }
     #active-nav-link {
         color: white;
-    }
-    #hamburger {
-        display: none;
     }
 }

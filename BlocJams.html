@@ -9,17 +9,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Julius+Sans+One' rel='stylesheet' type='text/css'>
 <!--    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Fauna+One' rel='stylesheet' type='text/css'>-->
-    <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/print.css">
-    <link rel="stylesheet" type="text/css" href="styles/nav.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
+    <link rel="stylesheet" type="text/css" href="styles/nav.css">
+    <link rel="stylesheet" type="text/css" href="styles/carousel.css">
+    <link rel="stylesheet" type="text/css" href="styles/modal.css">
+    <link rel="stylesheet" type="text/css" href="styles/print.css">
  </head>
 <body>
     
     
     <!-- Navigation Bar -->
-    <nav>
+    <nav><div id="nav-container">
         <div id="nav-left">
             <a href="index.html">
                 <div id="nav-logo"><img id="logo" alt="LFD" src="lfd02-11-16.png"></div>
@@ -43,7 +44,7 @@
                 <a href="projects.html">Projects</a>
             </div>
         </div>
-    </nav>
+        </div></nav>
     
     
     
@@ -52,19 +53,116 @@
         <h1>BlocJams</h1>
         <div class="first-image">
             <a class="button-link" href="https://shrouded-river-85724.herokuapp.com/" target="_blank">
-                <img alt="BlocJams" src="images/blocjams/blocjams-open.png" onmouseover="this.src='images/blocjams/blocjams-open-alt.png'" onmouseout="this.src='images/blocjams/blocjams-open.png'">
+                <img alt="BlocJams" 
+                     src="images/blocjams/blocjams-open.png"
+                     onmouseover="this.src='images/blocjams/blocjams-open-alt.png'"
+                     onmouseout="this.src='images/blocjams/blocjams-open.png'">
             </a>
         </div>
     
     
-        <h2>Summary</h2>
-        <p>While working and playing, we like to listen to music from our mobile devices and computers. BlocJams allows users to stream music from its album library.</p>
+        <h2>Description</h2>
+        <p>While working and playing, we like to listen to music from our mobile devices and computers. BlocJams is a replica of Spotify which allows users to stream music from its album library.<br/>
+        <br/>BlocJams allows users to scroll through the library's album listings. The user can select an album to view a list of its tracks and play its music. Users have the ability to play, pause, and skip songs. My role in this project was to create wireframes for 8 different views. </p>
     
-        <h2>Explanation</h2>
-        <p>BlocJams allows users to scroll through the library's album listings. The user can select an album to view a list of its tracks and play its music. Users have the ability to play, pause, and skip songs. My role in this project was to follow step-by-step instructions to learn how to rewrite original jQuery code into AngularJS while implementing a new file organization system. </p>
     
-        <h2>Problem</h2>
-        <p>The user stories I was given provide the individual steps to accomplish this project.</p>
+ 
+<div class="carouselbox">wireframes for mobile version
+        <div class="controls">
+            <div class="carousel-prev button"><i class="fa fa-chevron-left"></i> Previous</div>
+            <div class="dots">
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+                <div class="dot">*</div>
+            </div>
+            <div class="carousel-next button">Next <i class="fa fa-chevron-right"></i></div>
+        </div>
+        <div class="content">
+            <figure class="modal-figure">
+                <img src="images/blocjams/BlocJams-Wireframe-AlbumsLibrary(iPhone6).png" class="image-for-modal" onclick="openModal(0)">
+                <figcaption>Albums - list of all available albums</figcaption> 
+                <div class="modal">
+                    <span class="modal-close" onclick="closeModal(0)">&times;</span>
+                    <div class="modal-caption"></div>
+                    <img class="modal-img">
+                </div>
+            </figure>
+            <figure class="modal-figure">
+                <img src="images/blocjams/BlocJams-Wireframe-AlbumSongs(iPhone6).png" class="image-for-modal" onclick="openModal(1)">
+                <figcaption>Album - Links to discover similar music and its list of songs</figcaption> 
+                <div class="modal">
+                    <span class="modal-close" onclick="closeModal(1)">&times;</span>
+                    <div class="modal-caption"></div>
+                    <img class="modal-img">
+                </div>
+            </figure>
+            <figure class="modal-figure">
+                <img src="images/blocjams/BlocJams-Wireframe-CurrentSong(iPhone6).png" class="image-for-modal" onclick="openModal(2)">
+                <figcaption>Currently Playing - the current song</figcaption> 
+                <div class="modal">
+                    <span class="modal-close" onclick="closeModal(2)">&times;</span>
+                    <div class="modal-caption"></div>
+                    <img class="modal-img">
+                </div>
+            </figure>
+            <figure class="modal-figure">
+                <img src="images/blocjams/BlocJams-Wireframe-Search(iPhone6).png" class="image-for-modal" onclick="openModal(3)">
+                <figcaption>Search - by keyword for artist name, album name, or song title</figcaption> 
+                <div class="modal">
+                    <span class="modal-close" onclick="closeModal(3)">&times;</span>
+                    <div class="modal-caption"></div>
+                    <img class="modal-img">
+                </div>
+            </figure>
+            <figure class="modal-figure">
+                <img src="images/blocjams/BlocJams-Wireframe-SearchResults(iPhone6).png" class="image-for-modal" onclick="openModal(4)">
+                <figcaption>Search - results show artists, albums, and songs</figcaption> 
+                <div class="modal">
+                    <span class="modal-close" onclick="closeModal(4)">&times;</span>
+                    <div class="modal-caption"></div>
+                    <img class="modal-img">
+                </div>
+            </figure>
+            <figure class="modal-figure">
+                <img src="images/blocjams/BlocJams-Wireframe-PlaylistsLibrary(iPhone6).png" class="image-for-modal" onclick="openModal(5)">
+                <figcaption>Playlists - list containing the user's custom playlists plus system playlists</figcaption> 
+                <div class="modal">
+                    <span class="modal-close" onclick="closeModal(5)">&times;</span>
+                    <div class="modal-caption"></div>
+                    <img class="modal-img">
+                </div>
+            </figure>
+            <figure class="modal-figure">
+                <img src="images/blocjams/BlocJams-Wireframe-PlaylistTheBestLibrary(iPhone6).png" class="image-for-modal" onclick="openModal(6)">
+                <figcaption>Playlist - view a particular playlist</figcaption> 
+                <div class="modal">
+                    <span class="modal-close" onclick="closeModal(6)">&times;</span>
+                    <div class="modal-caption"></div>
+                    <img class="modal-img">
+                </div>
+            </figure>
+            <figure class="modal-figure">
+                <img src="images/blocjams/BlocJams-Wireframe-DiscoverNewMusicLibrary(iPhone6).png" class="image-for-modal" onclick="openModal(7)">
+                <figcaption>Discover New Music - based on a particular artist</figcaption> 
+                <div class="modal">
+                    <span class="modal-close" onclick="closeModal(7)">&times;</span>
+                    <div class="modal-caption"></div>
+                    <img class="modal-img">
+                </div>
+            </figure>
+        </div>
+    </div>
+
+
+        <p>After creating multiple wireframes, I followed step-by-step instructions to develop desktop versions of the Albums page, Album page, and a landing page. I used the instructions to learn how to write JavaScript and jQuery code, then I reworked the jQuery into AngularJS for those pages while implementing a new organization system for the development files. </p>
+
+
+        <p class="no-columns">The user stories I was given for the AngularJS development phase provide the individual steps to accomplish this project.</p>
             <ul>
                 <li>Bootstrap AngularJS to my original version of <a href="https://github.com/lfdogan/bloc-jams" target="_blank" class="inline-text-link">BlocJams</a>.</li>
                 <li>Configure routing and states.</li>
@@ -76,21 +174,50 @@
     
         <h2>Solution</h2>
         <p>I used UI Router to display the slide bar so that I could reference it twice in the music player function bar without repeating code. I created a controller for each of the three main views of this project to hold functions for each page. In order to play the music correctly using Buzz Library, the song length needed to be saved in total number of seconds rather than m:ss format. To account for this I created a filter that would receive the total number of seconds and format it in the m:ss format for better display.</p>
-        <img alt="BlocJams" src="images/blocjams/TimeCodeFilter.png">
+        
+        
+        <figure class="modal-figure">
+            <img src="images/blocjams/TimeCodeFilter.png" class="image-for-modal" onclick="openModal(8)">
+            <figcaption>JavaScript for time code filter</figcaption> 
+            <div class="modal">
+                <span class="modal-close" onclick="closeModal(8)">&times;</span>
+                <div class="modal-caption"></div>
+                <img class="modal-img">
+            </div>
+        </figure>
+
     
-        <h2>Results</h2>
-        <p>In addition to the completing the user stories I also added functionality to allow the user to mute the volume. </p>
+        <p class="no-columns">In addition to completing the user stories I also added functionality to allow the user to mute the volume. </p>
     
+        
         <h2>Conclusion</h2>
-        <p>The MVP of this project was successful. In its current form it is very limited. Future improvements for this project include user accounts to allow for multiple users' preferences, custom playlists, and ratings. Another useful improvement would be the ability to search the music library for a certain artist, album, or song. </p>
+        <p>The development MVP of this project was successful. In its current form it is very limited. Future development for this project will be to develop the additional wireframes to include user accounts, user preferences, custom playlists, ratings, and to search the music library for a certain artist, album, or song.</p>
     
-         
-        <a class="button-link" href="https://shrouded-river-85724.herokuapp.com/" target="_blank">
+         <div class="right-align">
+        <a class="button-link inline" href="https://shrouded-river-85724.herokuapp.com/" target="_blank">
             <div class="button">Use the App</div>
         </a>
+        <a class="button-link inline" target="_blank" href="https://github.com/lfdogan/bloc-jams-angular">
+            <div class="button button-fa"><i class="fa fa-github"></i></div>  
+        </a>
+        </div>
         
     </main>
+    
+        
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/projects.js"></script>
+    <script src="scripts/retina.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
+  ga('create', 'UA-74068591-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
 
     </body>
 </html>

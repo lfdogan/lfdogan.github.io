@@ -1,20 +1,61 @@
+.print-only {
+    display: none;
+}
+
+
 @media print {
 
     html {
         background-image: none;
         background-color: transparent;
+        color: black;
+        margin: auto;
     }
-    nav, footer {
+    nav,
+    .no-print {
         display: none;
+    }
+    .print-only {
+        display: block;
+        margin: auto;
+        padding: 0;
     }
     main {
         padding-top: 0;
         padding-bottom: 0;
+        margin: auto;
     }
-     a:after{
-         content: " (" attr(href) ") ";
-         font-size: 0.8em;
-         font-weight: normal;
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 16px;
+        text-transform: uppercase;
+        margin: 0.5em 0 0 0;
+        padding: 0;
+    }
+    h3 {
+        font-size: 14px;
+        padding: 0;
+        margin: 0.5em 0 0 0;
+    }
+    p, ul, li {
+        font-size: 12px;
+    }
+    ul, li {
+        margin-left: 10px;
+    }
+    /* project pages */
+    #main-project a:after{
+        content: " (" attr(href) ") ";
+        font-size: 0.8em;
+        font-weight: normal;
+        color: black;
+        text-transform: none;
+    }
+   .carouselbox .controls,
+    video {
+        display: none;
     }
 
 }

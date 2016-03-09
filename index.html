@@ -9,10 +9,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Julius+Sans+One' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/print.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
-    <script src="scripts/script.js"></script>
-
+    <link rel="stylesheet" type="text/css" href="styles/print.css">
  </head>
 <body>
     
@@ -20,7 +18,7 @@
     
     
     <!-- Navigation Bar -->
-    <nav>
+    <nav><div id="nav-container">
         <div id="nav-left">
             <a href="index.html">
                 <div id="nav-logo"><img id="logo" alt="LFD" src="lfd02-11-16.png"></div>
@@ -44,7 +42,7 @@
                 <a href="projects.html">Projects</a>
             </div>
         </div>
-    </nav>
+    </div></nav>
     
 
     
@@ -62,31 +60,31 @@
 
         <h2 style="clear: both"><a href="projects.html">Projects</a></h2>
         <div id="project-links">
-            <a href="PropertyManagement.html">            
+            <a href="PropertyManagement.html" class="tablinks" onmouseenter="viewProjectText(event, 'home-PropertyManagement')">            
                 <img alt="Property Management Owner's Portal" 
                  src="images/home/property-management-thumbnail.png" 
                  onmouseover="this.src='images/home/propertymanagement.png'" 
                  onmouseout="this.src='images/home/property-management-thumbnail.png'">
             </a>
-            <a href="CityStyleT-Shirts.html">
+            <a href="CityStyleT-Shirts.html" class="tablinks"  onmouseenter="viewProjectText(event, 'home-CityStyle')">
                 <img alt="City Style T-Shirts" 
                  src="images/home/city-style-tshirts-thumbnail.png" 
                  onmouseover="this.src='images/home/citystyletshirts.png'" 
                  onmouseout="this.src='images/home/city-style-tshirts-thumbnail.png'">
             </a>
-            <a href="Paycrave.html">
+            <a href="Paycrave.html" class="tablinks" onmouseenter="viewProjectText(event, 'home-Paycrave')">
                 <img alt="Paycrave" 
                  src="images/home/paycrave-thumbnail.png" 
                  onmouseover="this.src='images/home/paycrave.png'" 
                  onmouseout="this.src='images/home/paycrave-thumbnail.png'">
             </a>
-            <a href="Bloc-It-Off.html">
+            <a href="Bloc-It-Off.html" class="tablinks" onmouseenter="viewProjectText(event, 'home-BlocItOff')">
                 <img alt="Bloc It Off" 
                  src="images/home/bloc-it-off-thumbnail.png" 
                  onmouseover="this.src='images/home/blocitoff.png'" 
                  onmouseout="this.src='images/home/bloc-it-off-thumbnail.png'">
             </a>
-            <a href="BlocJams.html">
+            <a href="BlocJams.html" class="tablinks" onmouseenter="viewProjectText(event, 'home-BlocJams')">
                 <img alt="BlocJams" 
                  src="images/home/blocjams-thumbnail.png" 
                  onmouseover="this.src='images/home/blocjams.png'" 
@@ -94,9 +92,23 @@
             </a>
         </div>
             
-        <div>
-            <p>Check out my most recent project where I redesigned and developed a prototype for the Owner's Portal for a property management company.</p>  
+
+        <div id="home-PropertyManagement" class="tabcontent">
+            <p>Check out my most recent project where I redesigned and developed a prototype for the Owner's Portal for a property management company.</p>
         </div>
+        <div id="home-CityStyle" class="tabcontent">
+            <p>City Style T-Shirts is an e-commerce prototype.</p>
+        </div>
+        <div id="home-Paycrave" class="tabcontent">
+            <p>Paycrave is a mobile app prototype.</p>
+        </div>
+        <div id="home-BlocItOff" class="tabcontent">
+            <p>A To-Do List app with self-destructing expirations.</p>
+        </div>
+        <div id="home-BlocJams" class="tabcontent">
+            <p>An app similar to Spotify.</p>
+        </div>
+        
 
         
         <a href="resume.html">
@@ -109,7 +121,19 @@
     
 
     </main>
-      
+    
+    <script src="scripts/script.js"></script>
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/homepage.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-74068591-1', 'auto');
+      ga('send', 'pageview');
+    </script>   
     
 </body>
 </html>

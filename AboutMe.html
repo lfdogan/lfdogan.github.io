@@ -10,9 +10,8 @@
     <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Julius+Sans+One' rel='stylesheet' type='text/css'>
 <!--    <link href='https://fonts.googleapis.com/css?family=Carrois+Gothic|Fauna+One' rel='stylesheet' type='text/css'>-->
     <link rel="stylesheet" type="text/css" href="styles/main.css">
-    <link rel="stylesheet" type="text/css" href="styles/print.css">
     <link rel="stylesheet" type="text/css" href="styles/nav.css">
-    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/print.css">
  </head>
 <body>
     
@@ -20,7 +19,7 @@
     
     
     <!-- Navigation Bar -->
-    <nav>
+    <nav><div id="nav-container">
         <div id="nav-left">
             <a href="index.html">
                 <div id="nav-logo"><img id="logo" alt="LFD" src="lfd02-11-16.png"></div>
@@ -44,28 +43,43 @@
                 <a href="projects.html">Projects</a>
             </div>
         </div>
-    </nav>
+        </div></nav>
     
     
     
     <main class="main-about-me">
     
-    <h1>About Lauren</h1>
-        <img style="float: left" alt="Lauren Fritz Dogan" src="images/aboutme/lfd_full_2015-08-08.jpg" onmouseover="this.src='images/aboutme/DSC5061.jpg'" onmouseout="this.src='images/aboutme/lfd_full_2015-08-08.jpg'">
-        <p></p>
+        
+        <h1>About Lauren</h1>
+        <img id="about-me-img" alt="Lauren Fritz Dogan" 
+                 src="images/aboutme/DSCF0100-2015-08-08.jpg" 
+                 onmouseover="this.src='images/aboutme/DSC5061_2014-11-10.jpg'" 
+                 onmouseout="this.src='images/aboutme/DSCF0100-2015-08-08.jpg'">
 
-        <h2>Contact Me</h2>
-        <a href="mailto:laurenfdogan@gmail.com?Subject=Online%20Portfolio" target="_top">laurenfdogan@gmail.com</a>
-<!--
-        <div>
-            Name <input name="name" type="text">
-            Email <input name="email" type="email">
-            Message <input name="message" type="text">
-            <button>Submit</button>
+        <p>I'm a user experience researcher/engineer currently living near Rochester NY in the Finger Lakes region of the state. I started out working in psychology-based research for the University of Pittsburgh Cancer Institute. I enjoyed working with study participants and with the data we received from them. This introduced me to an interest in working with computers so I sought out a master's degree in information science while I continued working at the university. </p>
+        <p>About a year ago I was looking at the bookshelf of dusty photo albums and thinking about how we've moved from hand-held albums to digital albums. I still like the idea of having an album full of photos from a particular vacation and I felt that the computer wasn't quite doing them justice. I really wanted to share my photos with friends and family who were visiting. So I started creating a digital photo album, added music and videos, and incorporated cover art to access on my streaming device. It was fun to create these videos and my family absolutely loved watching a quick video of their vacation. That's when I realized that I was creating a better user experience for them and it's something that I could pursue.</p>
+        <p>After realizing my new interest was in the user experience, I took a course to learn these skills. I enjoy all aspects of the process but I've realized that I favor research. I really enjoy the research of determining how to improve a product's website performance. </p>
+
+
+
+        <a name="contact-form"></a>
+        <div class="cognito">
+            <script src="https://services.cognitoforms.com/s/TiFUQU0T-U-w04m7WvWxLQ"></script>
+            <script>Cognito.load("forms", { id: "1" });</script>
         </div>
--->
+        
     </main>
       
-    
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/retina.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-74068591-1', 'auto');
+      ga('send', 'pageview');
+    </script>
 </body>
 </html>

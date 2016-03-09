@@ -1,0 +1,90 @@
+@media print {
+    /* resume */
+    #main-resume h1,
+    #main-resume p,
+    #main-resume a {
+        padding: 0;
+        margin: 0;
+    }
+    #main-resume a {
+        text-decoration: none;
+        color: black;
+    }
+    #main-resume ul {
+        padding: 0 0 0 1em;
+    }
+    #main-resume br {
+        padding: 0;
+        margin: 0;
+    }
+    img.print-only {
+        max-height: 35px;
+        max-width: 35px;
+        text-align: left;
+    }
+    #main-resume #resume-logo {
+        position: fixed;
+        top: 15px;
+        left: 10px;
+    }
+    #main-resume #resume-name {
+        position: fixed;
+        top: 10px;
+        left: 55px;
+    }
+    #main-resume #resume-content {
+        padding-top: 50px;
+    }
+    #main-resume #resume-summary,
+    #main-resume #resume-education {
+        width: 60%
+    }
+    #main-resume #resume-experience h2 {
+        width: 60%;
+    }
+    #main-resume #resume-summary h2,
+    #main-resume #resume-education h2,
+    #main-resume #resume-experience h2 {
+        margin-top: 15px;
+        padding-top: 5px;
+    }
+    #main-resume #resume-education h2,
+    #main-resume #resume-experience h2,
+    #main-resume #resume-experience h2{
+        border-top: 1px solid black;
+    }
+
+    #main-resume #my-personal-links,
+    #main-resume #resume-specialties,
+    #main-resume #resume-tools {
+        position: fixed;
+        right: 0;
+        width: 36%;
+    }
+    #main-resume #my-personal-links {
+        text-align: left;
+        top: 80px;
+    }
+    #main-resume #my-personal-links .button{
+        color: black;
+        text-align: left;
+        width: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    #main-resume #my-personal-links a:after {
+        content: attr(href) ;
+        font-size: 12px;
+        font-weight: normal;
+        text-transform: none;
+        color: black;
+    }
+    #main-resume #resume-specialties {
+        top: 195px; /* print-no-share */
+        /*top: 180px; /* web version */
+    }
+    #main-resume #resume-tools {
+        top: 360px;
+    }
+
+}
